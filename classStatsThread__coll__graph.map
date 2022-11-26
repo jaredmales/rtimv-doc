@@ -1,0 +1,8 @@
+<map id="StatsThread" name="StatsThread">
+<area shape="rect" id="node1" title="Thread class to start the stats thread." alt="" coords="233,81,333,108"/>
+<area shape="rect" id="node3" href="$classrtimvStats.html" title="Class to manage calculating statistics in the designated image region." alt="" coords="112,171,203,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="244,5,321,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,81,80,108"/>
+<area shape="rect" id="node5" href="$classrtimvBase.html" title=" " alt="" coords="105,81,194,108"/>
+<area shape="rect" id="node6" title=" " alt="" coords="110,5,189,32"/>
+</map>

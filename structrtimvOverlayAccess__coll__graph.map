@@ -1,0 +1,9 @@
+<map id="rtimvOverlayAccess" name="rtimvOverlayAccess">
+<area shape="rect" id="node1" title="Contains the internal components of rtimvMainWindow exposed to overlay plugins." alt="" coords="89,200,243,227"/>
+<area shape="rect" id="node2" href="$classrtimvGraphicsView.html" title="The rtimv Graphics View." alt="" coords="22,96,169,123"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,13,127,39"/>
+<area shape="rect" id="node4" href="$classStretchBox.html" title=" " alt="" coords="250,96,343,123"/>
+<area shape="rect" id="node5" title=" " alt="" coords="151,13,226,39"/>
+<area shape="rect" id="node6" title=" " alt="" coords="251,13,399,39"/>
+<area shape="rect" id="node7" href="$classStretchGraphicsItem.html" title=" " alt="" coords="423,5,578,47"/>
+</map>
