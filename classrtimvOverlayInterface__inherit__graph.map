@@ -1,4 +1,5 @@
 <map id="rtimvOverlayInterface" name="rtimvOverlayInterface">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,172,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="51,5,126,32"/>
+<area shape="rect" id="node1" title="Interface for adding information to the display." alt="" coords="5,155,172,181"/>
+<area shape="rect" id="node2" href="$classrtimvInterface.html" title="The base plugin class type." alt="" coords="31,80,146,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="51,5,126,32"/>
 </map>

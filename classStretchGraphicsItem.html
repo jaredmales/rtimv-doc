@@ -133,6 +133,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a307612cfc984bcccabe7ef50a6e9fa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93e41f88e9e8da9390d15da08c1e3acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#a93e41f88e9e8da9390d15da08c1e3acf">handleKeyPressEvent</a> (QKeyEvent *ke)</td></tr>
 <tr class="separator:a93e41f88e9e8da9390d15da08c1e3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5336a886ba5632b28097a2355aa3f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#a0b5336a886ba5632b28097a2355aa3f0">handleFocusOutEvent</a> (QFocusEvent *e)</td></tr>
+<tr class="separator:a0b5336a886ba5632b28097a2355aa3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Sizing and Moving State</h2></td></tr>
 <tr class="memitem:a350480079797f0579a1f36c4f1e28e34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#a350480079797f0579a1f36c4f1e28e34">sizingMode</a> { <br />
@@ -206,6 +208,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad35192a77f77579346d055dadf074f1d"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#ad35192a77f77579346d055dadf074f1d">m_cursorTimer</a></td></tr>
 <tr class="memdesc:ad35192a77f77579346d055dadf074f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When this times out change cursor from open-hand to double-arrow.  <a href="classStretchGraphicsItem.html#ad35192a77f77579346d055dadf074f1d">More...</a><br /></td></tr>
 <tr class="separator:ad35192a77f77579346d055dadf074f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad0978e7b870b638bb8e7ed651fc6a5"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#adad0978e7b870b638bb8e7ed651fc6a5">m_selectionTimer</a></td></tr>
+<tr class="memdesc:adad0978e7b870b638bb8e7ed651fc6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is started on mouse in, and if mouse stays in for long enough it sets selected.  <a href="classStretchGraphicsItem.html#adad0978e7b870b638bb8e7ed651fc6a5">More...</a><br /></td></tr>
+<tr class="separator:adad0978e7b870b638bb8e7ed651fc6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fdece7802c019e6803bc4e3a72418f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#a1fdece7802c019e6803bc4e3a72418f5">setCursorStatus</a> (int cs)</td></tr>
 <tr class="memdesc:a1fdece7802c019e6803bc4e3a72418f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cursor status, including changing state and displayed cursor.  <a href="classStretchGraphicsItem.html#a1fdece7802c019e6803bc4e3a72418f5">More...</a><br /></td></tr>
 <tr class="separator:a1fdece7802c019e6803bc4e3a72418f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,21 +223,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3bee3687a624567408eda75d97e4e68d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#a3bee3687a624567408eda75d97e4e68d">slotCursorTimerOut</a> ()</td></tr>
 <tr class="memdesc:a3bee3687a624567408eda75d97e4e68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the cursor timer times-out, the cursor is changed to the double-arrow.  <a href="classStretchGraphicsItem.html#a3bee3687a624567408eda75d97e4e68d">More...</a><br /></td></tr>
 <tr class="separator:a3bee3687a624567408eda75d97e4e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f156be4503aab7a29f4687ae2519c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStretchGraphicsItem.html#a89f156be4503aab7a29f4687ae2519c4">slotSelectionTimerOut</a> ()</td></tr>
+<tr class="separator:a89f156be4503aab7a29f4687ae2519c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class _QGraphicsItemT&gt;<br />
 class StretchGraphicsItem&lt; _QGraphicsItemT &gt;</h3>
 
 <p>A CRTP bolt-on to provide the rtimv stretch-item logic. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>consider making this an old-school virtual base class. It would be a lot cleaner and simplify code in <a class="el" href="classrtimvMainWindow.html">rtimvMainWindow</a>. However this will make it harder to make it shape agnostic. Maybe there is a virtual interface parent class? </dd></dl>
 <p>Required interfaces in the derived class:</p><ul>
 <li>The timer must be connected in the constructor with the code: <div class="fragment"><div class="line">connect(&amp;<a class="code" href="classStretchGraphicsItem.html#ad35192a77f77579346d055dadf074f1d">m_cursorTimer</a>, SIGNAL(timeout()), <span class="keyword">this</span>, SLOT(cursorTimerOut()));</div>
-<div class="ttc" id="aclassStretchGraphicsItem_html_ad35192a77f77579346d055dadf074f1d"><div class="ttname"><a href="classStretchGraphicsItem.html#ad35192a77f77579346d055dadf074f1d">StretchGraphicsItem::m_cursorTimer</a></div><div class="ttdeci">QTimer m_cursorTimer</div><div class="ttdoc">When this times out change cursor from open-hand to double-arrow.</div><div class="ttdef"><b>Definition:</b> <a href="StretchGraphicsItem_8hpp_source.html#l00184">StretchGraphicsItem.hpp:184</a></div></div>
+<div class="ttc" id="aclassStretchGraphicsItem_html_ad35192a77f77579346d055dadf074f1d"><div class="ttname"><a href="classStretchGraphicsItem.html#ad35192a77f77579346d055dadf074f1d">StretchGraphicsItem::m_cursorTimer</a></div><div class="ttdeci">QTimer m_cursorTimer</div><div class="ttdoc">When this times out change cursor from open-hand to double-arrow.</div><div class="ttdef"><b>Definition:</b> <a href="StretchGraphicsItem_8hpp_source.html#l00191">StretchGraphicsItem.hpp:191</a></div></div>
 </div><!-- fragment --></li>
 <li>Handler functions which must call the associated handleXXXXX function of this class. For example: <div class="fragment"><div class="line"><span class="keywordtype">void</span> hoverMoveEvent(QGraphicsSceneHoverEvent * e)</div>
 <div class="line">{</div>
 <div class="line">   <a class="code" href="classStretchGraphicsItem.html#aad48ec6eced8e9277d3ba545ade4048d">handleHoverMoveEvent</a>(e); <span class="comment">// provided by StretchGraphicsItem</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassStretchGraphicsItem_html_aad48ec6eced8e9277d3ba545ade4048d"><div class="ttname"><a href="classStretchGraphicsItem.html#aad48ec6eced8e9277d3ba545ade4048d">StretchGraphicsItem::handleHoverMoveEvent</a></div><div class="ttdeci">void handleHoverMoveEvent(QGraphicsSceneHoverEvent *e)</div><div class="ttdef"><b>Definition:</b> <a href="StretchGraphicsItem_8hpp_source.html#l00378">StretchGraphicsItem.hpp:378</a></div></div>
+<div class="ttc" id="aclassStretchGraphicsItem_html_aad48ec6eced8e9277d3ba545ade4048d"><div class="ttname"><a href="classStretchGraphicsItem.html#aad48ec6eced8e9277d3ba545ade4048d">StretchGraphicsItem::handleHoverMoveEvent</a></div><div class="ttdeci">void handleHoverMoveEvent(QGraphicsSceneHoverEvent *e)</div><div class="ttdef"><b>Definition:</b> <a href="StretchGraphicsItem_8hpp_source.html#l00400">StretchGraphicsItem.hpp:400</a></div></div>
 </div><!-- fragment --> The other required handlers are: <div class="fragment"><div class="line"><span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent * e);</div>
 <div class="line"><span class="keywordtype">void</span> mousePressEvent ( QGraphicsSceneMouseEvent * event );</div>
 <div class="line"><span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent * event );</div>
@@ -244,7 +252,7 @@ class StretchGraphicsItem&lt; _QGraphicsItemT &gt;</h3>
 <div class="line">   {</div>
 <div class="line">      <a class="code" href="classStretchGraphicsItem.html#a3bee3687a624567408eda75d97e4e68d">slotCursorTimerOut</a>(); <span class="comment">// provided by StretchGraphicsItem</span></div>
 <div class="line">   }</div>
-<div class="ttc" id="aclassStretchGraphicsItem_html_a3bee3687a624567408eda75d97e4e68d"><div class="ttname"><a href="classStretchGraphicsItem.html#a3bee3687a624567408eda75d97e4e68d">StretchGraphicsItem::slotCursorTimerOut</a></div><div class="ttdeci">void slotCursorTimerOut()</div><div class="ttdoc">When the cursor timer times-out, the cursor is changed to the double-arrow.</div><div class="ttdef"><b>Definition:</b> <a href="StretchGraphicsItem_8hpp_source.html#l00372">StretchGraphicsItem.hpp:372</a></div></div>
+<div class="ttc" id="aclassStretchGraphicsItem_html_a3bee3687a624567408eda75d97e4e68d"><div class="ttname"><a href="classStretchGraphicsItem.html#a3bee3687a624567408eda75d97e4e68d">StretchGraphicsItem::slotCursorTimerOut</a></div><div class="ttdeci">void slotCursorTimerOut()</div><div class="ttdoc">When the cursor timer times-out, the cursor is changed to the double-arrow.</div><div class="ttdef"><b>Definition:</b> <a href="StretchGraphicsItem_8hpp_source.html#l00386">StretchGraphicsItem.hpp:386</a></div></div>
 </div><!-- fragment --></li>
 <li>Signal emitters must be provided. For example: <div class="fragment"><div class="line"><span class="keywordtype">void</span> emitMoved()</div>
 <div class="line">{</div>
@@ -278,7 +286,7 @@ class StretchGraphicsItem&lt; _QGraphicsItemT &gt;</h3>
 <div class="line">   QGraphicsEllipseItem::keyPressEvent(ke); <span class="comment">//For example this passes to the Qt parent</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00094">94</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00101">101</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a57a0f944a118e88ffa112e8fa204168f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57a0f944a118e88ffa112e8fa204168f">&#9670;&nbsp;</a></span>cursorStatus</h2>
@@ -302,7 +310,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 <tr><td class="fieldname"><a id="a57a0f944a118e88ffa112e8fa204168fa1ce9dde69f9f35e76edfebdce3c6549f"></a>cursorGrabbed&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00174">174</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00181">181</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -342,7 +350,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 <tr><td class="fieldname"><a id="a350480079797f0579a1f36c4f1e28e34abe02eb55f76a1ff4957c45c941085e20"></a>szAll&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00133">133</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00140">140</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +369,7 @@ template&lt;class QGraphicsItemT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00262">262</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00275">275</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +391,37 @@ template&lt;class QGraphicsItemT &gt; </div>
 <p>Get the edge tolerance. </p>
 <dl class="section return"><dt>Returns</dt><dd>the edge tolerance in pixels, the current value of m_edgeTol </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00360">360</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00374">374</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b5336a886ba5632b28097a2355aa3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5336a886ba5632b28097a2355aa3f0">&#9670;&nbsp;</a></span>handleFocusOutEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class QGraphicsItemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classStretchGraphicsItem.html">StretchGraphicsItem</a>&lt; QGraphicsItemT &gt;::handleFocusOutEvent </td>
+          <td>(</td>
+          <td class="paramtype">QFocusEvent *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00576">576</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +451,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00411">411</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00436">436</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +481,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00378">378</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00400">400</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +511,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00533">533</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00564">564</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -503,7 +541,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00507">507</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00538">538</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -533,7 +571,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00429">429</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00456">456</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -563,7 +601,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00470">470</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00499">499</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -591,7 +629,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 
 <p>Initialize the stretch item. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00269">269</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00282">282</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -613,7 +651,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 <p>Gets the pen color.</p>
 <dl class="section return"><dt>Returns</dt><dd>the current pen color. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00546">546</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00583">583</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +673,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 <p>Gets the pen width.</p>
 <dl class="section return"><dt>Returns</dt><dd>the current pen width </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00560">560</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00597">597</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +693,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 
 <p>Get whether this object is removable. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00300">300</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00314">314</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -679,7 +717,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 
 <p>Set the cursor status, including changing state and displayed cursor. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00306">306</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00320">320</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -703,7 +741,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 
 <p>Set the edge tolerance. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00366">366</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00380">380</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -733,7 +771,7 @@ template&lt;class QGraphicsItemT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00552">552</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00589">589</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +802,7 @@ template&lt;class QGraphicsItemT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00566">566</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00603">603</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +833,7 @@ template&lt;class QGraphicsItemT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00294">294</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00308">308</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -826,7 +864,7 @@ template&lt;class QGraphicsItemT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00282">282</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00296">296</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -854,7 +892,33 @@ template&lt;class QGraphicsItemT &gt; </div>
 
 <p>When the cursor timer times-out, the cursor is changed to the double-arrow. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00372">372</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00386">386</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a89f156be4503aab7a29f4687ae2519c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f156be4503aab7a29f4687ae2519c4">&#9670;&nbsp;</a></span>slotSelectionTimerOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class QGraphicsItemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classStretchGraphicsItem.html">StretchGraphicsItem</a>&lt; QGraphicsItemT &gt;::slotSelectionTimerOut</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00392">392</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -877,7 +941,7 @@ template&lt;class QGraphicsItemT &gt; </div>
 <dd>
 false if the object is not stretchable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00288">288</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00302">302</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -898,7 +962,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>The angle of the cursor position, for determining which double-arrow cursor to apply. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00178">178</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00185">185</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +982,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>The cursor status. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00176">176</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00183">183</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -938,7 +1002,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>The time out to change to double arrow from open-hand (in milliseconds) </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00182">182</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00189">189</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -958,7 +1022,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>When this times out change cursor from open-hand to double-arrow. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00184">184</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00191">191</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -978,7 +1042,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>Tolerance in pixels for selection, within this distance this object accepts the mouse. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00171">171</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00178">178</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1062,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>Whether or not the cursor is in grabbing (open-hand) mode (true) or has grabbed (false). </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00180">180</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00187">187</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1090,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>Trackes whether the item is moving. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00139">139</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00146">146</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1118,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>Tracks whether the item is being resized. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00130">130</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00137">137</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1146,27 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>Is this item removable? If not delete key is ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00127">127</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00134">134</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adad0978e7b870b638bb8e7ed651fc6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad0978e7b870b638bb8e7ed651fc6a5">&#9670;&nbsp;</a></span>m_selectionTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _QGraphicsItemT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer <a class="el" href="classStretchGraphicsItem.html">StretchGraphicsItem</a>&lt; _QGraphicsItemT &gt;::m_selectionTimer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is started on mouse in, and if mouse stays in for long enough it sets selected. </p>
+
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00193">193</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1194,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 
 <p>Tracks how the item is currently being resized. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00136">136</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00143">143</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1223,7 @@ template&lt;class _QGraphicsItemT &gt; </div>
 <p>Is this item stretchable? If not goes straight to grab for move. </p>
 <p>If stretchable == false, then mouse over goes straight to the hand. </p>
 
-<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00122">122</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="StretchGraphicsItem_8hpp_source.html#l00129">129</a> of file <a class="el" href="StretchGraphicsItem_8hpp_source.html">StretchGraphicsItem.hpp</a>.</p>
 
 </div>
 </div>

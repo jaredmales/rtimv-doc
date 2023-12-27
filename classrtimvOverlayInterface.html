@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('classrtimvOverlayInterface.html',''); 
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for adding information to the display.  
+ <a href="classrtimvOverlayInterface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="rtimvInterfaces_8hpp_source.html">rtimvInterfaces.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for rtimvOverlayInterface:</div>
@@ -100,7 +103,8 @@ $(document).ready(function(){initNavTree('classrtimvOverlayInterface.html',''); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classrtimvOverlayInterface__inherit__graph.png" border="0" usemap="#artimvOverlayInterface_inherit__map" alt="Inheritance graph"/></div>
 <map name="artimvOverlayInterface_inherit__map" id="artimvOverlayInterface_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,172,107"/>
+<area shape="rect" title="Interface for adding information to the display." alt="" coords="5,155,172,181"/>
+<area shape="rect" href="classrtimvInterface.html" title="The base plugin class type." alt="" coords="31,80,146,107"/>
 <area shape="rect" title=" " alt="" coords="51,5,126,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -111,7 +115,8 @@ $(document).ready(function(){initNavTree('classrtimvOverlayInterface.html',''); 
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classrtimvOverlayInterface__coll__graph.png" border="0" usemap="#artimvOverlayInterface_coll__map" alt="Collaboration graph"/></div>
 <map name="artimvOverlayInterface_coll__map" id="artimvOverlayInterface_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,172,107"/>
+<area shape="rect" title="Interface for adding information to the display." alt="" coords="5,155,172,181"/>
+<area shape="rect" href="classrtimvInterface.html" title="The base plugin class type." alt="" coords="31,80,146,107"/>
 <area shape="rect" title=" " alt="" coords="51,5,126,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -121,8 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af638eee11958be8f878f787c9bda6d24"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvOverlayInterface.html#af638eee11958be8f878f787c9bda6d24">~rtimvOverlayInterface</a> ()=default</td></tr>
 <tr class="separator:af638eee11958be8f878f787c9bda6d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279726431a684fcdf231de9fdb89648a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvOverlayInterface.html#a279726431a684fcdf231de9fdb89648a">attachOverlay</a> (<a class="el" href="structrtimvOverlayAccess.html">rtimvOverlayAccess</a> &amp;, mx::app::appConfigurator &amp;)=0</td></tr>
+<tr class="memdesc:a279726431a684fcdf231de9fdb89648a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and attach the overlay.  <a href="classrtimvOverlayInterface.html#a279726431a684fcdf231de9fdb89648a">More...</a><br /></td></tr>
 <tr class="separator:a279726431a684fcdf231de9fdb89648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83374c1b93501b42a043193b7c1c41af"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvOverlayInterface.html#a83374c1b93501b42a043193b7c1c41af">updateOverlay</a> ()=0</td></tr>
+<tr class="memdesc:a83374c1b93501b42a043193b7c1c41af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the overlay.  <a href="classrtimvOverlayInterface.html#a83374c1b93501b42a043193b7c1c41af">More...</a><br /></td></tr>
 <tr class="separator:a83374c1b93501b42a043193b7c1c41af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74e2be26b08ed86e5fbbde68e60b33a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvOverlayInterface.html#ac74e2be26b08ed86e5fbbde68e60b33a">keyPressEvent</a> (QKeyEvent *ke)=0</td></tr>
 <tr class="memdesc:ac74e2be26b08ed86e5fbbde68e60b33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a key press event.  <a href="classrtimvOverlayInterface.html#ac74e2be26b08ed86e5fbbde68e60b33a">More...</a><br /></td></tr>
@@ -131,13 +138,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a269c862ca9901a91d2ef086f9f088c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the overlay is currently enabled.  <a href="classrtimvOverlayInterface.html#a269c862ca9901a91d2ef086f9f088c9a">More...</a><br /></td></tr>
 <tr class="separator:a269c862ca9901a91d2ef086f9f088c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4de53d7732072fc6cf57a5d77f606d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvOverlayInterface.html#a8e4de53d7732072fc6cf57a5d77f606d">enableOverlay</a> ()=0</td></tr>
+<tr class="memdesc:a8e4de53d7732072fc6cf57a5d77f606d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the overlay.  <a href="classrtimvOverlayInterface.html#a8e4de53d7732072fc6cf57a5d77f606d">More...</a><br /></td></tr>
 <tr class="separator:a8e4de53d7732072fc6cf57a5d77f606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845c2bc401105fc12d6349ee33a36d6f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvOverlayInterface.html#a845c2bc401105fc12d6349ee33a36d6f">disableOverlay</a> ()=0</td></tr>
+<tr class="memdesc:a845c2bc401105fc12d6349ee33a36d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the overlay.  <a href="classrtimvOverlayInterface.html#a845c2bc401105fc12d6349ee33a36d6f">More...</a><br /></td></tr>
 <tr class="separator:a845c2bc401105fc12d6349ee33a36d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classrtimvInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrtimvInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrtimvInterface.html">rtimvInterface</a></td></tr>
+<tr class="memitem:a2e282f62c9af10d50b95038567b91ed0 inherit pub_methods_classrtimvInterface"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvInterface.html#a2e282f62c9af10d50b95038567b91ed0">info</a> ()=0</td></tr>
+<tr class="memdesc:a2e282f62c9af10d50b95038567b91ed0 inherit pub_methods_classrtimvInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the information about this plugin for user display.  <a href="classrtimvInterface.html#a2e282f62c9af10d50b95038567b91ed0">More...</a><br /></td></tr>
+<tr class="separator:a2e282f62c9af10d50b95038567b91ed0 inherit pub_methods_classrtimvInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="rtimvInterfaces_8hpp_source.html#l00223">223</a> of file <a class="el" href="rtimvInterfaces_8hpp_source.html">rtimvInterfaces.hpp</a>.</p>
+<div class="textblock"><p>Interface for adding information to the display. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvInterfaces_8hpp_source.html#l00279">279</a> of file <a class="el" href="rtimvInterfaces_8hpp_source.html">rtimvInterfaces.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af638eee11958be8f878f787c9bda6d24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af638eee11958be8f878f787c9bda6d24">&#9670;&nbsp;</a></span>~rtimvOverlayInterface()</h2>
@@ -199,6 +213,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Configure and attach the overlay. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+&lt;0 on error </dd>
+<dd>
+&gt;0 on not-configured </dd></dl>
+
 </div>
 </div>
 <a id="a845c2bc401105fc12d6349ee33a36d6f"></a>
@@ -224,6 +245,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Disable the overlay. </p>
+
 </div>
 </div>
 <a id="a8e4de53d7732072fc6cf57a5d77f606d"></a>
@@ -248,6 +271,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enable the overlay. </p>
 
 </div>
 </div>
@@ -276,6 +301,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handle a key press event. </p>
+<p>Note that there is currently no way to register and deconflict keys </p>
 
 </div>
 </div>
@@ -328,6 +354,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Update the overlay. </p>
 
 </div>
 </div>

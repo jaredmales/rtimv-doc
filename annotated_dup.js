@@ -8,6 +8,7 @@ var annotated_dup =
     [ "rtimvDictionaryInterface", "classrtimvDictionaryInterface.html", "classrtimvDictionaryInterface" ],
     [ "rtimvGraphicsView", "classrtimvGraphicsView.html", "classrtimvGraphicsView" ],
     [ "rtimvImage", "structrtimvImage.html", "structrtimvImage" ],
+    [ "rtimvInterface", "classrtimvInterface.html", "classrtimvInterface" ],
     [ "rtimvMainWindow", "classrtimvMainWindow.html", "classrtimvMainWindow" ],
     [ "rtimvMouseCoord", "structrtimvMouseCoord.html", "structrtimvMouseCoord" ],
     [ "rtimvOverlayAccess", "structrtimvOverlayAccess.html", "structrtimvOverlayAccess" ],

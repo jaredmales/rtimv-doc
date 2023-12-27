@@ -38,6 +38,13 @@ var NAVTREE =
       [ "North Arrow", "index.html#autotoc_md8", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -57,7 +64,6 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -68,10 +74,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "StretchBox_8cpp.html",
-"classrtimvBase.html#a1f5a8c7c3685090f137cb07f0fac4baa",
-"classrtimvGraphicsView.html#a3f6c5a2a73964dec8b3df37311629631",
-"classrtimvMainWindow.html#ad8988e01d7438faa08043f77e9037b74",
-"structrtimvColorMap.html#a5b0f92cbfdf9b90be29cc32533235489"
+"classrtimvBase.html#a097801d084bcc14956e2fb9a90d18a81",
+"classrtimvGraphicsView.html#a1b0d9881c9e2186f42dfc10a6cea5d3c",
+"classrtimvMainWindow.html#ab330d292b790b89b7017a2c58415c928",
+"rtimvImage_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

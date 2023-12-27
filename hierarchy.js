@@ -23,7 +23,10 @@ var hierarchy =
       [ "StretchCircle", "classStretchCircle.html", null ],
       [ "StretchLine", "classStretchLine.html", null ],
       [ "rtimvImage", "structrtimvImage.html", null ],
-      [ "rtimvOverlayInterface", "classrtimvOverlayInterface.html", null ]
+      [ "rtimvInterface", "classrtimvInterface.html", [
+        [ "rtimvDictionaryInterface", "classrtimvDictionaryInterface.html", null ],
+        [ "rtimvOverlayInterface", "classrtimvOverlayInterface.html", null ]
+      ] ]
     ] ],
     [ "QThread", null, [
       [ "StatsThread", "classStatsThread.html", null ]
@@ -39,7 +42,6 @@ var hierarchy =
     ] ],
     [ "rtimvColorMap", "structrtimvColorMap.html", null ],
     [ "rtimvDictBlob", "structrtimvDictBlob.html", null ],
-    [ "rtimvDictionaryInterface", "classrtimvDictionaryInterface.html", null ],
     [ "rtimvMouseCoord", "structrtimvMouseCoord.html", null ],
     [ "rtimvOverlayAccess", "structrtimvOverlayAccess.html", null ],
     [ "StretchGraphicsItem< _QGraphicsItemT >", "classStretchGraphicsItem.html", null ],

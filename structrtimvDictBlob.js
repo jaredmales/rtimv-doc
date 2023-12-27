@@ -6,6 +6,7 @@ var structrtimvDictBlob =
     [ "~rtimvDictBlob", "structrtimvDictBlob.html#a3eee06dfac70edaa060dea2f9a9e60b2", null ],
     [ "clearBlob", "structrtimvDictBlob.html#a968ca2279c6d399ad1ee5346a30e0a74", null ],
     [ "getBlob", "structrtimvDictBlob.html#aa4c13405b598018e397678ea0fe760ab", null ],
+    [ "getBlobSize", "structrtimvDictBlob.html#af993f1813cb0f8b181c87b46d17406bf", null ],
     [ "getBlobStr", "structrtimvDictBlob.html#a1ec1dc064e06ae70f648bbfe27acb5d1", null ],
     [ "setBlob", "structrtimvDictBlob.html#a831a1a76c9711e28b0c09a99c733c935", null ],
     [ "m_blob", "structrtimvDictBlob.html#a0de217d7281b0645d3369bb1ec2822b8", null ],

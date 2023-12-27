@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('structrtimvImage.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structrtimvImage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rtimvImage Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -121,6 +122,10 @@ $(document).ready(function(){initNavTree('structrtimvImage.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a103731c1d15b0774e19e3292f4c6eba1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a103731c1d15b0774e19e3292f4c6eba1">rtimvImage</a> ()=delete</td></tr>
+<tr class="separator:a103731c1d15b0774e19e3292f4c6eba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecd9299dbe4d497145ea5ff97325c2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">rtimvImage</a> (std::mutex *mut)</td></tr>
+<tr class="separator:aaecd9299dbe4d497145ea5ff97325c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe062f90440f1b7a07ec09c9f3218c7d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">imageKey</a> (const std::string &amp;sn)=0</td></tr>
 <tr class="memdesc:abe062f90440f1b7a07ec09c9f3218c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the image key.  <a href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">More...</a><br /></td></tr>
 <tr class="separator:abe062f90440f1b7a07ec09c9f3218c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,8 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adc828d82e9be14dcef9ec3bf7eeb1f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called at intervals to check for updated image data.  <a href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b">More...</a><br /></td></tr>
 <tr class="separator:adc828d82e9be14dcef9ec3bf7eeb1f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac8a4003039b3b0248929b72e73ea58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">detach</a> ()=0</td></tr>
-<tr class="memdesc:aeac8a4003039b3b0248929b72e73ea58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach / disconnect from the image source and clean up. <br  />
-  <a href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">More...</a><br /></td></tr>
+<tr class="memdesc:aeac8a4003039b3b0248929b72e73ea58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach / disconnect from the image source and clean up.  <a href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">More...</a><br /></td></tr>
 <tr class="separator:aeac8a4003039b3b0248929b72e73ea58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69c3a72e59819d22daa4776a6ae0e1cb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">valid</a> ()=0</td></tr>
 <tr class="memdesc:a69c3a72e59819d22daa4776a6ae0e1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether image is connected and has valid data.  <a href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">More...</a><br /></td></tr>
@@ -158,13 +162,75 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff8fdca34bcb23423241d6bb82325299"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">fpsEst</a> ()=0</td></tr>
 <tr class="memdesc:aff8fdca34bcb23423241d6bb82325299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest estimate of FPS for this image.  <a href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">More...</a><br /></td></tr>
 <tr class="separator:aff8fdca34bcb23423241d6bb82325299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fea9fd878deffa9fe089ea340af041"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a63fea9fd878deffa9fe089ea340af041">info</a> ()</td></tr>
+<tr class="separator:a63fea9fd878deffa9fe089ea340af041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a> {nullptr}</td></tr>
+<tr class="memdesc:a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for locking access to memory.  <a href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">More...</a><br /></td></tr>
+<tr class="separator:a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for rtimv images. </p>
 <p>Defines the interface to an image stream to be displayed by rtimv. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00024">24</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00027">27</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a103731c1d15b0774e19e3292f4c6eba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103731c1d15b0774e19e3292f4c6eba1">&#9670;&nbsp;</a></span>rtimvImage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rtimvImage::rtimvImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaecd9299dbe4d497145ea5ff97325c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecd9299dbe4d497145ea5ff97325c2c">&#9670;&nbsp;</a></span>rtimvImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rtimvImage::rtimvImage </td>
+          <td>(</td>
+          <td class="paramtype">std::mutex *&#160;</td>
+          <td class="paramname"><em>mut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00034">34</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aeac8a4003039b3b0248929b72e73ea58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeac8a4003039b3b0248929b72e73ea58">&#9670;&nbsp;</a></span>detach()</h2>
 
@@ -188,8 +254,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Detach / disconnect from the image source and clean up. <br  />
- </p>
+<p>Detach / disconnect from the image source and clean up. </p>
 <p>Primarily used in the event of a SIGSEGV or SIGBUS. This instance must be ready to connect again, and begin monitoring the source for new data. </p>
 
 </div>
@@ -344,6 +409,33 @@ Public Member Functions</h2></td></tr>
 <p>Get the image acquisition time. </p>
 <p>Gets the acquisition time converted to double, giving time since the epoch. This must be safe to call regardless of whehter <a class="el" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb" title="Check whether image is connected and has valid data.">valid()</a> is true.</p>
 <dl class="section return"><dt>Returns</dt><dd>the time the current image was acquired. </dd></dl>
+
+</div>
+</div>
+<a id="a63fea9fd878deffa9fe089ea340af041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fea9fd878deffa9fe089ea340af041">&#9670;&nbsp;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;std::string&gt; rtimvImage::info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00123">123</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
 
 </div>
 </div>
@@ -528,6 +620,25 @@ RTIMVIMAGE_FPSUPDATE if there is an F.P.S. update along with an image data updat
 
 <p>Check whether image is connected and has valid data. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this instance is attached to its source and has valid data. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a76abbd3e6b9ae6e1bc365fc6c13cd087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76abbd3e6b9ae6e1bc365fc6c13cd087">&#9670;&nbsp;</a></span>m_accessMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex* rtimvImage::m_accessMutex {nullptr}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutex for locking access to memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00107">107</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
 
 </div>
 </div>

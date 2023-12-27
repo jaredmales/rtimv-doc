@@ -1,12 +1,13 @@
 var classrtimvStats =
 [
-    [ "rtimvStats", "classrtimvStats.html#ad76c3548b88007a36148a00e8c1ac517", null ],
+    [ "rtimvStats", "classrtimvStats.html#acb6c6d308c5f693f8e5a5878b5aafbf3", null ],
     [ "~rtimvStats", "classrtimvStats.html#aebb48072cf039acef10a5bfa52d3dca7", null ],
     [ "calcStats", "classrtimvStats.html#a513da1000c11b6bfae339a7ed2206c38", null ],
     [ "setImdata", "classrtimvStats.html#aba0050cf42a5c9683b9720e20b6c01a8", null ],
     [ "setImdata", "classrtimvStats.html#a226e1afe420523cc8000bf723f7dc570", null ],
     [ "statsThread", "classrtimvStats.html#ad3c69ceab18da7e136db9330b1dd26f8", null ],
     [ "updateGUI", "classrtimvStats.html#a3c82a169f83091de1b21023d516e68cb", null ],
+    [ "m_calMutex", "classrtimvStats.html#a1c4a15addb3be8eb9d2fa7fd04c1b08a", null ],
     [ "m_dataMax", "classrtimvStats.html#a50114bd403fdbd511c34d92eddf5570b", null ],
     [ "m_dataMean", "classrtimvStats.html#ae00a6ed4b7d16ef5f55b136e7b541b0f", null ],
     [ "m_dataMedian", "classrtimvStats.html#ac33261462bd2f57f2e7dab7be448cdc5", null ],

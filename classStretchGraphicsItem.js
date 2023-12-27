@@ -20,6 +20,7 @@ var classStretchGraphicsItem =
     ] ],
     [ "StretchGraphicsItem", "classStretchGraphicsItem.html#a5cfab38329624ea05cbdbabaf98f4cef", null ],
     [ "edgeTol", "classStretchGraphicsItem.html#a1e2308ef26a6118922def6ed5b16df28", null ],
+    [ "handleFocusOutEvent", "classStretchGraphicsItem.html#a0b5336a886ba5632b28097a2355aa3f0", null ],
     [ "handleHoverLeaveEvent", "classStretchGraphicsItem.html#abdc518d42da3c5f540c253dc89f77eb9", null ],
     [ "handleHoverMoveEvent", "classStretchGraphicsItem.html#aad48ec6eced8e9277d3ba545ade4048d", null ],
     [ "handleKeyPressEvent", "classStretchGraphicsItem.html#a93e41f88e9e8da9390d15da08c1e3acf", null ],
@@ -37,6 +38,7 @@ var classStretchGraphicsItem =
     [ "setRemovable", "classStretchGraphicsItem.html#a66dea371d5453daacdb444259ebaaf42", null ],
     [ "setStretchable", "classStretchGraphicsItem.html#a73f26c041180400b3fe0ae11e362ff66", null ],
     [ "slotCursorTimerOut", "classStretchGraphicsItem.html#a3bee3687a624567408eda75d97e4e68d", null ],
+    [ "slotSelectionTimerOut", "classStretchGraphicsItem.html#a89f156be4503aab7a29f4687ae2519c4", null ],
     [ "stretchable", "classStretchGraphicsItem.html#a166e14bbebf244a8f2e14408d6450e9e", null ],
     [ "m_cursorAngle", "classStretchGraphicsItem.html#ae059d3ddc4df84d66c0513405c6693d3", null ],
     [ "m_cursorStatus", "classStretchGraphicsItem.html#ab4fc372ee3acdc75f8dc95990c6be41a", null ],
@@ -47,6 +49,7 @@ var classStretchGraphicsItem =
     [ "m_isMoving", "classStretchGraphicsItem.html#af6ecf1a335b1b421deffd72b1e9d30b0", null ],
     [ "m_isSizing", "classStretchGraphicsItem.html#ad66b72a816fb050d72b8afe2ea3784e0", null ],
     [ "m_removable", "classStretchGraphicsItem.html#ad246e7261a229f5989ac404277a93a13", null ],
+    [ "m_selectionTimer", "classStretchGraphicsItem.html#adad0978e7b870b638bb8e7ed651fc6a5", null ],
     [ "m_sizing", "classStretchGraphicsItem.html#aebe7d2e056e2d77e518ddfa3c9c9b8a1", null ],
     [ "m_stretchable", "classStretchGraphicsItem.html#a8134b49978e576f030ca234b9036fcb6", null ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zoomheight_1525',['ZOOMHEIGHT',['../rtimvGraphicsView_8cpp.html#ae9df6727e9938a0d1f491e2f274f2b85',1,'rtimvGraphicsView.cpp']]],
-  ['zoomwidth_1526',['ZOOMWIDTH',['../rtimvGraphicsView_8cpp.html#a5fbbd256708bdb68d04b62d99118325c',1,'rtimvGraphicsView.cpp']]]
+  ['warnheight_1600',['WARNHEIGHT',['../rtimvGraphicsView_8cpp.html#a2994fc0452765152593f4aad57ff9e73',1,'rtimvGraphicsView.cpp']]],
+  ['warnwidth_1601',['WARNWIDTH',['../rtimvGraphicsView_8cpp.html#ae05b3668bfb8e1f953d319d02b9dce1a',1,'rtimvGraphicsView.cpp']]]
 ];
