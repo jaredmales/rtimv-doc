@@ -1,4 +1,5 @@
-<map id="/home/jrmales/Source/rtimv/src/circleTimeSeries.hpp" name="/home/jrmales/Source/rtimv/src/circleTimeSeries.hpp">
-<area shape="rect" id="node1" title="Declaration of a circular&#45;buffer time&#45;series class." alt="" coords="5,5,229,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="33,95,201,121"/>
+<map id="/home/jrmales/Source/rtimv/rtimv/src/circleTimeSeries.hpp" name="/home/jrmales/Source/rtimv/rtimv/src/circleTimeSeries.hpp">
+<area shape="rect" id="Node000001" title="Declaration of a circular&#45;buffer time&#45;series class." alt="" coords="5,5,200,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,108,187,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,60,105,94,100,94,100,60"/>
 </map>

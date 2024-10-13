@@ -1,8 +1,14 @@
-<map id="/home/jrmales/Source/rtimv/src/rtimvInterfaces.hpp" name="/home/jrmales/Source/rtimv/src/rtimvInterfaces.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="130,5,346,47"/>
-<area shape="rect" id="node2" href="$rtimvMainWindow_8hpp.html" title=" " alt="" coords="121,95,355,136"/>
-<area shape="rect" id="node3" href="$rtimvControlPanel_8hpp.html" title=" " alt="" coords="5,184,239,225"/>
-<area shape="rect" id="node5" href="$rtimvMain_8cpp.html" title=" " alt="" coords="263,184,445,225"/>
-<area shape="rect" id="node6" href="$rtimvMainWindow_8cpp.html" title=" " alt="" coords="469,184,703,225"/>
-<area shape="rect" id="node4" href="$rtimvControlPanel_8cpp.html" title=" " alt="" coords="6,273,238,315"/>
+<map id="/home/jrmales/Source/rtimv/rtimv/src/rtimvInterfaces.hpp" name="/home/jrmales/Source/rtimv/rtimv/src/rtimvInterfaces.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,5,357,45"/>
+<area shape="rect" id="Node000002" href="$rtimvMainWindow_8hpp.html" title=" " alt="" coords="93,93,367,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,59,233,93,227,93,227,59"/>
+<area shape="rect" id="Node000003" href="$rtimvControlPanel_8hpp.html" title=" " alt="" coords="5,181,215,236"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,143,137,183,134,179,186,139"/>
+<area shape="rect" id="Node000005" href="$rtimvMain_8cpp.html" title=" " alt="" coords="239,189,461,229"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="267,140,327,186,324,191,264,144"/>
+<area shape="rect" id="Node000006" href="$rtimvMainWindow_8cpp.html" title=" " alt="" coords="485,189,757,229"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="323,134,542,186,541,191,321,139"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="161,171,211,131,215,136,165,175"/>
+<area shape="rect" id="Node000004" href="$rtimvControlPanel_8cpp.html" title=" " alt="" coords="5,284,215,339"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,250,113,284,107,284,107,250"/>
 </map>

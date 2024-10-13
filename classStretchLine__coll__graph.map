@@ -1,6 +1,9 @@
 <map id="StretchLine" name="StretchLine">
-<area shape="rect" id="node1" title=" " alt="" coords="130,95,225,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,13,80,39"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,13,251,39"/>
-<area shape="rect" id="node4" href="$classStretchGraphicsItem.html" title=" " alt="" coords="275,5,429,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,93,225,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,80,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,43,159,91,156,95,73,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,13,251,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,52,180,93,175,93,175,52"/>
+<area shape="rect" id="Node000004" href="$classStretchGraphicsItem.html" title=" " alt="" coords="275,5,429,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,53,204,96,202,91,296,49"/>
 </map>

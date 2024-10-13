@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning_5fcolor_1494',['warning_color',['../classrtimvBase.html#a382b253f179da7bb6c998b1ab7192ca5',1,'rtimvBase']]]
+  ['y_0',['Y',['../classcircleTimeSeries.html#a18e2b895872dabf55c0dc3a086e6ffb4',1,'circleTimeSeries']]]
 ];

@@ -1,11 +1,21 @@
-<map id="/home/jrmales/Source/rtimv/src/rtimvBase.hpp" name="/home/jrmales/Source/rtimv/src/rtimvBase.hpp">
-<area shape="rect" id="node1" title="Declarations for the rtimvBase base class." alt="" coords="147,5,329,47"/>
-<area shape="rect" id="node2" href="$rtimvBase_8cpp.html" title=" " alt="" coords="17,95,200,136"/>
-<area shape="rect" id="node3" href="$rtimvMainWindow_8hpp.html" title=" " alt="" coords="121,184,355,225"/>
-<area shape="rect" id="node8" href="$rtimvStats_8hpp.html" title=" " alt="" coords="275,95,459,136"/>
-<area shape="rect" id="node4" href="$rtimvControlPanel_8hpp.html" title=" " alt="" coords="5,273,239,315"/>
-<area shape="rect" id="node6" href="$rtimvMain_8cpp.html" title=" " alt="" coords="263,273,445,315"/>
-<area shape="rect" id="node7" href="$rtimvMainWindow_8cpp.html" title=" " alt="" coords="469,273,703,315"/>
-<area shape="rect" id="node5" href="$rtimvControlPanel_8cpp.html" title=" " alt="" coords="6,363,238,404"/>
-<area shape="rect" id="node9" href="$rtimvStats_8cpp.html" title=" " alt="" coords="380,184,563,225"/>
+<map id="/home/jrmales/Source/rtimv/rtimv/src/rtimvBase.hpp" name="/home/jrmales/Source/rtimv/rtimv/src/rtimvBase.hpp">
+<area shape="rect" id="Node000001" title="Declarations for the rtimvBase base class." alt="" coords="153,5,375,45"/>
+<area shape="rect" id="Node000002" href="$rtimvBase_8cpp.html" title=" " alt="" coords="5,93,227,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,55,150,96,147,91,218,50"/>
+<area shape="rect" id="Node000003" href="$rtimvMainWindow_8hpp.html" title=" " alt="" coords="127,181,401,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,59,267,181,261,181,261,59"/>
+<area shape="rect" id="Node000008" href="$rtimvStats_8hpp.html" title=" " alt="" coords="301,93,523,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="310,50,381,91,378,96,307,55"/>
+<area shape="rect" id="Node000004" href="$rtimvControlPanel_8hpp.html" title=" " alt="" coords="39,269,249,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,231,171,271,168,267,220,227"/>
+<area shape="rect" id="Node000006" href="$rtimvMain_8cpp.html" title=" " alt="" coords="273,277,495,317"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="301,228,361,274,358,279,298,232"/>
+<area shape="rect" id="Node000007" href="$rtimvMainWindow_8cpp.html" title=" " alt="" coords="519,277,791,317"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="357,222,576,274,575,279,355,227"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="195,259,245,219,249,224,199,263"/>
+<area shape="rect" id="Node000005" href="$rtimvControlPanel_8cpp.html" title=" " alt="" coords="39,372,249,427"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,338,147,372,141,372,141,338"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="369,143,298,184,295,179,366,138"/>
+<area shape="rect" id="Node000009" href="$rtimvStats_8cpp.html" title=" " alt="" coords="425,181,647,221"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="452,139,510,179,507,183,449,143"/>
 </map>

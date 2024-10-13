@@ -1,6 +1,6 @@
 var classrtimvControlPanel =
 [
-    [ "rtimvControlPanel", "classrtimvControlPanel.html#a07fd70160789994a8851b8e1feae9532", null ],
+    [ "rtimvControlPanel", "classrtimvControlPanel.html#a476bfb55e07fb3557576b9f5670c0050", null ],
     [ "enableViewViewMode", "classrtimvControlPanel.html#aae5318308d95730e0624e029da3c1a41", null ],
     [ "hideStatsBox", "classrtimvControlPanel.html#a01af9243b9ef947e08030dac39447918", null ],
     [ "init_panel", "classrtimvControlPanel.html#a3a7e2a04adad1fd95d29a607d6c14d23", null ],
@@ -55,6 +55,7 @@ var classrtimvControlPanel =
     [ "set_pointerViewCen", "classrtimvControlPanel.html#acd0a4973ef7618a24fbf26f21bd4dea6", null ],
     [ "set_PointerViewMode", "classrtimvControlPanel.html#a5bbd6d9d3d5d99a151983dd7055ebcf3", null ],
     [ "set_ViewViewMode", "classrtimvControlPanel.html#a89582123ae4f88d1364f0cab7bb59b33", null ],
+    [ "setScaleMode", "classrtimvControlPanel.html#a66b32b017fb73173cad0aecb166a09f1", null ],
     [ "setupCombos", "classrtimvControlPanel.html#a4ddc9fc1401739ab0a21387b2dd850cb", null ],
     [ "setupMode", "classrtimvControlPanel.html#a032e165baf2a471712ab25542fdb4d0e", null ],
     [ "showStaticCoords", "classrtimvControlPanel.html#a7b4c26a9620667220860ffe075b53ede", null ],
@@ -94,6 +95,7 @@ var classrtimvControlPanel =
     [ "IgnoremindatSliderChange", "classrtimvControlPanel.html#a9b4dc32dbf6b59bca60d8225510b1d96", null ],
     [ "IgnoreZoomSliderChange", "classrtimvControlPanel.html#ac7aeca676a18431f6da16b464ed37ef3", null ],
     [ "imv", "classrtimvControlPanel.html#a9320297a5731a2e97d0a6302f0a26a6f", null ],
+    [ "m_calMutex", "classrtimvControlPanel.html#aa200be01ccdfcca2dc61fe5c77bf33fb", null ],
     [ "pointerViewCen", "classrtimvControlPanel.html#a91b08634f5bf3f18e12f721ffd261dd5", null ],
     [ "PointerViewEmpty", "classrtimvControlPanel.html#a8c260406566773551712d656bc181453", null ],
     [ "PointerViewFixed", "classrtimvControlPanel.html#a45c626a29590bc9ba0e8a68e7ccea1d5", null ],

@@ -8,8 +8,13 @@ var rtimvInterfaces_8hpp =
     [ "rtimvOverlayInterface", "classrtimvOverlayInterface.html", "classrtimvOverlayInterface" ],
     [ "rtimvDictionaryInterface_iid", "rtimvInterfaces_8hpp.html#a9cfd80a1287865da715c8c8d86be201b", null ],
     [ "rtimvOverlayInterface_iid", "rtimvInterfaces_8hpp.html#a9dce3d779b106874af3b2a60c2218a3c", null ],
-    [ "dictionaryIteratorT", "rtimvInterfaces_8hpp.html#ade39f09acc01dfa93845772d0eba4b24", null ],
+    [ "dictionaryIteratorT", "rtimvInterfaces_8hpp.html#a290b2874d9595b14dfc9e48b88e725bf", null ],
     [ "dictionaryT", "rtimvInterfaces_8hpp.html#ab907d4fdc947612304bebd11b3b53e70", null ],
+    [ "savingState", "rtimvInterfaces_8hpp.html#ab5250c6f77e2977a3b3038d16a8495f0", [
+      [ "on", "rtimvInterfaces_8hpp.html#ab5250c6f77e2977a3b3038d16a8495f0aed2b5c0139cec8ad2873829dc1117d50", null ],
+      [ "waiting", "rtimvInterfaces_8hpp.html#ab5250c6f77e2977a3b3038d16a8495f0acb05cab65afefab8fd3831d92cfc68be", null ],
+      [ "off", "rtimvInterfaces_8hpp.html#ab5250c6f77e2977a3b3038d16a8495f0a3262d48df5d75e3452f0f16b313b7808", null ]
+    ] ],
     [ "warningLevel", "rtimvInterfaces_8hpp.html#a157c9e87ca92fffbcfc61af79434da3c", [
       [ "normal", "rtimvInterfaces_8hpp.html#a157c9e87ca92fffbcfc61af79434da3cafea087517c26fadd409bd4b9dc642555", null ],
       [ "caution", "rtimvInterfaces_8hpp.html#a157c9e87ca92fffbcfc61af79434da3ca72bd70ba8e0881dce0f72bb5752ab13a", null ],

@@ -1,9 +1,15 @@
 <map id="rtimvOverlayAccess" name="rtimvOverlayAccess">
-<area shape="rect" id="node1" title="Contains the internal components of rtimvMainWindow exposed to overlay plugins." alt="" coords="89,200,243,227"/>
-<area shape="rect" id="node2" href="$classrtimvGraphicsView.html" title="The rtimv Graphics View." alt="" coords="22,96,169,123"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,13,127,39"/>
-<area shape="rect" id="node4" href="$classStretchBox.html" title=" " alt="" coords="250,96,343,123"/>
-<area shape="rect" id="node5" title=" " alt="" coords="151,13,226,39"/>
-<area shape="rect" id="node6" title=" " alt="" coords="251,13,399,39"/>
-<area shape="rect" id="node7" href="$classStretchGraphicsItem.html" title=" " alt="" coords="423,5,578,47"/>
+<area shape="rect" id="Node000001" title="Contains the internal components of rtimvMainWindow exposed to overlay plugins." alt="" coords="271,197,425,223"/>
+<area shape="rect" id="Node000002" href="$classStretchBox.html" title=" " alt="" coords="220,95,313,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,129,341,196,337,199,283,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,13,80,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,40,93,43,234,92,232,97,91,48,84,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="105,13,253,38"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="203,45,256,93,252,97,200,49"/>
+<area shape="rect" id="Node000005" href="$classStretchGraphicsItem.html" title=" " alt="" coords="277,5,432,45"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="326,57,281,96,278,92,322,53"/>
+<area shape="rect" id="Node000006" href="$classrtimvGraphicsView.html" title="The rtimv Graphics View." alt="" coords="416,95,563,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="466,130,406,176,368,200,365,195,402,171,463,126"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="457,13,578,38"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="511,52,496,96,491,94,506,50"/>
 </map>

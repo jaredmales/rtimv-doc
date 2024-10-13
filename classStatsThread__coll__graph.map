@@ -1,8 +1,14 @@
 <map id="StatsThread" name="StatsThread">
-<area shape="rect" id="node1" title="Thread class to start the stats thread." alt="" coords="233,81,333,108"/>
-<area shape="rect" id="node3" href="$classrtimvStats.html" title="Class to manage calculating statistics in the designated image region." alt="" coords="112,171,203,197"/>
-<area shape="rect" id="node2" title=" " alt="" coords="244,5,321,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,81,80,108"/>
-<area shape="rect" id="node5" href="$classrtimvBase.html" title=" " alt="" coords="105,81,194,108"/>
-<area shape="rect" id="node6" title=" " alt="" coords="110,5,189,32"/>
+<area shape="rect" id="Node000001" title="Thread class to start the stats thread." alt="" coords="233,80,333,105"/>
+<area shape="rect" id="Node000003" href="$classrtimvStats.html" title="Class to manage calculating statistics in the designated image region." alt="" coords="112,168,203,193"/>
+<area shape="poly" id="edge6_Node000003_Node000001" title=" " alt="" coords="228,113,195,131,178,150,165,169,161,167,173,147,192,127,226,108"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="244,5,321,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,45,285,80,280,80,280,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,169,266,158,286,151,298,142,301,134,300,125,290,107,295,104,305,124,306,135,302,146,289,156,268,164,217,175"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,80,80,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,111,143,166,140,170,67,116"/>
+<area shape="rect" id="Node000005" href="$classrtimvBase.html" title=" " alt="" coords="105,80,194,105"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="128,117,121,130,121,143,130,156,141,166,137,170,126,159,116,145,115,129,123,114"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="110,5,189,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="152,45,152,80,147,80,147,45"/>
 </map>

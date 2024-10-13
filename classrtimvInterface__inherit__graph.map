@@ -1,6 +1,9 @@
 <map id="rtimvInterface" name="rtimvInterface">
-<area shape="rect" id="node1" title="The base plugin class type." alt="" coords="138,80,253,107"/>
-<area shape="rect" id="node3" href="$classrtimvDictionaryInterface.html" title=" " alt="" coords="5,155,188,181"/>
-<area shape="rect" id="node4" href="$classrtimvOverlayInterface.html" title="Interface for adding information to the display." alt="" coords="212,155,379,181"/>
-<area shape="rect" id="node2" title=" " alt="" coords="158,5,233,32"/>
+<area shape="rect" id="Node000001" title="The base plugin class type." alt="" coords="138,79,253,104"/>
+<area shape="rect" id="Node000003" href="$classrtimvDictionaryInterface.html" title=" " alt="" coords="5,152,188,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,114,114,154,111,150,167,110"/>
+<area shape="rect" id="Node000004" href="$classrtimvOverlayInterface.html" title="Interface for adding information to the display." alt="" coords="212,152,379,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,110,281,150,277,154,221,114"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="158,5,233,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,44,198,79,193,79,193,44"/>
 </map>

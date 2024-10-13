@@ -25,18 +25,7 @@
 var NAVTREE =
 [
   [ "rtimv", "index.html", [
-    [ "rtimv User's Guide", "index.html", [
-      [ "Basic Startup", "index.html#autotoc_md1", null ],
-      [ "Image Keys", "index.html#autotoc_md2", null ],
-      [ "Operating rtimv", "index.html#autotoc_md3", [
-        [ "Keyboard Shortcuts", "index.html#autotoc_md4", null ],
-        [ "Pixel Coordinates and Value", "index.html#autotoc_md5", null ]
-      ] ],
-      [ "Configuration", "index.html#autotoc_md6", [
-        [ "Configuration Options", "index.html#autotoc_md7", null ]
-      ] ],
-      [ "North Arrow", "index.html#autotoc_md8", null ]
-    ] ],
+    [ "rtimv User's Guide", "index.html", "index" ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -56,7 +45,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -74,10 +63,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "StretchBox_8cpp.html",
-"classrtimvBase.html#a097801d084bcc14956e2fb9a90d18a81",
-"classrtimvGraphicsView.html#a1b0d9881c9e2186f42dfc10a6cea5d3c",
-"classrtimvMainWindow.html#ab330d292b790b89b7017a2c58415c928",
-"rtimvImage_8hpp.html"
+"classrtimvBase.html#a0c1a7610c8acd4285e17e6742449d932",
+"classrtimvGraphicsView.html#a0eac7ce9683aa2a18e1242dc48d031a6",
+"classrtimvMainWindow.html#a94acc4c7105a968c8090743a123abf97",
+"rtimvGraphicsView_8hpp.html#a42e60d1a0e53bac7b8786ba074518f40"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
