@@ -29,6 +29,7 @@ var classStretchLine =
     [ "onMousePressCalcGrabbed", "classStretchLine.html#adcc0823850f003477ed78779a7cb9ceb", null ],
     [ "passKeyPressEvent", "classStretchLine.html#ad775fdebddc39ea620b6017838b0d149", null ],
     [ "rejectMouse", "classStretchLine.html#a6b038a85723fb8cff1b0bf897b391239", null ],
+    [ "remove", "classStretchLine.html#a125d23fc454492655d8e0ab6595ce35a", null ],
     [ "remove", "classStretchLine.html#a28a7a1a1e99876b865c22f672cf2f929", null ],
     [ "resized", "classStretchLine.html#a27801d2ea2f23cda370d32f68370ff7b", null ],
     [ "selected", "classStretchLine.html#a34034efc160129c9137dd0ddb4e59780", null ],

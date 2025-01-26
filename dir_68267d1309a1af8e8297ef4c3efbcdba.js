@@ -2,6 +2,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "circleTimeSeries.hpp", "circleTimeSeries_8hpp.html", "circleTimeSeries_8hpp" ],
     [ "colorMaps.hpp", "colorMaps_8hpp.html", "colorMaps_8hpp" ],
+    [ "cubeCtrl.cpp", "cubeCtrl_8cpp.html", null ],
+    [ "cubeCtrl.hpp", "cubeCtrl_8hpp.html", "cubeCtrl_8hpp" ],
     [ "rtimvBase.cpp", "rtimvBase_8cpp.html", "rtimvBase_8cpp" ],
     [ "rtimvBase.hpp", "rtimvBase_8hpp.html", "rtimvBase_8hpp" ],
     [ "rtimvControlPanel.cpp", "rtimvControlPanel_8cpp.html", null ],

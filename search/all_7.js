@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['gagefontcolor_0',['gagefontcolor',['../classrtimvGraphicsView.html#a8d8da198353032656e4b0760a8f17769',1,'rtimvGraphicsView::gageFontColor()'],['../classrtimvGraphicsView.html#af0f4f03b48d3a76919c177d027814592',1,'rtimvGraphicsView::gageFontColor(const char *fc)']]],
-  ['gagefontfamily_1',['gagefontfamily',['../classrtimvGraphicsView.html#a74119e686447f9680d6c38e54bbed886',1,'rtimvGraphicsView::gageFontFamily(const char *ff)'],['../classrtimvGraphicsView.html#a4b174f8071186dbf85ed7b5c460fe939',1,'rtimvGraphicsView::gageFontFamily()']]],
+  ['gagefontcolor_0',['gagefontcolor',['../classrtimvGraphicsView.html#a8d8da198353032656e4b0760a8f17769',1,'rtimvGraphicsView::gageFontColor()'],['../classrtimvGraphicsView.html#a1b410e2d03965bce75da1fb2bea236ea',1,'rtimvGraphicsView::gageFontColor(const QString &amp;fc)']]],
+  ['gagefontfamily_1',['gagefontfamily',['../classrtimvGraphicsView.html#aa67c6c4b210c118a74ab6bb1ce66ff14',1,'rtimvGraphicsView::gageFontFamily(const QString &amp;ff)'],['../classrtimvGraphicsView.html#a4b174f8071186dbf85ed7b5c460fe939',1,'rtimvGraphicsView::gageFontFamily()']]],
   ['gagefontsize_2',['gagefontsize',['../classrtimvGraphicsView.html#a65d9e1819dc6989226a26afe5a19082e',1,'rtimvGraphicsView::gageFontSize(float fs)'],['../classrtimvGraphicsView.html#a7dca4d819bb363919bb9cbcfbc166862',1,'rtimvGraphicsView::gageFontSize()']]],
   ['gageheight_3',['GAGEHEIGHT',['../rtimvGraphicsView_8cpp.html#abf7ba1125372d57afb6f4ba79ddea3b9',1,'rtimvGraphicsView.cpp']]],
   ['generatehelp_4',['generateHelp',['../classrtimvMainWindow.html#ad350e062ed8d51035476067e951ea41f',1,'rtimvMainWindow']]],

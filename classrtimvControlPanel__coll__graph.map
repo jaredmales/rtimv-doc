@@ -1,32 +1,35 @@
 <map id="rtimvControlPanel" name="rtimvControlPanel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="312,192,451,217"/>
-<area shape="rect" id="Node000003" href="$classrtimvMainWindow.html" title=" " alt="" coords="305,289,447,315"/>
-<area shape="poly" id="edge6_Node000003_Node000001" title=" " alt="" coords="383,231,379,289,374,289,377,231"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="457,13,535,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="478,50,442,96,411,149,389,193,384,190,406,147,438,93,474,47"/>
-<area shape="rect" id="Node000004" href="$classrtimvBase.html" title=" " alt="" coords="451,95,541,120"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="499,52,499,95,493,95,493,52"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,280,344,266,344,250,354,231,367,216,371,219,359,234,349,251,349,265,356,277"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,134,486,179,465,228,450,248,432,265,397,291,394,287,429,261,446,244,460,225,480,178,490,133"/>
-<area shape="rect" id="Node000010" href="$classrtimvStats.html" title="Class to manage calculating statistics in the designated image region." alt="" coords="568,192,659,217"/>
-<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="523,127,601,190,598,194,519,131"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="53,192,147,217"/>
-<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="123,225,148,245,178,263,242,283,306,294,305,299,241,288,176,268,145,250,120,229"/>
-<area shape="rect" id="Node000006" href="$classStretchBox.html" title=" " alt="" coords="149,95,243,120"/>
-<area shape="poly" id="edge17_Node000001_Node000006" title=" " alt="" coords="232,124,360,189,358,194,229,129"/>
-<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="194,133,194,179,199,203,210,225,231,247,257,265,314,287,312,292,255,269,228,251,206,228,194,205,189,180,189,133"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="5,13,80,38"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="78,42,175,92,173,97,75,47"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="105,13,253,38"/>
-<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="187,51,196,94,191,95,181,52"/>
-<area shape="rect" id="Node000009" href="$classStretchGraphicsItem.html" title=" " alt="" coords="277,5,432,45"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="306,54,220,97,218,92,304,49"/>
-<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="585,227,547,248,504,268,428,292,426,287,502,263,544,243,582,222"/>
-<area shape="rect" id="Node000012" href="$classStatsThread.html" title="Thread class to start the stats thread." alt="" coords="699,289,799,315"/>
-<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="671,220,698,232,722,249,738,268,748,288,743,291,733,271,718,253,695,237,669,225"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="576,95,651,120"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="616,134,616,192,611,192,611,134"/>
-<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="685,301,648,290,631,280,617,267,610,255,607,242,608,217,613,218,612,241,615,253,621,264,634,276,650,285,686,296"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="788,192,865,217"/>
-<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="826,232,820,250,810,267,795,281,778,292,776,287,792,277,806,264,815,248,820,230"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="125,203,263,228"/>
+<area shape="rect" id="Node000003" href="$classrtimvMainWindow.html" title=" " alt="" coords="241,300,382,325"/>
+<area shape="poly" id="edge6_Node000003_Node000001" title=" " alt="" coords="195,241,198,259,205,274,222,288,242,298,239,303,219,293,201,278,192,260,190,242"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="457,13,536,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="468,48,214,205,211,200,465,43"/>
+<area shape="rect" id="Node000004" href="$classrtimvBase.html" title=" " alt="" coords="523,95,612,120"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="518,46,559,93,555,96,514,50"/>
+<area shape="rect" id="Node000006" href="$classcubeCtrl.html" title=" " alt="" coords="421,144,497,169"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="492,52,465,144,460,143,487,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,294,262,278,205,230,209,226,265,274,286,290"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="568,134,556,186,544,215,525,239,493,264,457,283,419,297,383,305,382,300,418,291,455,278,490,260,521,235,539,212,551,185,563,133"/>
+<area shape="rect" id="Node000011" href="$classrtimvStats.html" title="Class to manage calculating statistics in the designated image region." alt="" coords="647,203,738,228"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="593,127,640,167,680,200,677,204,636,171,589,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,203,100,228"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="90,231,192,273,269,297,267,302,190,279,88,236"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="449,183,432,211,411,239,370,275,332,302,329,298,367,271,407,236,428,208,445,180"/>
+<area shape="rect" id="Node000007" href="$classStretchBox.html" title=" " alt="" coords="147,95,241,120"/>
+<area shape="poly" id="edge19_Node000001_Node000007" title=" " alt="" coords="197,134,197,203,191,203,191,134"/>
+<area shape="poly" id="edge9_Node000003_Node000007" title=" " alt="" coords="241,124,263,142,287,183,302,228,310,269,313,300,308,300,305,270,297,230,282,186,259,146,238,128"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="6,13,81,38"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="78,42,174,92,171,97,76,47"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="105,13,253,38"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="187,51,195,94,189,95,181,52"/>
+<area shape="rect" id="Node000010" href="$classStretchGraphicsItem.html" title=" " alt="" coords="278,5,433,45"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="306,54,219,97,216,92,304,49"/>
+<area shape="poly" id="edge13_Node000003_Node000011" title=" " alt="" coords="666,238,627,260,583,279,532,292,479,302,383,312,382,306,478,297,530,287,581,273,625,255,663,233"/>
+<area shape="rect" id="Node000013" href="$classStatsThread.html" title="Thread class to start the stats thread." alt="" coords="779,300,879,325"/>
+<area shape="poly" id="edge18_Node000013_Node000011" title=" " alt="" coords="751,230,777,243,801,259,817,279,827,299,822,301,812,282,798,263,774,247,749,235"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="655,95,730,120"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="695,134,695,203,690,203,690,134"/>
+<area shape="poly" id="edge16_Node000011_Node000013" title=" " alt="" coords="764,312,727,301,710,291,696,278,689,266,686,252,688,228,693,228,692,252,694,264,700,274,714,287,730,296,766,307"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="867,203,945,228"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="905,242,899,260,889,278,875,292,858,302,855,298,871,288,885,274,894,258,900,241"/>
 </map>

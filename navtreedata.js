@@ -63,10 +63,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "StretchBox_8cpp.html",
-"classrtimvBase.html#a0c1a7610c8acd4285e17e6742449d932",
-"classrtimvGraphicsView.html#a0eac7ce9683aa2a18e1242dc48d031a6",
-"classrtimvMainWindow.html#a94acc4c7105a968c8090743a123abf97",
-"rtimvGraphicsView_8hpp.html#a42e60d1a0e53bac7b8786ba074518f40"
+"classcubeCtrl.html#a4f478ef42294dd82d46384e35651ee92",
+"classrtimvControlPanel.html#a801549f1fb28d56ce61fb9371a961b9d",
+"classrtimvMainWindow.html#a22d269fc6c73a8a8ad59a5d2cc8d8bba",
+"functions_func_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

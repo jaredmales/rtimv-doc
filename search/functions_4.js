@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edgetol_0',['edgeTol',['../classStretchGraphicsItem.html#a1e2308ef26a6118922def6ed5b16df28',1,'StretchGraphicsItem']]],
+  ['edgetol_0',['edgeTol',['../classStretchGraphicsItem.html#affb8e680f6e2284dca65122d8e58d022',1,'StretchGraphicsItem']]],
   ['emitdeselected_1',['emitdeselected',['../classStretchBox.html#a07d4b69a8c29fbb942c9a0bdd46d940f',1,'StretchBox::emitDeSelected()'],['../classStretchCircle.html#ae0de418b3bcf30ca400b3fbc3484024d',1,'StretchCircle::emitDeSelected()'],['../classStretchLine.html#a42f2b8677f4bc992372b9b9c0293ebbe',1,'StretchLine::emitDeSelected()']]],
   ['emitmousein_2',['emitmousein',['../classStretchBox.html#af1f876e6f912fdd7aa7808cee170d89b',1,'StretchBox::emitMouseIn()'],['../classStretchCircle.html#adac046cbba8d1beb2468272dc1cf2849',1,'StretchCircle::emitMouseIn()'],['../classStretchLine.html#ace80160ef75e96ddcf3736ef082782eb',1,'StretchLine::emitMouseIn()']]],
   ['emitmouseout_3',['emitmouseout',['../classStretchBox.html#a46ec788251e6dd5587dd163f30c0486d',1,'StretchBox::emitMouseOut()'],['../classStretchCircle.html#acf6a16b534e60a22571ae80dccea05b2',1,'StretchCircle::emitMouseOut()'],['../classStretchLine.html#aedfada3ac07da35e64582377dc015e10',1,'StretchLine::emitMouseOut()']]],

@@ -153,6 +153,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac41634658b8ef066b99dee234eceeea4" id="r_ac41634658b8ef066b99dee234eceeea4"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">ny</a> ()=0</td></tr>
 <tr class="memdesc:ac41634658b8ef066b99dee234eceeea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the image dimension in the y direction.  <br /></td></tr>
 <tr class="separator:ac41634658b8ef066b99dee234eceeea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51addf58481b07315251e38bd0485807" id="r_a51addf58481b07315251e38bd0485807"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a51addf58481b07315251e38bd0485807">nz</a> ()=0</td></tr>
+<tr class="memdesc:a51addf58481b07315251e38bd0485807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of images.  <br /></td></tr>
+<tr class="separator:a51addf58481b07315251e38bd0485807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7cb93eed7dd50487c72c0009a24dc2" id="r_a5d7cb93eed7dd50487c72c0009a24dc2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a5d7cb93eed7dd50487c72c0009a24dc2">defaultCubeMode</a> ()</td></tr>
+<tr class="memdesc:a5d7cb93eed7dd50487c72c0009a24dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default cube playback mode for this image type.  <br /></td></tr>
+<tr class="separator:a5d7cb93eed7dd50487c72c0009a24dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55714c3b047d451c907f88ea11a4adf8" id="r_a55714c3b047d451c907f88ea11a4adf8"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a55714c3b047d451c907f88ea11a4adf8">imageNo</a> ()=0</td></tr>
+<tr class="memdesc:a55714c3b047d451c907f88ea11a4adf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current image in the cube.  <br /></td></tr>
+<tr class="separator:a55714c3b047d451c907f88ea11a4adf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7733ecd9e873e985d579a264efd940e5" id="r_a7733ecd9e873e985d579a264efd940e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a7733ecd9e873e985d579a264efd940e5">imageNo</a> (uint32_t ino)</td></tr>
+<tr class="memdesc:a7733ecd9e873e985d579a264efd940e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current image in the cube.  <br /></td></tr>
+<tr class="separator:a7733ecd9e873e985d579a264efd940e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d8063e855e3e2906c2ae67473c5b21" id="r_a64d8063e855e3e2906c2ae67473c5b21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a64d8063e855e3e2906c2ae67473c5b21">incImageNo</a> ()</td></tr>
+<tr class="memdesc:a64d8063e855e3e2906c2ae67473c5b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the current image number.  <br /></td></tr>
+<tr class="separator:a64d8063e855e3e2906c2ae67473c5b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e05d3c9b3f5c9070606b72f0b7a141" id="r_a51e05d3c9b3f5c9070606b72f0b7a141"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a51e05d3c9b3f5c9070606b72f0b7a141">decImageNo</a> ()</td></tr>
+<tr class="memdesc:a51e05d3c9b3f5c9070606b72f0b7a141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the current image number.  <br /></td></tr>
+<tr class="separator:a51e05d3c9b3f5c9070606b72f0b7a141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae933223947b86288b53a68aae8510a52" id="r_ae933223947b86288b53a68aae8510a52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#ae933223947b86288b53a68aae8510a52">deltaImageNo</a> (int32_t dino)</td></tr>
+<tr class="memdesc:ae933223947b86288b53a68aae8510a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current image number by an offset.  <br /></td></tr>
+<tr class="separator:ae933223947b86288b53a68aae8510a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad301c1a4ffa992a33e6dbc676da7698c" id="r_ad301c1a4ffa992a33e6dbc676da7698c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">imageTime</a> ()=0</td></tr>
 <tr class="memdesc:ad301c1a4ffa992a33e6dbc676da7698c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the image acquisition time.  <br /></td></tr>
 <tr class="separator:ad301c1a4ffa992a33e6dbc676da7698c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +197,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a76abbd3e6b9ae6e1bc365fc6c13cd087" id="r_a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a> {nullptr}</td></tr>
+<tr class="memitem:a76abbd3e6b9ae6e1bc365fc6c13cd087" id="r_a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a> { nullptr }</td></tr>
 <tr class="memdesc:a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for locking access to memory.  <br /></td></tr>
 <tr class="separator:a76abbd3e6b9ae6e1bc365fc6c13cd087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -235,11 +256,108 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00034">34</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00032">32</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a51e05d3c9b3f5c9070606b72f0b7a141" name="a51e05d3c9b3f5c9070606b72f0b7a141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e05d3c9b3f5c9070606b72f0b7a141">&#9670;&#160;</a></span>decImageNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rtimvImage::decImageNo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrement the current image number. </p>
+<p>If not a cube this has no effect. If it is a cube it should cause the previous image in the cube to be presented as an update on the next call to <a class="el" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b" title="Function called at intervals to check for updated image data.">update()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00129">129</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5d7cb93eed7dd50487c72c0009a24dc2" name="a5d7cb93eed7dd50487c72c0009a24dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7cb93eed7dd50487c72c0009a24dc2">&#9670;&#160;</a></span>defaultCubeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool rtimvImage::defaultCubeMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the default cube playback mode for this image type. </p>
+<p>Returns the cube playback mode that should be initiated when a cube of this image type is opened. The global default is false, which means playback is not started. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00092">92</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae933223947b86288b53a68aae8510a52" name="ae933223947b86288b53a68aae8510a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae933223947b86288b53a68aae8510a52">&#9670;&#160;</a></span>deltaImageNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rtimvImage::deltaImageNo </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>dino</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the current image number by an offset. </p>
+<p>If not a cube this has no effect. If it is a cube it should cause a new image in the cube to be presented as an update on the next call to <a class="el" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b" title="Function called at intervals to check for updated image data.">update()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dino</td><td>the change in image number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00139">139</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+
+</div>
+</div>
 <a id="aeac8a4003039b3b0248929b72e73ea58" name="aeac8a4003039b3b0248929b72e73ea58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeac8a4003039b3b0248929b72e73ea58">&#9670;&#160;</a></span>detach()</h2>
 
@@ -292,7 +410,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the latest estimate of FPS for this image. </p>
-<p>This must be safe to call regardless of whehter <a class="el" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb" title="Check whether image is connected and has valid data.">valid()</a> is true.</p>
+<p>This must be safe to call regardless of whether <a class="el" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb" title="Check whether image is connected and has valid data.">valid()</a> is true.</p>
 <dl class="section return"><dt>Returns</dt><dd>the latest FPS estimate. </dd></dl>
 
 </div>
@@ -392,6 +510,72 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a55714c3b047d451c907f88ea11a4adf8" name="a55714c3b047d451c907f88ea11a4adf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55714c3b047d451c907f88ea11a4adf8">&#9670;&#160;</a></span>imageNo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t rtimvImage::imageNo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current image in the cube. </p>
+<p>If not a cube this will always be 0. Must be less than nz.</p>
+<dl class="section return"><dt>Returns</dt><dd>the current image number; </dd></dl>
+
+</div>
+</div>
+<a id="a7733ecd9e873e985d579a264efd940e5" name="a7733ecd9e873e985d579a264efd940e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7733ecd9e873e985d579a264efd940e5">&#9670;&#160;</a></span>imageNo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rtimvImage::imageNo </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>ino</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current image in the cube. </p>
+<p>If not a cube this will have no effect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ino</td><td>then new image number to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00108">108</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ad301c1a4ffa992a33e6dbc676da7698c" name="ad301c1a4ffa992a33e6dbc676da7698c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad301c1a4ffa992a33e6dbc676da7698c">&#9670;&#160;</a></span>imageTime()</h2>
 
@@ -416,8 +600,38 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the image acquisition time. </p>
-<p>Gets the acquisition time converted to double, giving time since the epoch. This must be safe to call regardless of whehter <a class="el" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb" title="Check whether image is connected and has valid data.">valid()</a> is true.</p>
+<p>Gets the acquisition time converted to double, giving time since the epoch. This must be safe to call regardless of whether <a class="el" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb" title="Check whether image is connected and has valid data.">valid()</a> is true.</p>
 <dl class="section return"><dt>Returns</dt><dd>the time the current image was acquired. </dd></dl>
+
+</div>
+</div>
+<a id="a64d8063e855e3e2906c2ae67473c5b21" name="a64d8063e855e3e2906c2ae67473c5b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d8063e855e3e2906c2ae67473c5b21">&#9670;&#160;</a></span>incImageNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rtimvImage::incImageNo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increment the current image number. </p>
+<p>If not a cube this has no effect. If it is a cube it should cause the next image in the cube to be presented as an update on the next call to <a class="el" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b" title="Function called at intervals to check for updated image data.">update()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00119">119</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
 
 </div>
 </div>
@@ -444,7 +658,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00128">128</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00190">190</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
 
 </div>
 </div>
@@ -503,6 +717,35 @@ Public Attributes</h2></td></tr>
 <p>Get the image dimension in the y direction. </p>
 <p>Units are pixels.</p>
 <dl class="section return"><dt>Returns</dt><dd>the current y dimension; </dd></dl>
+
+</div>
+</div>
+<a id="a51addf58481b07315251e38bd0485807" name="a51addf58481b07315251e38bd0485807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51addf58481b07315251e38bd0485807">&#9670;&#160;</a></span>nz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t rtimvImage::nz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of images. </p>
+<p>Must be at least 1. If greater than 1 this is a cube.</p>
+<dl class="section return"><dt>Returns</dt><dd>the current z dimension; </dd></dl>
 
 </div>
 </div>
@@ -594,7 +837,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function called at intervals to check for updated image data. </p>
-<dl class="section return"><dt>Returns</dt><dd>RTIMVIMAGE_NOUPDATE if there no updates </dd>
+<dl class="section return"><dt>Returns</dt><dd>RTIMVIMAGE_NOUPDATE if there are no updates </dd>
 <dd>
 RTIMVIMAGE_AGEUPDATE if the image age has been updated but the data has not. </dd>
 <dd>
@@ -640,14 +883,14 @@ RTIMVIMAGE_FPSUPDATE if there is an F.P.S. update along with an image data updat
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::mutex* rtimvImage::m_accessMutex {nullptr}</td>
+          <td class="memname">std::mutex* rtimvImage::m_accessMutex { nullptr }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Mutex for locking access to memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00112">112</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvImage_8hpp_source.html#l00174">174</a> of file <a class="el" href="rtimvImage_8hpp_source.html">rtimvImage.hpp</a>.</p>
 
 </div>
 </div>

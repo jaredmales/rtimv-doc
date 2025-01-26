@@ -154,8 +154,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a031560b7b375dbfc992b50d7fb9091b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="classrtimvMainWindow.html">rtimvMainWindow</a> to indicate that the region has changed.  <br /></td></tr>
 <tr class="separator:a031560b7b375dbfc992b50d7fb9091b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c69ceab18da7e136db9330b1dd26f8" id="r_ad3c69ceab18da7e136db9330b1dd26f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ad3c69ceab18da7e136db9330b1dd26f8">statsThread</a> ()</td></tr>
-<tr class="memdesc:ad3c69ceab18da7e136db9330b1dd26f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run funciton for the statistics thread. <br  />
-  <br /></td></tr>
+<tr class="memdesc:ad3c69ceab18da7e136db9330b1dd26f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run funciton for the statistics thread.  <br /></td></tr>
 <tr class="separator:ad3c69ceab18da7e136db9330b1dd26f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80afd182dc2b6f1bd388282d052e1bb1" id="r_a80afd182dc2b6f1bd388282d052e1bb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a80afd182dc2b6f1bd388282d052e1bb1">mtxUL_calcStats</a> ()</td></tr>
 <tr class="memdesc:a80afd182dc2b6f1bd388282d052e1bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the statistics.  <br /></td></tr>
@@ -169,63 +168,58 @@ Protected Slots</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a4bf8892700bee0ac8e42843853b82616" id="r_a4bf8892700bee0ac8e42843853b82616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrtimvBase.html">rtimvBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a4bf8892700bee0ac8e42843853b82616">m_imv</a> {nullptr}</td></tr>
+<tr class="memitem:a4bf8892700bee0ac8e42843853b82616" id="r_a4bf8892700bee0ac8e42843853b82616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrtimvBase.html">rtimvBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a4bf8892700bee0ac8e42843853b82616">m_imv</a> { nullptr }</td></tr>
 <tr class="memdesc:a4bf8892700bee0ac8e42843853b82616"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rtimv instance this is connected to.  <br /></td></tr>
 <tr class="separator:a4bf8892700bee0ac8e42843853b82616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc7f8b29f6f322f48ea564649a4bef7" id="r_a4fc7f8b29f6f322f48ea564649a4bef7"><td class="memItemLeft" align="right" valign="top">std::shared_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a4fc7f8b29f6f322f48ea564649a4bef7">m_calMutex</a> {nullptr}</td></tr>
+<tr class="memitem:a4fc7f8b29f6f322f48ea564649a4bef7" id="r_a4fc7f8b29f6f322f48ea564649a4bef7"><td class="memItemLeft" align="right" valign="top">std::shared_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a4fc7f8b29f6f322f48ea564649a4bef7">m_calMutex</a> { nullptr }</td></tr>
 <tr class="separator:a4fc7f8b29f6f322f48ea564649a4bef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa24c5e3db8444a298f5b59e517edeaa0" id="r_aa24c5e3db8444a298f5b59e517edeaa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#aa24c5e3db8444a298f5b59e517edeaa0">m_statsPause</a> {20}</td></tr>
+<tr class="memitem:aa24c5e3db8444a298f5b59e517edeaa0" id="r_aa24c5e3db8444a298f5b59e517edeaa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#aa24c5e3db8444a298f5b59e517edeaa0">m_statsPause</a> { 20 }</td></tr>
 <tr class="memdesc:aa24c5e3db8444a298f5b59e517edeaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause between checks if the stats thread needs to calculate, milliseconds.  <br /></td></tr>
 <tr class="separator:aa24c5e3db8444a298f5b59e517edeaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91db2b8848323eb2d488e88934750f77" id="r_a91db2b8848323eb2d488e88934750f77"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a91db2b8848323eb2d488e88934750f77">m_updateTimer</a></td></tr>
 <tr class="memdesc:a91db2b8848323eb2d488e88934750f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">When this times out the GUI is updated if needed.  <br /></td></tr>
 <tr class="separator:a91db2b8848323eb2d488e88934750f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb20ea1d0c57ee98c0b3d0754e8500d" id="r_a9cb20ea1d0c57ee98c0b3d0754e8500d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a9cb20ea1d0c57ee98c0b3d0754e8500d">m_updateTimerTimeout</a> {50}</td></tr>
+<tr class="memitem:a9cb20ea1d0c57ee98c0b3d0754e8500d" id="r_a9cb20ea1d0c57ee98c0b3d0754e8500d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a9cb20ea1d0c57ee98c0b3d0754e8500d">m_updateTimerTimeout</a> { 50 }</td></tr>
 <tr class="memdesc:a9cb20ea1d0c57ee98c0b3d0754e8500d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GUI update timeout, milliseconds.  <br /></td></tr>
 <tr class="separator:a9cb20ea1d0c57ee98c0b3d0754e8500d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05c0af06f360feab925b691fa8bd132d" id="r_a05c0af06f360feab925b691fa8bd132d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a05c0af06f360feab925b691fa8bd132d">m_nx</a> {0}</td></tr>
+<tr class="memitem:a05c0af06f360feab925b691fa8bd132d" id="r_a05c0af06f360feab925b691fa8bd132d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a05c0af06f360feab925b691fa8bd132d">m_nx</a> { 0 }</td></tr>
 <tr class="memdesc:a05c0af06f360feab925b691fa8bd132d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x size of the image, stored internally for copying from image data to local array.  <br /></td></tr>
 <tr class="separator:a05c0af06f360feab925b691fa8bd132d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e11c01cbd3f512843b7bb338e74c9c" id="r_a13e11c01cbd3f512843b7bb338e74c9c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a13e11c01cbd3f512843b7bb338e74c9c">m_ny</a> {0}</td></tr>
+<tr class="memitem:a13e11c01cbd3f512843b7bb338e74c9c" id="r_a13e11c01cbd3f512843b7bb338e74c9c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a13e11c01cbd3f512843b7bb338e74c9c">m_ny</a> { 0 }</td></tr>
 <tr class="memdesc:a13e11c01cbd3f512843b7bb338e74c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y size of the image, stored internally for copying from image data to local array.  <br /></td></tr>
 <tr class="separator:a13e11c01cbd3f512843b7bb338e74c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b2c2c95fd9b02e6e937971ce5baac2c" id="r_a6b2c2c95fd9b02e6e937971ce5baac2c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a6b2c2c95fd9b02e6e937971ce5baac2c">m_x0</a> {0}</td></tr>
-<tr class="memdesc:a6b2c2c95fd9b02e6e937971ce5baac2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x coordinate of the starting corner of the region, stored internally for copying from image data to local array.  <br /></td></tr>
+<tr class="memitem:a6b2c2c95fd9b02e6e937971ce5baac2c" id="r_a6b2c2c95fd9b02e6e937971ce5baac2c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a6b2c2c95fd9b02e6e937971ce5baac2c">m_x0</a> { 0 }</td></tr>
 <tr class="separator:a6b2c2c95fd9b02e6e937971ce5baac2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56894a8b9fad9c403a4cd4c90b651ea2" id="r_a56894a8b9fad9c403a4cd4c90b651ea2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a56894a8b9fad9c403a4cd4c90b651ea2">m_x1</a> {0}</td></tr>
-<tr class="memdesc:a56894a8b9fad9c403a4cd4c90b651ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x coordinate of the ending corner of the region, stored internally for copying from image data to local array.  <br /></td></tr>
+<tr class="memitem:a56894a8b9fad9c403a4cd4c90b651ea2" id="r_a56894a8b9fad9c403a4cd4c90b651ea2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a56894a8b9fad9c403a4cd4c90b651ea2">m_x1</a> { 0 }</td></tr>
 <tr class="separator:a56894a8b9fad9c403a4cd4c90b651ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a1d979a16551dd2328fe44a81dec77" id="r_a61a1d979a16551dd2328fe44a81dec77"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a61a1d979a16551dd2328fe44a81dec77">m_y0</a> {0}</td></tr>
-<tr class="memdesc:a61a1d979a16551dd2328fe44a81dec77"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y coordinate of the starting corner of the region, stored internally for copying from image data to local array.  <br /></td></tr>
+<tr class="memitem:a61a1d979a16551dd2328fe44a81dec77" id="r_a61a1d979a16551dd2328fe44a81dec77"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a61a1d979a16551dd2328fe44a81dec77">m_y0</a> { 0 }</td></tr>
 <tr class="separator:a61a1d979a16551dd2328fe44a81dec77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d5c0901406774d1ac6ed6ea26065de" id="r_ad8d5c0901406774d1ac6ed6ea26065de"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ad8d5c0901406774d1ac6ed6ea26065de">m_y1</a> {0}</td></tr>
-<tr class="memdesc:ad8d5c0901406774d1ac6ed6ea26065de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y coordinate of the ending corner of the region, stored internally for copying from image data to local array.  <br /></td></tr>
+<tr class="memitem:ad8d5c0901406774d1ac6ed6ea26065de" id="r_ad8d5c0901406774d1ac6ed6ea26065de"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ad8d5c0901406774d1ac6ed6ea26065de">m_y1</a> { 0 }</td></tr>
 <tr class="separator:ad8d5c0901406774d1ac6ed6ea26065de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dae45336701df27e0452ef4c189864d" id="r_a0dae45336701df27e0452ef4c189864d"><td class="memItemLeft" align="right" valign="top">mx::improc::eigenImage&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a0dae45336701df27e0452ef4c189864d">m_imdata</a></td></tr>
-<tr class="memdesc:a0dae45336701df27e0452ef4c189864d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local image storage. The region is copied to this for robustness against segfaults from image changes.  <br /></td></tr>
 <tr class="separator:a0dae45336701df27e0452ef4c189864d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69821843efb0092a900269ad2ce544e0" id="r_a69821843efb0092a900269ad2ce544e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a69821843efb0092a900269ad2ce544e0">m_dataMin</a> {0}</td></tr>
+<tr class="memitem:a69821843efb0092a900269ad2ce544e0" id="r_a69821843efb0092a900269ad2ce544e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a69821843efb0092a900269ad2ce544e0">m_dataMin</a> { 0 }</td></tr>
 <tr class="memdesc:a69821843efb0092a900269ad2ce544e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum value in the data.  <br /></td></tr>
 <tr class="separator:a69821843efb0092a900269ad2ce544e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50114bd403fdbd511c34d92eddf5570b" id="r_a50114bd403fdbd511c34d92eddf5570b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a50114bd403fdbd511c34d92eddf5570b">m_dataMax</a> {0}</td></tr>
+<tr class="memitem:a50114bd403fdbd511c34d92eddf5570b" id="r_a50114bd403fdbd511c34d92eddf5570b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#a50114bd403fdbd511c34d92eddf5570b">m_dataMax</a> { 0 }</td></tr>
 <tr class="memdesc:a50114bd403fdbd511c34d92eddf5570b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value in the data.  <br /></td></tr>
 <tr class="separator:a50114bd403fdbd511c34d92eddf5570b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae00a6ed4b7d16ef5f55b136e7b541b0f" id="r_ae00a6ed4b7d16ef5f55b136e7b541b0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ae00a6ed4b7d16ef5f55b136e7b541b0f">m_dataMean</a> {0}</td></tr>
+<tr class="memitem:ae00a6ed4b7d16ef5f55b136e7b541b0f" id="r_ae00a6ed4b7d16ef5f55b136e7b541b0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ae00a6ed4b7d16ef5f55b136e7b541b0f">m_dataMean</a> { 0 }</td></tr>
 <tr class="memdesc:ae00a6ed4b7d16ef5f55b136e7b541b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mean value in the data.  <br /></td></tr>
 <tr class="separator:ae00a6ed4b7d16ef5f55b136e7b541b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe856acfae393470969c7aad6d8afd24" id="r_afe856acfae393470969c7aad6d8afd24"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#afe856acfae393470969c7aad6d8afd24">m_medWork</a></td></tr>
 <tr class="memdesc:afe856acfae393470969c7aad6d8afd24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Working memory for median calculation.  <br /></td></tr>
 <tr class="separator:afe856acfae393470969c7aad6d8afd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33261462bd2f57f2e7dab7be448cdc5" id="r_ac33261462bd2f57f2e7dab7be448cdc5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ac33261462bd2f57f2e7dab7be448cdc5">m_dataMedian</a> {0}</td></tr>
+<tr class="memitem:ac33261462bd2f57f2e7dab7be448cdc5" id="r_ac33261462bd2f57f2e7dab7be448cdc5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#ac33261462bd2f57f2e7dab7be448cdc5">m_dataMedian</a> { 0 }</td></tr>
 <tr class="memdesc:ac33261462bd2f57f2e7dab7be448cdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The median value in the data.  <br /></td></tr>
 <tr class="separator:ac33261462bd2f57f2e7dab7be448cdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af23803b041f2b1f06326a991b17a16bb" id="r_af23803b041f2b1f06326a991b17a16bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#af23803b041f2b1f06326a991b17a16bb">m_regionChanged</a> {0}</td></tr>
+<tr class="memitem:af23803b041f2b1f06326a991b17a16bb" id="r_af23803b041f2b1f06326a991b17a16bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#af23803b041f2b1f06326a991b17a16bb">m_regionChanged</a></td></tr>
 <tr class="memdesc:af23803b041f2b1f06326a991b17a16bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating that the region has changed, either size, location, or the data itself.  <br /></td></tr>
 <tr class="separator:af23803b041f2b1f06326a991b17a16bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed1761a31c473214420815d987220b94" id="r_aed1761a31c473214420815d987220b94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#aed1761a31c473214420815d987220b94">m_statsChanged</a> {0}</td></tr>
+<tr class="memitem:aed1761a31c473214420815d987220b94" id="r_aed1761a31c473214420815d987220b94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#aed1761a31c473214420815d987220b94">m_statsChanged</a> { 0 }</td></tr>
 <tr class="memdesc:aed1761a31c473214420815d987220b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating that the statistics have changed.  <br /></td></tr>
 <tr class="separator:aed1761a31c473214420815d987220b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb150b099e966e86af3b65220e4442fe" id="r_acb150b099e966e86af3b65220e4442fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#acb150b099e966e86af3b65220e4442fe">m_dieNow</a> {0}</td></tr>
+<tr class="memitem:acb150b099e966e86af3b65220e4442fe" id="r_acb150b099e966e86af3b65220e4442fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#acb150b099e966e86af3b65220e4442fe">m_dieNow</a> { 0 }</td></tr>
 <tr class="memdesc:acb150b099e966e86af3b65220e4442fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating that the stats thread should exit.  <br /></td></tr>
 <tr class="separator:acb150b099e966e86af3b65220e4442fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3f30521040383fd6a25904ad337c6d3" id="r_aa3f30521040383fd6a25904ad337c6d3"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvStats.html#aa3f30521040383fd6a25904ad337c6d3">m_dataMutex</a></td></tr>
@@ -239,7 +233,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Class to manage calculating statistics in the designated image region. </p>
 <p>Copies the data in the region to a local array. While less efficient than not doing so, this is done to avoid problems if the image goes away while the stats calculations are occuring. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00034">34</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00033">33</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac3cd85b1ded73f697216c82a508b7d7d" name="ac3cd85b1ded73f697216c82a508b7d7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3cd85b1ded73f697216c82a508b7d7d">&#9670;&#160;</a></span>rtimvStats()</h2>
@@ -310,7 +304,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00038">38</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00036">36</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +380,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00049">49</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00047">47</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
 
 </div>
 </div>
@@ -408,7 +402,7 @@ Protected Attributes</h2></td></tr>
 <p>Calculate the statistics. </p>
 <p>Both the rtimv cal mutex and the local data mutex will be try-locked. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00095">95</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00087">87</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +423,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Called by <a class="el" href="classrtimvMainWindow.html">rtimvMainWindow</a> to indicate that the data has changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00044">44</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00042">42</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
 
 </div>
 </div>
@@ -448,11 +442,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Run funciton for the statistics thread. <br  />
- </p>
+<p>Run funciton for the statistics thread. </p>
 <p>Pauses for m_statsPause then calls calcStats, until m_dieNow is called. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00086">86</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00078">78</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +475,7 @@ Protected Attributes</h2></td></tr>
 <p>Update the GUI. </p>
 <p>Called when m_updateTimer times out. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00170">170</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8cpp_source.html#l00164">164</a> of file <a class="el" href="rtimvStats_8cpp_source.html">rtimvStats.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +490,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_mutex* rtimvStats::m_calMutex {nullptr}</td>
+          <td class="memname">std::shared_mutex* rtimvStats::m_calMutex { nullptr }</td>
         </tr>
       </table>
   </td>
@@ -507,7 +500,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00058">58</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00056">56</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +514,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvStats::m_dataMax {0}</td>
+          <td class="memname">float rtimvStats::m_dataMax { 0 }</td>
         </tr>
       </table>
   </td>
@@ -533,7 +526,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The maximum value in the data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00075">75</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00078">78</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -547,7 +540,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvStats::m_dataMean {0}</td>
+          <td class="memname">float rtimvStats::m_dataMean { 0 }</td>
         </tr>
       </table>
   </td>
@@ -559,7 +552,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The mean value in the data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00076">76</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00079">79</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +566,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvStats::m_dataMedian {0}</td>
+          <td class="memname">float rtimvStats::m_dataMedian { 0 }</td>
         </tr>
       </table>
   </td>
@@ -585,7 +578,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The median value in the data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00080">80</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00083">83</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -599,7 +592,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvStats::m_dataMin {0}</td>
+          <td class="memname">float rtimvStats::m_dataMin { 0 }</td>
         </tr>
       </table>
   </td>
@@ -611,7 +604,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The minimum value in the data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00074">74</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00077">77</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -637,7 +630,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Mutex for updating the local image (m_imdata). </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00086">86</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00090">90</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -651,7 +644,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvStats::m_dieNow {0}</td>
+          <td class="memname">int rtimvStats::m_dieNow { 0 }</td>
         </tr>
       </table>
   </td>
@@ -663,7 +656,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Flag indicating that the stats thread should exit. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00084">84</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00088">88</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -686,10 +679,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
 <p>Local image storage. The region is copied to this for robustness against segfaults from image changes. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00072">72</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00074">74</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -703,7 +695,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrtimvBase.html">rtimvBase</a>* rtimvStats::m_imv {nullptr}</td>
+          <td class="memname"><a class="el" href="classrtimvBase.html">rtimvBase</a>* rtimvStats::m_imv { nullptr }</td>
         </tr>
       </table>
   </td>
@@ -715,7 +707,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The rtimv instance this is connected to. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00056">56</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00054">54</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +733,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Working memory for median calculation. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00078">78</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00081">81</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -755,7 +747,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rtimvStats::m_nx {0}</td>
+          <td class="memname">size_t rtimvStats::m_nx { 0 }</td>
         </tr>
       </table>
   </td>
@@ -767,7 +759,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The x size of the image, stored internally for copying from image data to local array. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00065">65</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00063">63</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -781,7 +773,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rtimvStats::m_ny {0}</td>
+          <td class="memname">size_t rtimvStats::m_ny { 0 }</td>
         </tr>
       </table>
   </td>
@@ -793,7 +785,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The y size of the image, stored internally for copying from image data to local array. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00066">66</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00064">64</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +799,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvStats::m_regionChanged {0}</td>
+          <td class="memname">int rtimvStats::m_regionChanged</td>
         </tr>
       </table>
   </td>
@@ -816,10 +808,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        0 }</div>
+</div><!-- fragment -->
 <p>Flag indicating that the region has changed, either size, location, or the data itself. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00082">82</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00085">85</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -833,7 +827,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvStats::m_statsChanged {0}</td>
+          <td class="memname">int rtimvStats::m_statsChanged { 0 }</td>
         </tr>
       </table>
   </td>
@@ -845,7 +839,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Flag indicating that the statistics have changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00083">83</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00087">87</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -859,7 +853,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvStats::m_statsPause {20}</td>
+          <td class="memname">int rtimvStats::m_statsPause { 20 }</td>
         </tr>
       </table>
   </td>
@@ -871,7 +865,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Pause between checks if the stats thread needs to calculate, milliseconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00060">60</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00058">58</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -897,7 +891,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Thread for calculating the stats. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00088">88</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00092">92</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -923,7 +917,7 @@ Protected Attributes</h2></td></tr>
 
 <p>When this times out the GUI is updated if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00062">62</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00060">60</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -937,7 +931,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvStats::m_updateTimerTimeout {50}</td>
+          <td class="memname">int rtimvStats::m_updateTimerTimeout { 50 }</td>
         </tr>
       </table>
   </td>
@@ -949,7 +943,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The GUI update timeout, milliseconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00063">63</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00061">61</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -963,7 +957,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rtimvStats::m_x0 {0}</td>
+          <td class="memname">size_t rtimvStats::m_x0 { 0 }</td>
         </tr>
       </table>
   </td>
@@ -972,10 +966,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The x coordinate of the starting corner of the region, stored internally for copying from image data to local array </p>
 
-<p>The x coordinate of the starting corner of the region, stored internally for copying from image data to local array. </p>
-
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00067">67</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00065">65</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -989,7 +982,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rtimvStats::m_x1 {0}</td>
+          <td class="memname">size_t rtimvStats::m_x1 { 0 }</td>
         </tr>
       </table>
   </td>
@@ -998,10 +991,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The x coordinate of the ending corner of the region, stored internally for copying from image data to local array </p>
 
-<p>The x coordinate of the ending corner of the region, stored internally for copying from image data to local array. </p>
-
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00068">68</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00067">67</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1007,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rtimvStats::m_y0 {0}</td>
+          <td class="memname">size_t rtimvStats::m_y0 { 0 }</td>
         </tr>
       </table>
   </td>
@@ -1024,8 +1016,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>The y coordinate of the starting corner of the region, stored internally for copying from image data to local array. </p>
+<p>The y coordinate of the starting corner of the region, stored internally for copying from image data to local array </p>
 
 <p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00069">69</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
@@ -1041,7 +1032,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rtimvStats::m_y1 {0}</td>
+          <td class="memname">size_t rtimvStats::m_y1 { 0 }</td>
         </tr>
       </table>
   </td>
@@ -1050,10 +1041,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The y coordinate of the ending corner of the region, stored internally for copying from image data to local array </p>
 
-<p>The y coordinate of the ending corner of the region, stored internally for copying from image data to local array. </p>
-
-<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00070">70</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvStats_8hpp_source.html#l00071">71</a> of file <a class="el" href="rtimvStats_8hpp_source.html">rtimvStats.hpp</a>.</p>
 
 </div>
 </div>

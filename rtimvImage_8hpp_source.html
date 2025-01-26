@@ -117,10 +117,10 @@ $(document).ready(function(){initNavTree('rtimvImage_8hpp_source.html',''); init
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;mx/sys/timeUtils.hpp&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a5b60e7944fde9a96e73a5f8f2db1887d">   18</a></span><span class="preprocessor">#define RTIMVIMAGE_NOUPDATE (0)</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a89de67c836ed84c8ba3cb51b67047f0d">   19</a></span><span class="preprocessor">#define RTIMVIMAGE_AGEUPDATE (1)</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a4dfbd9605167bca06bbd71e7f8b5b15f">   20</a></span><span class="preprocessor">#define RTIMVIMAGE_IMUPDATE (2)</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a272e29b639360772e59f18a6eb9681f5">   21</a></span><span class="preprocessor">#define RTIMVIMAGE_FPSUPDATE (3)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a5b60e7944fde9a96e73a5f8f2db1887d">   18</a></span><span class="preprocessor">#define RTIMVIMAGE_NOUPDATE ( 0 )</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a89de67c836ed84c8ba3cb51b67047f0d">   19</a></span><span class="preprocessor">#define RTIMVIMAGE_AGEUPDATE ( 1 )</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a4dfbd9605167bca06bbd71e7f8b5b15f">   20</a></span><span class="preprocessor">#define RTIMVIMAGE_IMUPDATE ( 2 )</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rtimvImage_8hpp.html#a272e29b639360772e59f18a6eb9681f5">   21</a></span><span class="preprocessor">#define RTIMVIMAGE_FPSUPDATE ( 3 )</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/// Base class for rtimv images</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span><span class="comment">/** Defines the interface to an image stream to be displayed by rtimv.</span></div>
@@ -130,141 +130,221 @@ $(document).ready(function(){initNavTree('rtimvImage_8hpp_source.html',''); init
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structrtimvImage.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structrtimvImage.html">rtimvImage</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a103731c1d15b0774e19e3292f4c6eba1">   30</a></span>    <a class="code hl_function" href="structrtimvImage.html#a103731c1d15b0774e19e3292f4c6eba1">rtimvImage</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a103731c1d15b0774e19e3292f4c6eba1">   32</a></span>    <a class="code hl_function" href="structrtimvImage.html#a103731c1d15b0774e19e3292f4c6eba1">rtimvImage</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">   34</a></span>    <a class="code hl_function" href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">rtimvImage</a>( std::mutex * mut ) : <a class="code hl_variable" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a>{mut}</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;m_accessMutex can&#39;t be null&quot;</span>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">   32</a></span>    <a class="code hl_function" href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">rtimvImage</a>( std::mutex *mut ) : <a class="code hl_variable" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a>{ mut }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a> == <span class="keyword">nullptr</span> )</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">throw</span> std::invalid_argument( <span class="stringliteral">&quot;m_accessMutex can&#39;t be null&quot;</span> );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /// Set the image key</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span><span class="comment">    /** This function sets the image key, and must begin the connection and reading process.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * \returns 0 on success</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * \returns -1 on error</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">imageKey</a>(<span class="keyword">const</span> std::string &amp;sn <span class="comment">/**&lt; [in] the new share memory image name*/</span>) = 0;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /// Get the current image key.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     * \returns the image key.</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ac72dfb6fa09b8d352cab55b403e0d9ca">   55</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="structrtimvImage.html#ac72dfb6fa09b8d352cab55b403e0d9ca">imageKey</a>() = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    /// Get the image name, usually derived from the key.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"></span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * The name may be a subset of the key, e.g. without the path for a file.</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * \returns the image name</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">   63</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">imageName</a>() = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    /// Set the image key</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span><span class="comment">    /** This function sets the image key, and must begin the connection and reading process.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * \returns 0 on success</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * \returns -1 on error</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">   46</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">imageKey</a>( <span class="keyword">const</span> std::string &amp;sn <span class="comment">/**&lt; [in] the new share memory image name*/</span> ) = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">    /// Get the current image key.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * \returns the image key.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ac72dfb6fa09b8d352cab55b403e0d9ca">   52</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="structrtimvImage.html#ac72dfb6fa09b8d352cab55b403e0d9ca">imageKey</a>() = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    /// Get the image name, usually derived from the key.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     * The name may be a subset of the key, e.g. without the path for a file.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * \returns the image name</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">   60</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">imageName</a>() = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">    /// Set the managing processes display timeout, which is only used for F.P.S. calculations</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a76f0de93ce321c5b9891d06aa424c0e4">   63</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#a76f0de93ce321c5b9891d06aa424c0e4">timeout</a>( <span class="keywordtype">int</span> to <span class="comment">/**&lt; [in] the new timeout in milliseconds */</span> ) = 0;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /// Set the managing processes display timeout, which is only used for F.P.S. calculations</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a76f0de93ce321c5b9891d06aa424c0e4">   66</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#a76f0de93ce321c5b9891d06aa424c0e4">timeout</a>(<span class="keywordtype">int</span> to <span class="comment">/**&lt; [in] the new timeout in milliseconds */</span>) = 0;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">    /// Get the image dimension in the x direction.</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span><span class="comment">    /** Units are pixels.</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     * \returns the current x dimension</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">   73</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">nx</a>() = 0;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    /// Get the image dimension in the y direction.</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span><span class="comment">    /** Units are pixels.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     * \returns the current y dimension;</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">   80</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">ny</a>() = 0;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">    /// Get the image acquisition time</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span><span class="comment">    /** Gets the acquisition time converted to double, giving time since the epoch.</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">     * This must be safe to call regardless of whehter valid() is true.</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">     * \returns the time the current image was acquired.</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">   88</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code hl_function" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">imageTime</a>() = 0;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"></span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">    /// Function called at intervals to check for updated image data.</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">     * \returns RTIMVIMAGE_NOUPDATE if there no updates</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">     * \returns RTIMVIMAGE_AGEUPDATE if the image age has been updated but the data has not.</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">     * \returns RTIMVIMAGE_IMUPDATE if the image data has updated</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">     * \returns RTIMVIMAGE_FPSUPDATE if there is an F.P.S. update along with an image data update</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b">   97</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b">update</a>() = 0;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    /// Detach / disconnect from the image source and clean up.</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"></span><span class="comment">    /** Primarily used in the event of a SIGSEGV or SIGBUS.</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">     * This instance must be ready to connect again, and begin monitoring the source for new data.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">  103</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">detach</a>() = 0;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"></span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">    /// Check whether image is connected and has valid data</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"></span><span class="comment">    /**</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">     * \returns `true` if this instance is attached to its source and has valid data.  `false` otherwise.</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">  109</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">valid</a>() = 0;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"></span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">    ///Mutex for locking access to memory</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">  112</a></span><span class="comment"></span>    std::mutex * <a class="code hl_variable" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a> {<span class="keyword">nullptr</span>};</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"></span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">    /// Get the value at pixel n as a float.</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"></span><span class="comment">    /** The linear index n is determined by n = y * nx() + x where (x,y) is the pixel coordinate.</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">     * \returns the value of the pixel</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /// Get the image dimension in the x direction.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span><span class="comment">    /** Units are pixels.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     * \returns the current x dimension</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">   70</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">nx</a>() = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">    /// Get the image dimension in the y direction.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span><span class="comment">    /** Units are pixels.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">     * \returns the current y dimension;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">   77</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">ny</a>() = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">    /// Get the number of images.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"></span><span class="comment">    /** Must be at least 1. If greater than 1 this is a cube.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">     * \returns the current z dimension;</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a51addf58481b07315251e38bd0485807">   84</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="structrtimvImage.html#a51addf58481b07315251e38bd0485807">nz</a>() = 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">    /// Get the default cube playback mode for this image type</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"></span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">     *  Returns the cube playback mode that should be initiated when a</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">     *  cube of this image type is opened. The global default is false,</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">     *  which means playback is not started.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">     */</span></div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a5d7cb93eed7dd50487c72c0009a24dc2">   92</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structrtimvImage.html#a5d7cb93eed7dd50487c72c0009a24dc2">defaultCubeMode</a>()</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">    /// Get the current image in the cube.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span><span class="comment">    /** If not a cube this will always be 0.  Must be less than nz.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">     * \returns the current image number;</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a55714c3b047d451c907f88ea11a4adf8">  102</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="structrtimvImage.html#a55714c3b047d451c907f88ea11a4adf8">imageNo</a>() = 0;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">    /// Set the current image in the cube.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"></span><span class="comment">    /** If not a cube this will have no effect.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">     */</span></div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a7733ecd9e873e985d579a264efd940e5">  108</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#a7733ecd9e873e985d579a264efd940e5">imageNo</a>(uint32_t ino <span class="comment">/**&lt; [in] then new image number to display */</span>)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span><span class="keyword">&gt;</span>(ino);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"></span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">    /// Increment the current image number.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span><span class="comment">    /** If not a cube this has no effect.  If it is a cube it should</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">     *  cause the next image in the cube to be presented as an update on the</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">     *  next call to update().</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">     *</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a096a0863f3ed7d6b52acc19ae85f87d0">  119</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structrtimvImage.html#a096a0863f3ed7d6b52acc19ae85f87d0">pixel</a>(<span class="keywordtype">size_t</span> n) = 0;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"></span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">    /// Get the latest estimate of FPS for this image.</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"></span><span class="comment">    /** This must be safe to call regardless of whehter valid() is true.</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">     * \returns the latest FPS estimate.</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">  126</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">fpsEst</a>() = 0;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structrtimvImage.html#af4c3b36b287edf3f9ede2772e7f36f53">  128</a></span>    <span class="keyword">virtual</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="structrtimvImage.html#af4c3b36b287edf3f9ede2772e7f36f53">info</a>()</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        std::vector&lt;std::string&gt; vinfo;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        vinfo.push_back( <a class="code hl_function" href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">imageName</a>() + <span class="stringliteral">&quot; [&quot;</span> + std::to_string(<a class="code hl_function" href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">nx</a>()) + <span class="stringliteral">&quot;x&quot;</span> + std::to_string(<a class="code hl_function" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">ny</a>()) +<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordtype">double</span> age = mx::sys::get_curr_time() - <a class="code hl_function" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">imageTime</a>();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">if</span>(age &gt; 10)</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            vinfo[0] += <span class="stringliteral">&quot; age: &quot;</span> + std::to_string((<span class="keywordtype">int</span>) age) + <span class="stringliteral">&quot; sec&quot;</span>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        } </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">return</span> vinfo;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a64d8063e855e3e2906c2ae67473c5b21">  119</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#a64d8063e855e3e2906c2ae67473c5b21">incImageNo</a>()</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
 </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>};</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"></span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">    /// Decrement the current image number.</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"></span><span class="comment">    /** If not a cube this has no effect.  If it is a cube it should</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">     *  cause the previous image in the cube to be presented as an update on the</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">     *  next call to update().</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">     */</span></div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a51e05d3c9b3f5c9070606b72f0b7a141">  129</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#a51e05d3c9b3f5c9070606b72f0b7a141">decImageNo</a>()</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
 </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">#endif </span><span class="comment">// rtimv_rtimvImage_hpp</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"></span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">    /// Change the current image number by an offset.</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"></span><span class="comment">    /** If not a cube this has no effect.  If it is a cube it should</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">     *  cause a new image in the cube to be presented as an update on the</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">     *  next call to update().</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">     */</span></div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ae933223947b86288b53a68aae8510a52">  139</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#ae933223947b86288b53a68aae8510a52">deltaImageNo</a>(int32_t dino <span class="comment">/**&lt; [in] the change in image number */</span>)</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span><span class="keyword">&gt;</span>(dino);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"></span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">    /// Get the image acquisition time</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"></span><span class="comment">    /** Gets the acquisition time converted to double, giving time since the epoch.</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">     * This must be safe to call regardless of whether valid() is true.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">     * \returns the time the current image was acquired.</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">  150</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code hl_function" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">imageTime</a>() = 0;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"></span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">    /// Function called at intervals to check for updated image data.</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"></span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">     * \returns RTIMVIMAGE_NOUPDATE if there are no updates</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">     * \returns RTIMVIMAGE_AGEUPDATE if the image age has been updated but the data has not.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">     * \returns RTIMVIMAGE_IMUPDATE if the image data has updated</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">     * \returns RTIMVIMAGE_FPSUPDATE if there is an F.P.S. update along with an image data update</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b">  159</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b">update</a>() = 0;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"></span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">    /// Detach / disconnect from the image source and clean up.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"></span><span class="comment">    /** Primarily used in the event of a SIGSEGV or SIGBUS.</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">     * This instance must be ready to connect again, and begin monitoring the source for new data.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">  165</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">detach</a>() = 0;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"></span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">    /// Check whether image is connected and has valid data</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"></span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">     * \returns `true` if this instance is attached to its source and has valid data.  `false` otherwise.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">  171</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">valid</a>() = 0;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"></span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">    /// Mutex for locking access to memory</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">  174</a></span><span class="comment"></span>    std::mutex *<a class="code hl_variable" href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">m_accessMutex</a>{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment"></span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">    /// Get the value at pixel n as a float.</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span><span class="comment">    /** The linear index n is determined by n = y * nx() + x where (x,y) is the pixel coordinate.</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">     * \returns the value of the pixel</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="structrtimvImage.html#a096a0863f3ed7d6b52acc19ae85f87d0">  181</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structrtimvImage.html#a096a0863f3ed7d6b52acc19ae85f87d0">pixel</a>( <span class="keywordtype">size_t</span> n ) = 0;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"></span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">    /// Get the latest estimate of FPS for this image.</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"></span><span class="comment">    /** This must be safe to call regardless of whether valid() is true.</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">     * \returns the latest FPS estimate.</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">  188</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">fpsEst</a>() = 0;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="structrtimvImage.html#af4c3b36b287edf3f9ede2772e7f36f53">  190</a></span>    <span class="keyword">virtual</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="structrtimvImage.html#af4c3b36b287edf3f9ede2772e7f36f53">info</a>()</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        std::vector&lt;std::string&gt; vinfo;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        vinfo.push_back( <a class="code hl_function" href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">imageName</a>() );</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        vinfo.push_back( <span class="stringliteral">&quot;size: [&quot;</span> + std::to_string( <a class="code hl_function" href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">nx</a>() ) + <span class="stringliteral">&quot;x&quot;</span> + std::to_string( <a class="code hl_function" href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">ny</a>() ) + <span class="stringliteral">&quot;x&quot;</span> + std::to_string( <a class="code hl_function" href="structrtimvImage.html#a51addf58481b07315251e38bd0485807">nz</a>() ) + <span class="stringliteral">&quot;]&quot;</span> );</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordtype">double</span> age = mx::sys::get_curr_time() - <a class="code hl_function" href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">imageTime</a>();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">if</span>( age &gt; 10 )</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            vinfo.push_back(std::string(<span class="stringliteral">&quot;age: &quot;</span>) + std::to_string( (<span class="keywordtype">int</span>)age ) + <span class="stringliteral">&quot; sec&quot;</span> );</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">return</span> vinfo;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>};</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#endif </span><span class="comment">// rtimv_rtimvImage_hpp</span></div>
 <div class="ttc" id="astructrtimvImage_html"><div class="ttname"><a href="structrtimvImage.html">rtimvImage</a></div><div class="ttdoc">Base class for rtimv images.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00027">rtimvImage.hpp:28</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_a015afea3bafd6048df924bf320485c92"><div class="ttname"><a href="structrtimvImage.html#a015afea3bafd6048df924bf320485c92">rtimvImage::nx</a></div><div class="ttdeci">virtual uint32_t nx()=0</div><div class="ttdoc">Get the image dimension in the x direction.</div></div>
 <div class="ttc" id="astructrtimvImage_html_a096a0863f3ed7d6b52acc19ae85f87d0"><div class="ttname"><a href="structrtimvImage.html#a096a0863f3ed7d6b52acc19ae85f87d0">rtimvImage::pixel</a></div><div class="ttdeci">virtual float pixel(size_t n)=0</div><div class="ttdoc">Get the value at pixel n as a float.</div></div>
 <div class="ttc" id="astructrtimvImage_html_a103731c1d15b0774e19e3292f4c6eba1"><div class="ttname"><a href="structrtimvImage.html#a103731c1d15b0774e19e3292f4c6eba1">rtimvImage::rtimvImage</a></div><div class="ttdeci">rtimvImage()=delete</div></div>
+<div class="ttc" id="astructrtimvImage_html_a51addf58481b07315251e38bd0485807"><div class="ttname"><a href="structrtimvImage.html#a51addf58481b07315251e38bd0485807">rtimvImage::nz</a></div><div class="ttdeci">virtual uint32_t nz()=0</div><div class="ttdoc">Get the number of images.</div></div>
+<div class="ttc" id="astructrtimvImage_html_a51e05d3c9b3f5c9070606b72f0b7a141"><div class="ttname"><a href="structrtimvImage.html#a51e05d3c9b3f5c9070606b72f0b7a141">rtimvImage::decImageNo</a></div><div class="ttdeci">virtual void decImageNo()</div><div class="ttdoc">Decrement the current image number.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00129">rtimvImage.hpp:129</a></div></div>
+<div class="ttc" id="astructrtimvImage_html_a55714c3b047d451c907f88ea11a4adf8"><div class="ttname"><a href="structrtimvImage.html#a55714c3b047d451c907f88ea11a4adf8">rtimvImage::imageNo</a></div><div class="ttdeci">virtual uint32_t imageNo()=0</div><div class="ttdoc">Get the current image in the cube.</div></div>
+<div class="ttc" id="astructrtimvImage_html_a5d7cb93eed7dd50487c72c0009a24dc2"><div class="ttname"><a href="structrtimvImage.html#a5d7cb93eed7dd50487c72c0009a24dc2">rtimvImage::defaultCubeMode</a></div><div class="ttdeci">virtual bool defaultCubeMode()</div><div class="ttdoc">Get the default cube playback mode for this image type.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00092">rtimvImage.hpp:92</a></div></div>
+<div class="ttc" id="astructrtimvImage_html_a64d8063e855e3e2906c2ae67473c5b21"><div class="ttname"><a href="structrtimvImage.html#a64d8063e855e3e2906c2ae67473c5b21">rtimvImage::incImageNo</a></div><div class="ttdeci">virtual void incImageNo()</div><div class="ttdoc">Increment the current image number.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00119">rtimvImage.hpp:119</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_a69c3a72e59819d22daa4776a6ae0e1cb"><div class="ttname"><a href="structrtimvImage.html#a69c3a72e59819d22daa4776a6ae0e1cb">rtimvImage::valid</a></div><div class="ttdeci">virtual bool valid()=0</div><div class="ttdoc">Check whether image is connected and has valid data.</div></div>
-<div class="ttc" id="astructrtimvImage_html_a76abbd3e6b9ae6e1bc365fc6c13cd087"><div class="ttname"><a href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">rtimvImage::m_accessMutex</a></div><div class="ttdeci">std::mutex * m_accessMutex</div><div class="ttdoc">Mutex for locking access to memory.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00112">rtimvImage.hpp:112</a></div></div>
+<div class="ttc" id="astructrtimvImage_html_a76abbd3e6b9ae6e1bc365fc6c13cd087"><div class="ttname"><a href="structrtimvImage.html#a76abbd3e6b9ae6e1bc365fc6c13cd087">rtimvImage::m_accessMutex</a></div><div class="ttdeci">std::mutex * m_accessMutex</div><div class="ttdoc">Mutex for locking access to memory.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00174">rtimvImage.hpp:174</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_a76f0de93ce321c5b9891d06aa424c0e4"><div class="ttname"><a href="structrtimvImage.html#a76f0de93ce321c5b9891d06aa424c0e4">rtimvImage::timeout</a></div><div class="ttdeci">virtual void timeout(int to)=0</div><div class="ttdoc">Set the managing processes display timeout, which is only used for F.P.S. calculations.</div></div>
+<div class="ttc" id="astructrtimvImage_html_a7733ecd9e873e985d579a264efd940e5"><div class="ttname"><a href="structrtimvImage.html#a7733ecd9e873e985d579a264efd940e5">rtimvImage::imageNo</a></div><div class="ttdeci">virtual void imageNo(uint32_t ino)</div><div class="ttdoc">Set the current image in the cube.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00108">rtimvImage.hpp:108</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_a8a29bcc64d7a0b9a3ff6435d556044fd"><div class="ttname"><a href="structrtimvImage.html#a8a29bcc64d7a0b9a3ff6435d556044fd">rtimvImage::imageName</a></div><div class="ttdeci">virtual std::string imageName()=0</div><div class="ttdoc">Get the image name, usually derived from the key.</div></div>
-<div class="ttc" id="astructrtimvImage_html_aaecd9299dbe4d497145ea5ff97325c2c"><div class="ttname"><a href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">rtimvImage::rtimvImage</a></div><div class="ttdeci">rtimvImage(std::mutex *mut)</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00034">rtimvImage.hpp:34</a></div></div>
+<div class="ttc" id="astructrtimvImage_html_aaecd9299dbe4d497145ea5ff97325c2c"><div class="ttname"><a href="structrtimvImage.html#aaecd9299dbe4d497145ea5ff97325c2c">rtimvImage::rtimvImage</a></div><div class="ttdeci">rtimvImage(std::mutex *mut)</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00032">rtimvImage.hpp:32</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_abe062f90440f1b7a07ec09c9f3218c7d"><div class="ttname"><a href="structrtimvImage.html#abe062f90440f1b7a07ec09c9f3218c7d">rtimvImage::imageKey</a></div><div class="ttdeci">virtual int imageKey(const std::string &amp;sn)=0</div><div class="ttdoc">Set the image key.</div></div>
 <div class="ttc" id="astructrtimvImage_html_ac41634658b8ef066b99dee234eceeea4"><div class="ttname"><a href="structrtimvImage.html#ac41634658b8ef066b99dee234eceeea4">rtimvImage::ny</a></div><div class="ttdeci">virtual uint32_t ny()=0</div><div class="ttdoc">Get the image dimension in the y direction.</div></div>
 <div class="ttc" id="astructrtimvImage_html_ac72dfb6fa09b8d352cab55b403e0d9ca"><div class="ttname"><a href="structrtimvImage.html#ac72dfb6fa09b8d352cab55b403e0d9ca">rtimvImage::imageKey</a></div><div class="ttdeci">virtual std::string imageKey()=0</div><div class="ttdoc">Get the current image key.</div></div>
 <div class="ttc" id="astructrtimvImage_html_ad301c1a4ffa992a33e6dbc676da7698c"><div class="ttname"><a href="structrtimvImage.html#ad301c1a4ffa992a33e6dbc676da7698c">rtimvImage::imageTime</a></div><div class="ttdeci">virtual double imageTime()=0</div><div class="ttdoc">Get the image acquisition time.</div></div>
 <div class="ttc" id="astructrtimvImage_html_adc828d82e9be14dcef9ec3bf7eeb1f6b"><div class="ttname"><a href="structrtimvImage.html#adc828d82e9be14dcef9ec3bf7eeb1f6b">rtimvImage::update</a></div><div class="ttdeci">virtual int update()=0</div><div class="ttdoc">Function called at intervals to check for updated image data.</div></div>
+<div class="ttc" id="astructrtimvImage_html_ae933223947b86288b53a68aae8510a52"><div class="ttname"><a href="structrtimvImage.html#ae933223947b86288b53a68aae8510a52">rtimvImage::deltaImageNo</a></div><div class="ttdeci">virtual void deltaImageNo(int32_t dino)</div><div class="ttdoc">Change the current image number by an offset.</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00139">rtimvImage.hpp:139</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_aeac8a4003039b3b0248929b72e73ea58"><div class="ttname"><a href="structrtimvImage.html#aeac8a4003039b3b0248929b72e73ea58">rtimvImage::detach</a></div><div class="ttdeci">virtual void detach()=0</div><div class="ttdoc">Detach / disconnect from the image source and clean up.</div></div>
-<div class="ttc" id="astructrtimvImage_html_af4c3b36b287edf3f9ede2772e7f36f53"><div class="ttname"><a href="structrtimvImage.html#af4c3b36b287edf3f9ede2772e7f36f53">rtimvImage::info</a></div><div class="ttdeci">virtual std::vector&lt; std::string &gt; info()</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00128">rtimvImage.hpp:128</a></div></div>
+<div class="ttc" id="astructrtimvImage_html_af4c3b36b287edf3f9ede2772e7f36f53"><div class="ttname"><a href="structrtimvImage.html#af4c3b36b287edf3f9ede2772e7f36f53">rtimvImage::info</a></div><div class="ttdeci">virtual std::vector&lt; std::string &gt; info()</div><div class="ttdef"><b>Definition</b> <a href="rtimvImage_8hpp_source.html#l00190">rtimvImage.hpp:190</a></div></div>
 <div class="ttc" id="astructrtimvImage_html_aff8fdca34bcb23423241d6bb82325299"><div class="ttname"><a href="structrtimvImage.html#aff8fdca34bcb23423241d6bb82325299">rtimvImage::fpsEst</a></div><div class="ttdeci">virtual float fpsEst()=0</div><div class="ttdoc">Get the latest estimate of FPS for this image.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

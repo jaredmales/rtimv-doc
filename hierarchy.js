@@ -32,6 +32,7 @@ var hierarchy =
       [ "StatsThread", "classStatsThread.html", null ]
     ] ],
     [ "QWidget", null, [
+      [ "cubeCtrl", "classcubeCtrl.html", null ],
       [ "rtimvBase", "classrtimvBase.html", [
         [ "rtimvMainWindow", "classrtimvMainWindow.html", null ]
       ] ],

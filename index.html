@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">rtimv User's Guide </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_UserGuide"></a> An astronomical image viewer optimized for real-time image stream display. Works with MILK/CACAO shared memory image streams locally or via the <code>milkzmq</code> protocol. Will also display local FITS files.</p>
+<div class="textblock"><p><a class="anchor" id="md_UserGuide"></a> An astronomical image viewer optimized for real-time image stream display. Works with MILK/CACAO shared memory image streams locally or via the <code>milkzmq</code> protocol. Will also display local FITS files, updating anytime the file is updated.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Basic Startup</h1>
 <p>The basic way to start <code>rtimv</code> is to provide a list of local stream names: </p><div class="fragment"><div class="line">$ rtimv image dark mask sat_mask</div>
@@ -106,10 +106,22 @@ Basic Startup</h1>
 Image Keys</h1>
 <p>The name and location of an image is specified by its <code>key</code>. The following rules are followed in the given order to determine how to find an image:</p><ul>
 <li>If the <code>key</code> ends in <code>.fits</code>, <code>.fit</code>, <code>.FITS</code>, or <code>.FIT</code>, then the image is treated as a FITS file stored on local disk with <code>key</code> specifying a valid path.</li>
+<li>if the <code>key</code> ends in <code>/</code>, e.g. <code>/path/to/directory/</code>, then rtimv will treat the FITS files in that directory as a cube, enabling playback and incrementing through the images.</li>
 <li>If the <code>key</code> contains <code>@</code> or <code>:</code>, or the configuration option <code>--mzmq.always=true</code> (<code>-Z</code>) is set, then the <code>key</code> is interpreted as a <code>milkzmq</code> address of the form <code>name@server:port</code>. If <code>mzmq.always</code> is set, then <code>@</code> and <code>:</code> are optional. The default server is <code>localhost</code> and the default port is <code>5556</code>.</li>
 <li>Otherwise, <code>key</code> is treated as a local <code>milk</code> <code>shmim</code> name and the standard path is followed, e.g. <code>/milk/shm/image.im.shm</code> for <code>key=image</code>.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
+Cube Mode</h1>
+<p>If a FITS file containing an image cube (NAXIS3 &gt; 1) is opened, rtimv will automatically enter cube mode. This enables playback of the cube at varying speeds, as well as switching between frames. <br  />
+</p>
+<p>Cube mode can also be entered by pointing rtimv at a directory containing multiple FITS files. This mode is entered anytime the image key ends in <code>/</code>.</p>
+<p>The FPS of playback in cube mode is determined both by the entered "desired" FPS, and the overal update timeout. The update timeout takes precedence to ensure that rtimv is responsive to image updates. This results in not necessarily obtaining the desired FPS for cube playback if <code>FPS &lt; 1/update_timeout</code>. The cube control GUI will show the effective FPS compared to the desired FPS.</p>
+<p>Cube playback and frame position controlled by the Cube Control GUI. This opens automatically when a cube is opened, and can be toggles with the <code>C</code> shortcut. The GUI is illustrated below.</p>
+<div class="image">
+<img src="cubeMode.png" alt=""/>
+<div class="caption">
+The Cube Control GUI</div></div>
+    <h1><a class="anchor" id="autotoc_md4"></a>
 Operating rtimv</h1>
 <p>rtimv lets you adjust color scales and draw shapes for interactive measurement of image features with keyboard shortcuts.</p>
 <p>To access the help screen, type <code>h</code> after opening rtimv. The keyboard shortcuts are just the letters shown (without <code>ctrl</code> or <code>alt</code>) unless noted.</p>
@@ -133,7 +145,7 @@ rtimv with a box overlay</div></div>
 <div class="caption">
 rtimv with a line overlay</div></div>
     <p>In general, if you see the "resize arrows" cursor when your mouse hovers over the shape, clicking and dragging will change the size. If you see the "hand" cursor, it will move the shape. Numbers, shape center indicators, and line end indicators are only shown when your mouse is over that shape.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Keyboard Shortcuts</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -167,29 +179,31 @@ Keyboard Shortcuts</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>z</code>   </td><td class="markdownTableBodyNone">toggle color box   </td><td class="markdownTableBodyNone">the yellow box used for changing the color table limits based on the values inside it    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>C</code>   </td><td class="markdownTableBodyNone">toggle cube control GUI   </td><td class="markdownTableBodyNone">opens automatically if a cube is opened    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>D</code>   </td><td class="markdownTableBodyNone">toggle dark subtraction   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>L</code>   </td><td class="markdownTableBodyNone">toggle log scale   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>M</code>   </td><td class="markdownTableBodyNone">toggle the mask   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>S</code>   </td><td class="markdownTableBodyNone">toggle the sat-mask   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>1</code>-<code>9</code>   </td><td class="markdownTableBodyNone">change the zoom level   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>[</code>   </td><td class="markdownTableBodyNone">fit gui to image, decreasing size   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>]</code>   </td><td class="markdownTableBodyNone">fit gui to image, increasing size   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"><code>[</code>   </td><td class="markdownTableBodyNone">fit gui to image, decreasing size   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>]</code>   </td><td class="markdownTableBodyNone">fit gui to image, increasing size   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>ctrl+c</code>   </td><td class="markdownTableBodyNone">center the display   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Pixel Coordinates and Value</h2>
 <p>By default the cuurent (x,y) pixel coordinate of the mouse pointer, and the image value under it, are displayed next to the mouse pointer. This can be turned off in configuration using <code>--mouse.pointerCoords=true/false</code> or with the control panel. <br  />
 </p>
 <p>The mouse coordinates and value can also be displayed in a static location at the lower left of the window. This can be set in configuration using <code>--mouse.staticCoords=true/false</code> or with the control panel.</p>
 <p>The displayed coordinate is for the center of a pixel, counting from <code>0,0</code> for the center of the lower left pixel. The center of the array (and default target-cross coordinate) is <code>(0.5*(Nx-1), 0.5*(Ny-1))</code>.</p>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Configuration</h1>
 <p>rtimv can be configured from the command line or using a config file. </p><div class="fragment"><div class="line">$ rtimv --image.key=image --dark.key=dark --mask.key=mask --satMask.key=sat_mask</div>
 </div><!-- fragment --><p> or with a configuration file </p><div class="fragment"><div class="line">rtimv -c /path/to/config_file.conf </div>
@@ -206,7 +220,7 @@ Configuration</h1>
 <div class="line">key=sat_mask</div>
 </div><!-- fragment --><p> Many more options are available. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 Configuration Options</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -255,7 +269,7 @@ Configuration Options</h2>
 </div><!-- fragment --><p> in the configuration file.</p>
 <p>The path to <code>config_file.conf</code> can be specified via the environment variable <code>RTIMV_CONFIG_PATH</code>, in which case the path can be ommitted. If set, this path will be added to the front of the filename specified with the <code>-c</code> or <code>--config</code> command line option.</p>
 <p>Settings on the command line override settings in the config file. So the same config file could be used for several images, changing only the image name on the command line for instance.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 North Arrow</h1>
 <p>The north arrow is toggled on/off with the <code>n</code> key. If the angle of the north arrow is being updated (i.e. from a plugin that talks to the telescope) the value received is multiplied by a scale (e.g. -1 or 180/pi) and then an offset (in degrees) is added to the result to produce a counter clockwise (c.c.w.) rotation angle in degrees.</p>
 <p>The north arrow can be disabled in configuration. If <code>north.enabled=false</code> is set, the north arrow will not be displayed.</p>

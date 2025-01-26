@@ -9,5 +9,7 @@ var searchData=
   ['adduserline_6',['addUserLine',['../classrtimvMainWindow.html#a83c079ce34560a667ab248b5f2db543a',1,'rtimvMainWindow']]],
   ['angle_7',['angle',['../classStretchLine.html#aea8caa6d52efba2c77c45db4150fe10a',1,'StretchLine']]],
   ['attachdictionary_8',['attachDictionary',['../classrtimvDictionaryInterface.html#a25113e795c751c51cbb93a9bb8d8585b',1,'rtimvDictionaryInterface']]],
-  ['attachoverlay_9',['attachOverlay',['../classrtimvOverlayInterface.html#a279726431a684fcdf231de9fdb89648a',1,'rtimvOverlayInterface']]]
+  ['attachoverlay_9',['attachOverlay',['../classrtimvOverlayInterface.html#a279726431a684fcdf231de9fdb89648a',1,'rtimvOverlayInterface']]],
+  ['autoscale_10',['autoscale',['../classcubeCtrl.html#a505450c22de55e6005601b08d5ec7648',1,'cubeCtrl::autoScale()'],['../classrtimvMainWindow.html#a5d6e58acb010925a39cd6f856543a930',1,'rtimvMainWindow::autoScale()']]],
+  ['autoscaleupdated_11',['autoscaleupdated',['../classcubeCtrl.html#a1227994f80154db5e8a2416009dfba54',1,'cubeCtrl::autoScaleUpdated()'],['../classrtimvMainWindow.html#a6ca39778365720087d5427c27b34cdf5',1,'rtimvMainWindow::autoScaleUpdated()']]]
 ];

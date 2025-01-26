@@ -30,6 +30,7 @@ var classStretchBox =
     [ "onMousePressCalcGrabbed", "classStretchBox.html#a7c2313dfd4e98d92ef8b0d2fb22c3a5f", null ],
     [ "passKeyPressEvent", "classStretchBox.html#a7fdea900fb26d118cb66b6ffdaccac39", null ],
     [ "rejectMouse", "classStretchBox.html#a3c68abb73ce7051a014d7c4e62bbd2fd", null ],
+    [ "remove", "classStretchBox.html#af6239acfda84476e41f8c10b5ff14d66", null ],
     [ "remove", "classStretchBox.html#a8c9bfc9c108916aa6f004a9591623f57", null ],
     [ "resized", "classStretchBox.html#a1e67850d5f8742ba7728bb2f7b7299c0", null ],
     [ "selected", "classStretchBox.html#aebfc897761240f22cd099b6c592d3763", null ],

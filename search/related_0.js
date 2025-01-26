@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['rtimvmainwindow_0',['rtimvMainWindow',['../classrtimvGraphicsView.html#a860ad36a73c6ec2f7fa50d416a87cd16',1,'rtimvGraphicsView']]]
+  ['stretchgraphicsitem_3c_20stretchbox_20_3e_0',['StretchGraphicsItem&lt; StretchBox &gt;',['../classStretchBox.html#a66825cb39d453efee5c74a10c2b8af4c',1,'StretchBox']]],
+  ['stretchgraphicsitem_3c_20stretchcircle_20_3e_1',['StretchGraphicsItem&lt; StretchCircle &gt;',['../classStretchCircle.html#adf92251443935a88978f6770a14ea77c',1,'StretchCircle']]],
+  ['stretchgraphicsitem_3c_20stretchline_20_3e_2',['StretchGraphicsItem&lt; StretchLine &gt;',['../classStretchLine.html#ac73e18723aed12863dc0d3f69cf05dbe',1,'StretchLine']]]
 ];

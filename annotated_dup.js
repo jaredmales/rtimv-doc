@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "circleTimeSeries", "classcircleTimeSeries.html", "classcircleTimeSeries" ],
+    [ "cubeCtrl", "classcubeCtrl.html", "classcubeCtrl" ],
     [ "rtimvBase", "classrtimvBase.html", "classrtimvBase" ],
     [ "rtimvColorMap", "structrtimvColorMap.html", "structrtimvColorMap" ],
     [ "rtimvControlPanel", "classrtimvControlPanel.html", "classrtimvControlPanel" ],

@@ -1,29 +1,29 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,70,168,95"/>
 <area shape="rect" id="Node000001" href="$classStretchCircle.html" title=" " alt="" coords="221,59,326,85"/>
-<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="182,75,220,72,220,78,182,80"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="182,75,220,72,220,78,182,80"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="13,254,160,279"/>
 <area shape="rect" id="Node000006" href="$classStretchLine.html" title=" " alt="" coords="226,207,321,233"/>
-<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="151,248,225,229,226,234,152,253"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="151,248,225,229,226,234,152,253"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="13,369,161,394"/>
 <area shape="rect" id="Node000003" href="$classStretchBox.html" title=" " alt="" coords="227,311,320,337"/>
-<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="141,362,230,334,232,339,143,367"/>
+<area shape="poly" id="edge9_Node000004_Node000003" title=" " alt="" coords="141,362,230,334,232,339,143,367"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="49,139,124,165"/>
-<area shape="poly" id="edge10_Node000002_Node000001" title=" " alt="" coords="128,131,215,94,241,82,243,87,217,98,130,136"/>
-<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="138,164,169,175,244,205,242,210,167,180,136,169"/>
-<area shape="poly" id="edge9_Node000002_Node000003" title=" " alt="" coords="138,160,170,175,187,191,197,207,218,244,265,310,261,313,214,247,193,210,183,195,166,180,136,164"/>
+<area shape="poly" id="edge11_Node000002_Node000001" title=" " alt="" coords="128,131,215,94,241,82,243,87,217,98,130,136"/>
+<area shape="poly" id="edge12_Node000002_Node000006" title=" " alt="" coords="138,164,169,175,244,205,242,210,167,180,136,169"/>
+<area shape="poly" id="edge10_Node000002_Node000003" title=" " alt="" coords="138,160,170,175,187,191,197,207,218,244,265,310,261,313,214,247,193,210,183,195,166,180,136,164"/>
 <area shape="rect" id="Node000009" href="$structrtimvImage.html" title="Base class for rtimv images." alt="" coords="224,158,323,183"/>
-<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="138,154,224,163,224,168,137,160"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="138,154,224,163,224,168,137,160"/>
 <area shape="rect" id="Node000010" href="$classrtimvInterface.html" title="The base plugin class type." alt="" coords="216,109,331,134"/>
-<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="137,141,215,128,216,133,138,146"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="137,141,215,128,216,133,138,146"/>
 <area shape="rect" id="Node000011" href="$classrtimvDictionaryInterface.html" title=" " alt="" coords="379,85,561,110"/>
-<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="344,110,378,106,379,111,344,115"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="344,110,378,106,379,111,344,115"/>
 <area shape="rect" id="Node000012" href="$classrtimvOverlayInterface.html" title="Interface for adding information to the display." alt="" coords="387,134,553,159"/>
-<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="344,128,387,133,386,139,344,133"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="344,128,387,133,386,139,344,133"/>
 <area shape="rect" id="Node000005" href="$classStretchGraphicsItem.html" title=" " alt="" coords="9,304,164,344"/>
-<area shape="poly" id="edge16_Node000005_Node000003" title=" " alt="" coords="178,321,227,321,227,327,178,327"/>
+<area shape="poly" id="edge17_Node000005_Node000003" title=" " alt="" coords="178,321,227,321,227,327,178,327"/>
 <area shape="rect" id="Node000013" href="$classStretchGraphicsItem.html" title=" " alt="" coords="9,5,164,45"/>
-<area shape="poly" id="edge17_Node000013_Node000001" title=" " alt="" coords="178,45,222,57,221,62,177,51"/>
+<area shape="poly" id="edge18_Node000013_Node000001" title=" " alt="" coords="178,45,222,57,221,62,177,51"/>
 <area shape="rect" id="Node000008" href="$classStretchGraphicsItem.html" title=" " alt="" coords="9,189,164,229"/>
-<area shape="poly" id="edge18_Node000008_Node000006" title=" " alt="" coords="178,212,226,215,225,220,178,217"/>
+<area shape="poly" id="edge19_Node000008_Node000006" title=" " alt="" coords="178,212,226,215,225,220,178,217"/>
 </map>

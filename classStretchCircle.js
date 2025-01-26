@@ -30,6 +30,7 @@ var classStretchCircle =
     [ "passKeyPressEvent", "classStretchCircle.html#a2e795ca2e776dd68a2c93f15fda61b2d", null ],
     [ "radius", "classStretchCircle.html#a19cf8f3cf2f2a6ed4128fbb2b69f2103", null ],
     [ "rejectMouse", "classStretchCircle.html#aa4a653617c4b8b93fbbf70fb91b73087", null ],
+    [ "remove", "classStretchCircle.html#ace64f1824f02e4a5f3ecf4f42e7c93b7", null ],
     [ "remove", "classStretchCircle.html#a22f91b22ef87c73dd352193c57c1c2c2", null ],
     [ "resized", "classStretchCircle.html#ad3c76bafb487f1c536d7c331e7ecfa9d", null ],
     [ "selected", "classStretchCircle.html#a83d3f2555fdba091721783d97b019a1b", null ],

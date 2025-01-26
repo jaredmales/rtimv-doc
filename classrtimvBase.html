@@ -200,47 +200,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a438411d6c9176b5ab98996dc32a1a6be" id="r_a438411d6c9176b5ab98996dc32a1a6be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a438411d6c9176b5ab98996dc32a1a6be">imageValid</a> (size_t n)</td></tr>
 <tr class="memdesc:a438411d6c9176b5ab98996dc32a1a6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an image is currently valid.  <br /></td></tr>
 <tr class="separator:a438411d6c9176b5ab98996dc32a1a6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Image Size</div></td></tr>
-<tr class="memitem:a18c192980fc84aca7436ed0472996dad" id="r_a18c192980fc84aca7436ed0472996dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a18c192980fc84aca7436ed0472996dad">mtxL_setImsize</a> (uint32_t x, uint32_t y, const <a class="el" href="classrtimvBase.html#ad88357de947f7b92fcd6e1401c7e15aa">uniqueLockT</a> &amp;lock)</td></tr>
-<tr class="memdesc:a18c192980fc84aca7436ed0472996dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the image size, but only if necessary.  <br /></td></tr>
-<tr class="separator:a18c192980fc84aca7436ed0472996dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3275285ac87a369c6cd6fb99e382d7" id="r_a5e3275285ac87a369c6cd6fb99e382d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a5e3275285ac87a369c6cd6fb99e382d7">mtxL_postSetImsize</a> (const <a class="el" href="classrtimvBase.html#ad88357de947f7b92fcd6e1401c7e15aa">uniqueLockT</a> &amp;lock)=0</td></tr>
-<tr class="memdesc:a5e3275285ac87a369c6cd6fb99e382d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after set_imsize to handle allocations for derived classes.  <br /></td></tr>
-<tr class="separator:a5e3275285ac87a369c6cd6fb99e382d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d2e98b672743bd2792c6ed1f10777fc" id="r_a0d2e98b672743bd2792c6ed1f10777fc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0d2e98b672743bd2792c6ed1f10777fc">nx</a> ()</td></tr>
-<tr class="memdesc:a0d2e98b672743bd2792c6ed1f10777fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of x pixels.  <br /></td></tr>
-<tr class="separator:a0d2e98b672743bd2792c6ed1f10777fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a844b06be89dda520322a28c4069b4f9d" id="r_a844b06be89dda520322a28c4069b4f9d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a844b06be89dda520322a28c4069b4f9d">ny</a> ()</td></tr>
-<tr class="memdesc:a844b06be89dda520322a28c4069b4f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of y pixels.  <br /></td></tr>
-<tr class="separator:a844b06be89dda520322a28c4069b4f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Image Update</div></td></tr>
-<tr class="memitem:a51e0d6dbd130310cb547403034d4c4c1" id="r_a51e0d6dbd130310cb547403034d4c4c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a51e0d6dbd130310cb547403034d4c4c1">imageTimeout</a> (int to)</td></tr>
-<tr class="memdesc:a51e0d6dbd130310cb547403034d4c4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the image display timeout.  <br /></td></tr>
-<tr class="separator:a51e0d6dbd130310cb547403034d4c4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57afa662d20fb775390eff593aed7a73" id="r_a57afa662d20fb775390eff593aed7a73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a57afa662d20fb775390eff593aed7a73">imageTimeout</a> ()</td></tr>
-<tr class="memdesc:a57afa662d20fb775390eff593aed7a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the image display timeout.  <br /></td></tr>
-<tr class="separator:a57afa662d20fb775390eff593aed7a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Image Filtering</div></td></tr>
-<tr class="memitem:ad9c088d72417584c581732809645911a" id="r_ad9c088d72417584c581732809645911a"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ad9c088d72417584c581732809645911a">m_lowPassFiltered</a> {nullptr}</td></tr>
+<tr class="memitem:ad9c088d72417584c581732809645911a" id="r_ad9c088d72417584c581732809645911a"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ad9c088d72417584c581732809645911a">m_lowPassFiltered</a> { nullptr }</td></tr>
 <tr class="separator:ad9c088d72417584c581732809645911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc5323aee86c3a53e4267904bb8d270" id="r_a8cc5323aee86c3a53e4267904bb8d270"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a8cc5323aee86c3a53e4267904bb8d270">m_applyLPFilter</a></td></tr>
 <tr class="separator:a8cc5323aee86c3a53e4267904bb8d270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57a8204e3059a75edcacc15d4afc5a59" id="r_a57a8204e3059a75edcacc15d4afc5a59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a57a8204e3059a75edcacc15d4afc5a59">m_lpFilterType</a></td></tr>
 <tr class="separator:a57a8204e3059a75edcacc15d4afc5a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-slots" name="pro-slots"></a>
-Protected Slots</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Image Update - Slots</div></td></tr>
-<tr class="memitem:a0633d398b63af5942b2bf0e4d3f019ea" id="r_a0633d398b63af5942b2bf0e4d3f019ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0633d398b63af5942b2bf0e4d3f019ea">updateImages</a> ()</td></tr>
-<tr class="memdesc:a0633d398b63af5942b2bf0e4d3f019ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by m_imageTimer expiration.  <br /></td></tr>
-<tr class="separator:a0633d398b63af5942b2bf0e4d3f019ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a6bbfd7998d3b2cb4b1c24b45d6be913f" id="r_a6bbfd7998d3b2cb4b1c24b45d6be913f"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a6bbfd7998d3b2cb4b1c24b45d6be913f">m_qim</a> {nullptr}</td></tr>
+<tr class="memitem:a6bbfd7998d3b2cb4b1c24b45d6be913f" id="r_a6bbfd7998d3b2cb4b1c24b45d6be913f"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a6bbfd7998d3b2cb4b1c24b45d6be913f">m_qim</a> { nullptr }</td></tr>
 <tr class="memdesc:a6bbfd7998d3b2cb4b1c24b45d6be913f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A QT image, used to store the color-map encoded data.  <br /></td></tr>
 <tr class="separator:a6bbfd7998d3b2cb4b1c24b45d6be913f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acefe003eb567749c049067cbe6758c93" id="r_acefe003eb567749c049067cbe6758c93"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#acefe003eb567749c049067cbe6758c93">m_lightness</a></td></tr>
@@ -249,72 +222,100 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a0c7cbf9da897d2943e217bb96747da42" id="r_a0c7cbf9da897d2943e217bb96747da42"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0c7cbf9da897d2943e217bb96747da42">m_qpm</a></td></tr>
 <tr class="memdesc:a0c7cbf9da897d2943e217bb96747da42"><td class="mdescLeft">&#160;</td><td class="mdescRight">A QT pixmap, used to prep the QImage for display.  <br /></td></tr>
 <tr class="separator:a0c7cbf9da897d2943e217bb96747da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1a7610c8acd4285e17e6742449d932" id="r_a0c1a7610c8acd4285e17e6742449d932"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0c1a7610c8acd4285e17e6742449d932">m_amChangingimdata</a> {false}</td></tr>
+<tr class="memitem:a0c1a7610c8acd4285e17e6742449d932" id="r_a0c1a7610c8acd4285e17e6742449d932"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0c1a7610c8acd4285e17e6742449d932">m_amChangingimdata</a> { false }</td></tr>
 <tr class="memdesc:a0c1a7610c8acd4285e17e6742449d932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating that changeImdata(bool) is currently executing.  <br /></td></tr>
 <tr class="separator:a0c1a7610c8acd4285e17e6742449d932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ac2afdc5d45f6f206ba72e897454230" id="r_a1ac2afdc5d45f6f206ba72e897454230"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1ac2afdc5d45f6f206ba72e897454230">m_satLevel</a> {1e30}</td></tr>
+<tr class="memitem:a1ac2afdc5d45f6f206ba72e897454230" id="r_a1ac2afdc5d45f6f206ba72e897454230"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1ac2afdc5d45f6f206ba72e897454230">m_satLevel</a> { 1e30 }</td></tr>
 <tr class="separator:a1ac2afdc5d45f6f206ba72e897454230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad271598c2e8d087cd27c62b3d3d2915f" id="r_ad271598c2e8d087cd27c62b3d3d2915f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ad271598c2e8d087cd27c62b3d3d2915f">m_saturated</a> {0}</td></tr>
+<tr class="memitem:ad271598c2e8d087cd27c62b3d3d2915f" id="r_ad271598c2e8d087cd27c62b3d3d2915f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ad271598c2e8d087cd27c62b3d3d2915f">m_saturated</a> { 0 }</td></tr>
 <tr class="separator:ad271598c2e8d087cd27c62b3d3d2915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48dd3dee51a5ed51234c9f5c68c5fe68" id="r_a48dd3dee51a5ed51234c9f5c68c5fe68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a48dd3dee51a5ed51234c9f5c68c5fe68">imdat_min</a></td></tr>
 <tr class="separator:a48dd3dee51a5ed51234c9f5c68c5fe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa401cd4e1ff94ccbd39803c3f19f9203" id="r_aa401cd4e1ff94ccbd39803c3f19f9203"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa401cd4e1ff94ccbd39803c3f19f9203">imdat_max</a></td></tr>
 <tr class="separator:aa401cd4e1ff94ccbd39803c3f19f9203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3afc60ba9f45d97ad8572f480e37518" id="r_aa3afc60ba9f45d97ad8572f480e37518"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa3afc60ba9f45d97ad8572f480e37518">m_zoomLevel</a> {1}</td></tr>
+<tr class="memitem:aa3afc60ba9f45d97ad8572f480e37518" id="r_aa3afc60ba9f45d97ad8572f480e37518"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa3afc60ba9f45d97ad8572f480e37518">m_zoomLevel</a> { 1 }</td></tr>
 <tr class="separator:aa3afc60ba9f45d97ad8572f480e37518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd47449c4ec72b3ead7ccc910473e93" id="r_aecd47449c4ec72b3ead7ccc910473e93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aecd47449c4ec72b3ead7ccc910473e93">m_zoomLevelMin</a> {1}</td></tr>
+<tr class="memitem:aecd47449c4ec72b3ead7ccc910473e93" id="r_aecd47449c4ec72b3ead7ccc910473e93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aecd47449c4ec72b3ead7ccc910473e93">m_zoomLevelMin</a> { 1 }</td></tr>
 <tr class="separator:aecd47449c4ec72b3ead7ccc910473e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160037f4bb76765357f0d0814f52ffb7" id="r_a160037f4bb76765357f0d0814f52ffb7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a160037f4bb76765357f0d0814f52ffb7">m_zoomLevelMax</a> {64}</td></tr>
+<tr class="memitem:a160037f4bb76765357f0d0814f52ffb7" id="r_a160037f4bb76765357f0d0814f52ffb7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a160037f4bb76765357f0d0814f52ffb7">m_zoomLevelMax</a> { 64 }</td></tr>
 <tr class="separator:a160037f4bb76765357f0d0814f52ffb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a442d12258b97e1383ab93ffabb2b4a77" id="r_a442d12258b97e1383ab93ffabb2b4a77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a442d12258b97e1383ab93ffabb2b4a77">RealTimeEnabled</a> {true}</td></tr>
+<tr class="memitem:a442d12258b97e1383ab93ffabb2b4a77" id="r_a442d12258b97e1383ab93ffabb2b4a77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a442d12258b97e1383ab93ffabb2b4a77">RealTimeEnabled</a> { true }</td></tr>
 <tr class="memdesc:a442d12258b97e1383ab93ffabb2b4a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether <a class="el" href="classrtimvBase.html">rtimvBase</a> is using real-time data.  <br /></td></tr>
 <tr class="separator:a442d12258b97e1383ab93ffabb2b4a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01ea93cde9077dfe5903b40bfef119f1" id="r_a01ea93cde9077dfe5903b40bfef119f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a01ea93cde9077dfe5903b40bfef119f1">RealTimeStopped</a> {false}</td></tr>
+<tr class="memitem:a01ea93cde9077dfe5903b40bfef119f1" id="r_a01ea93cde9077dfe5903b40bfef119f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a01ea93cde9077dfe5903b40bfef119f1">RealTimeStopped</a> { false }</td></tr>
 <tr class="memdesc:a01ea93cde9077dfe5903b40bfef119f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set when user temporarily freezes real-time data viewing.  <br /></td></tr>
 <tr class="separator:a01ea93cde9077dfe5903b40bfef119f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Connection - Data</div></td></tr>
 <tr class="memitem:a13396f14c432e45b1096f4c3838705a5" id="r_a13396f14c432e45b1096f4c3838705a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrtimvImage.html">rtimvImage</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a13396f14c432e45b1096f4c3838705a5">m_images</a></td></tr>
 <tr class="memdesc:a13396f14c432e45b1096f4c3838705a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The images to be displayed.  <br /></td></tr>
 <tr class="separator:a13396f14c432e45b1096f4c3838705a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1325b68793f4e78a10440da32f21704c" id="r_a1325b68793f4e78a10440da32f21704c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1325b68793f4e78a10440da32f21704c">m_mzmqAlways</a> {false}</td></tr>
+<tr class="memitem:a5eb1e7700c69fde9970a4fe1e5111e00" id="r_a5eb1e7700c69fde9970a4fe1e5111e00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a5eb1e7700c69fde9970a4fe1e5111e00">m_connected</a> { false }</td></tr>
+<tr class="memdesc:a5eb1e7700c69fde9970a4fe1e5111e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used to indicate that the main image, m_images[0], is connected to its first image.  <br /></td></tr>
+<tr class="separator:a5eb1e7700c69fde9970a4fe1e5111e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1325b68793f4e78a10440da32f21704c" id="r_a1325b68793f4e78a10440da32f21704c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1325b68793f4e78a10440da32f21704c">m_mzmqAlways</a> { false }</td></tr>
 <tr class="memdesc:a1325b68793f4e78a10440da32f21704c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to indicate that the milkzmq protocol should be used for all ImageStremIO images.  <br /></td></tr>
 <tr class="separator:a1325b68793f4e78a10440da32f21704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f8578d112c3687a6e598eb92a6073a" id="r_ac0f8578d112c3687a6e598eb92a6073a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac0f8578d112c3687a6e598eb92a6073a">m_mzmqServer</a></td></tr>
 <tr class="memdesc:ac0f8578d112c3687a6e598eb92a6073a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default milkzmq server to use, if set this overrides default "localhost" in mzmqImage.  <br /></td></tr>
 <tr class="separator:ac0f8578d112c3687a6e598eb92a6073a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c635d8c5b6c21dc0d2ba918e09637a3" id="r_a6c635d8c5b6c21dc0d2ba918e09637a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a6c635d8c5b6c21dc0d2ba918e09637a3">m_mzmqPort</a> {0}</td></tr>
+<tr class="memitem:a6c635d8c5b6c21dc0d2ba918e09637a3" id="r_a6c635d8c5b6c21dc0d2ba918e09637a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a6c635d8c5b6c21dc0d2ba918e09637a3">m_mzmqPort</a> { 0 }</td></tr>
 <tr class="memdesc:a6c635d8c5b6c21dc0d2ba918e09637a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default milkzmq server to use, if set this overrides default "5556" in mzmqImage.  <br /></td></tr>
 <tr class="separator:a6c635d8c5b6c21dc0d2ba918e09637a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Image Size - Data</div></td></tr>
-<tr class="memitem:a6cdd0426e23749a7f88d599a2187a239" id="r_a6cdd0426e23749a7f88d599a2187a239"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a6cdd0426e23749a7f88d599a2187a239">m_nx</a> {0}</td></tr>
+<tr class="memitem:a6cdd0426e23749a7f88d599a2187a239" id="r_a6cdd0426e23749a7f88d599a2187a239"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a6cdd0426e23749a7f88d599a2187a239">m_nx</a> { 0 }</td></tr>
 <tr class="memdesc:a6cdd0426e23749a7f88d599a2187a239"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of pixels in the x (horizontal) direction.  <br /></td></tr>
 <tr class="separator:a6cdd0426e23749a7f88d599a2187a239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3d995077ec58e78b72e04b7f588407" id="r_a5e3d995077ec58e78b72e04b7f588407"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a5e3d995077ec58e78b72e04b7f588407">m_ny</a> {0}</td></tr>
+<tr class="memitem:a5e3d995077ec58e78b72e04b7f588407" id="r_a5e3d995077ec58e78b72e04b7f588407"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a5e3d995077ec58e78b72e04b7f588407">m_ny</a> { 0 }</td></tr>
 <tr class="memdesc:a5e3d995077ec58e78b72e04b7f588407"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of pixels in the y (vertical) direction.  <br /></td></tr>
 <tr class="separator:a5e3d995077ec58e78b72e04b7f588407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8499046f36c8eb54e0b182b2ed008d3f" id="r_a8499046f36c8eb54e0b182b2ed008d3f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a8499046f36c8eb54e0b182b2ed008d3f">m_nz</a> { 1 }</td></tr>
+<tr class="memdesc:a8499046f36c8eb54e0b182b2ed008d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of images in the cube. Always &gt;= 1.  <br /></td></tr>
+<tr class="separator:a8499046f36c8eb54e0b182b2ed008d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Image Update - Data</div></td></tr>
 <tr class="memitem:ab1d4892d27ed3fe71c07729fe1c5f3e8" id="r_ab1d4892d27ed3fe71c07729fe1c5f3e8"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ab1d4892d27ed3fe71c07729fe1c5f3e8">m_imageTimer</a></td></tr>
 <tr class="memdesc:ab1d4892d27ed3fe71c07729fe1c5f3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">When this times out <a class="el" href="classrtimvBase.html">rtimvBase</a> checks for a new image.  <br /></td></tr>
 <tr class="separator:ab1d4892d27ed3fe71c07729fe1c5f3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68829411b1dca926edf1ca2e048c0de8" id="r_a68829411b1dca926edf1ca2e048c0de8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a68829411b1dca926edf1ca2e048c0de8">m_imageTimeout</a> {50}</td></tr>
-<tr class="memdesc:a68829411b1dca926edf1ca2e048c0de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timeout for checking for a new images, ms.  <br /></td></tr>
+<tr class="memitem:a3dcf03c94b65ad6e6859eb26317f105a" id="r_a3dcf03c94b65ad6e6859eb26317f105a"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a3dcf03c94b65ad6e6859eb26317f105a">m_cubeTimer</a></td></tr>
+<tr class="memdesc:a3dcf03c94b65ad6e6859eb26317f105a"><td class="mdescLeft">&#160;</td><td class="mdescRight">When this times out <a class="el" href="classrtimvBase.html">rtimvBase</a> increments the cube frame number.  <br /></td></tr>
+<tr class="separator:a3dcf03c94b65ad6e6859eb26317f105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc4e27779f826e831d2c04c92036b74" id="r_acfc4e27779f826e831d2c04c92036b74"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#acfc4e27779f826e831d2c04c92036b74">m_cubeFrameUpdateTimer</a></td></tr>
+<tr class="memdesc:acfc4e27779f826e831d2c04c92036b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">When this times out the current frame number signal is sent.  <br /></td></tr>
+<tr class="separator:acfc4e27779f826e831d2c04c92036b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68829411b1dca926edf1ca2e048c0de8" id="r_a68829411b1dca926edf1ca2e048c0de8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a68829411b1dca926edf1ca2e048c0de8">m_imageTimeout</a> { 50 }</td></tr>
+<tr class="memdesc:a68829411b1dca926edf1ca2e048c0de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum timeout for checking for a new images, ms.  <br /></td></tr>
 <tr class="separator:a68829411b1dca926edf1ca2e048c0de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0708c9df061a1aeed8ad80230b810bf8" id="r_a0708c9df061a1aeed8ad80230b810bf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0708c9df061a1aeed8ad80230b810bf8">m_cubeMode</a> { false }</td></tr>
+<tr class="memdesc:a0708c9df061a1aeed8ad80230b810bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not cube mode is enabled.  <br /></td></tr>
+<tr class="separator:a0708c9df061a1aeed8ad80230b810bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51212c1faf9047e9c0f02a942d2fc17" id="r_aa51212c1faf9047e9c0f02a942d2fc17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa51212c1faf9047e9c0f02a942d2fc17">m_cubeFPS</a> { 20 }</td></tr>
+<tr class="memdesc:aa51212c1faf9047e9c0f02a942d2fc17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cube frame rate.  <br /></td></tr>
+<tr class="separator:aa51212c1faf9047e9c0f02a942d2fc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d0c589834ceba7ff3acb57e7a5f72e" id="r_a69d0c589834ceba7ff3acb57e7a5f72e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a69d0c589834ceba7ff3acb57e7a5f72e">m_desiredCubeFPS</a> { 20 }</td></tr>
+<tr class="memdesc:a69d0c589834ceba7ff3acb57e7a5f72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cube frame rate.  <br /></td></tr>
+<tr class="separator:a69d0c589834ceba7ff3acb57e7a5f72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71d94d0a26827871e268622fed42132" id="r_aa71d94d0a26827871e268622fed42132"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa71d94d0a26827871e268622fed42132">m_cubeFPSMult</a> { 1.0 }</td></tr>
+<tr class="memdesc:aa71d94d0a26827871e268622fed42132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplier on cube FPS, e.g. for fast forwarding.  <br /></td></tr>
+<tr class="separator:aa71d94d0a26827871e268622fed42132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c28228ff749386f3f4409afd0e032ba" id="r_a3c28228ff749386f3f4409afd0e032ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a3c28228ff749386f3f4409afd0e032ba">m_cubeDir</a> { 1 }</td></tr>
+<tr class="memdesc:a3c28228ff749386f3f4409afd0e032ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction of cube travel. +1 or -1.  <br /></td></tr>
+<tr class="separator:a3c28228ff749386f3f4409afd0e032ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1933edbaa84ec2bce3b32be73887819" id="r_ab1933edbaa84ec2bce3b32be73887819"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ab1933edbaa84ec2bce3b32be73887819">m_currImageTimeout</a> { 50 }</td></tr>
+<tr class="separator:ab1933edbaa84ec2bce3b32be73887819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Calibrated Pixel Data</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Settings to control which calibrations are applied, and manage access to memory. </p>
 </div></td></tr>
-<tr class="memitem:aafd6ed796f70fa5417570b9bb8386956" id="r_aafd6ed796f70fa5417570b9bb8386956"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aafd6ed796f70fa5417570b9bb8386956">m_subtractDark</a> {false}</td></tr>
+<tr class="memitem:aafd6ed796f70fa5417570b9bb8386956" id="r_aafd6ed796f70fa5417570b9bb8386956"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aafd6ed796f70fa5417570b9bb8386956">m_subtractDark</a> { false }</td></tr>
 <tr class="memdesc:aafd6ed796f70fa5417570b9bb8386956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the dark image is subtracted, default is false.  <br /></td></tr>
 <tr class="separator:aafd6ed796f70fa5417570b9bb8386956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be0b829ec5d5ec2dbe5ae9bbc1c22c1" id="r_a8be0b829ec5d5ec2dbe5ae9bbc1c22c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a8be0b829ec5d5ec2dbe5ae9bbc1c22c1">m_applyMask</a> {false}</td></tr>
+<tr class="memitem:a8be0b829ec5d5ec2dbe5ae9bbc1c22c1" id="r_a8be0b829ec5d5ec2dbe5ae9bbc1c22c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a8be0b829ec5d5ec2dbe5ae9bbc1c22c1">m_applyMask</a> { false }</td></tr>
 <tr class="memdesc:a8be0b829ec5d5ec2dbe5ae9bbc1c22c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the mask is applied, default is false.  <br /></td></tr>
 <tr class="separator:a8be0b829ec5d5ec2dbe5ae9bbc1c22c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ac7461194611b629ddc69b795ea423" id="r_a23ac7461194611b629ddc69b795ea423"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a23ac7461194611b629ddc69b795ea423">m_applySatMask</a> {false}</td></tr>
-<tr class="memdesc:a23ac7461194611b629ddc69b795ea423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the saturation mask is applied, default is false. <br  />
-  <br /></td></tr>
+<tr class="memitem:a23ac7461194611b629ddc69b795ea423" id="r_a23ac7461194611b629ddc69b795ea423"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a23ac7461194611b629ddc69b795ea423">m_applySatMask</a> { false }</td></tr>
+<tr class="memdesc:a23ac7461194611b629ddc69b795ea423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the saturation mask is applied, default is false.  <br /></td></tr>
 <tr class="separator:a23ac7461194611b629ddc69b795ea423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b17d101078a2c7b19c8e498f44374e9" id="r_a9b17d101078a2c7b19c8e498f44374e9"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a9b17d101078a2c7b19c8e498f44374e9">m_calData</a> {nullptr}</td></tr>
+<tr class="memitem:a9b17d101078a2c7b19c8e498f44374e9" id="r_a9b17d101078a2c7b19c8e498f44374e9"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a9b17d101078a2c7b19c8e498f44374e9">m_calData</a> { nullptr }</td></tr>
 <tr class="separator:a9b17d101078a2c7b19c8e498f44374e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f6e4183a9b2bdf26d9128c7d81b7bf" id="r_ac0f6e4183a9b2bdf26d9128c7d81b7bf"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac0f6e4183a9b2bdf26d9128c7d81b7bf">m_satData</a> {nullptr}</td></tr>
+<tr class="memitem:ac0f6e4183a9b2bdf26d9128c7d81b7bf" id="r_ac0f6e4183a9b2bdf26d9128c7d81b7bf"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac0f6e4183a9b2bdf26d9128c7d81b7bf">m_satData</a> { nullptr }</td></tr>
 <tr class="separator:ac0f6e4183a9b2bdf26d9128c7d81b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72898a2756312805e2e1f0a7e3d9560a" id="r_a72898a2756312805e2e1f0a7e3d9560a"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a72898a2756312805e2e1f0a7e3d9560a">m_rawMutex</a></td></tr>
 <tr class="memdesc:a72898a2756312805e2e1f0a7e3d9560a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for locking access to raw pixels.  <br /></td></tr>
@@ -356,26 +357,26 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a210a241be3b7a074bc9092a6b3f1455c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967981b650e163d5fd722e167a62357c" id="r_a967981b650e163d5fd722e167a62357c"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a967981b650e163d5fd722e167a62357c">pixelIndexF</a>) (float)</td></tr>
 <tr class="separator:a967981b650e163d5fd722e167a62357c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e611e8936d03b32fd963fefb0f20d8" id="r_ac1e611e8936d03b32fd963fefb0f20d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac1e611e8936d03b32fd963fefb0f20d8">m_minColor</a> {0}</td></tr>
+<tr class="memitem:ac1e611e8936d03b32fd963fefb0f20d8" id="r_ac1e611e8936d03b32fd963fefb0f20d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac1e611e8936d03b32fd963fefb0f20d8">m_minColor</a> { 0 }</td></tr>
 <tr class="memdesc:ac1e611e8936d03b32fd963fefb0f20d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum index to use for the color table.  <br /></td></tr>
 <tr class="separator:ac1e611e8936d03b32fd963fefb0f20d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141b93ac63e23ff7487d56a0db689615" id="r_a141b93ac63e23ff7487d56a0db689615"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a141b93ac63e23ff7487d56a0db689615">m_maxColor</a> {253}</td></tr>
+<tr class="memitem:a141b93ac63e23ff7487d56a0db689615" id="r_a141b93ac63e23ff7487d56a0db689615"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a141b93ac63e23ff7487d56a0db689615">m_maxColor</a> { 253 }</td></tr>
 <tr class="memdesc:a141b93ac63e23ff7487d56a0db689615"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum index to use for the color table.  <br /></td></tr>
 <tr class="separator:a141b93ac63e23ff7487d56a0db689615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef18d1eddef9b593bb33d17b8373c7ff" id="r_aef18d1eddef9b593bb33d17b8373c7ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aef18d1eddef9b593bb33d17b8373c7ff">m_maskColor</a> {254}</td></tr>
+<tr class="memitem:aef18d1eddef9b593bb33d17b8373c7ff" id="r_aef18d1eddef9b593bb33d17b8373c7ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aef18d1eddef9b593bb33d17b8373c7ff">m_maskColor</a> { 254 }</td></tr>
 <tr class="memdesc:aef18d1eddef9b593bb33d17b8373c7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index in the color table to use for the mask color.  <br /></td></tr>
 <tr class="separator:aef18d1eddef9b593bb33d17b8373c7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf54f0abf4ec979528c3b7b19802af48" id="r_acf54f0abf4ec979528c3b7b19802af48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#acf54f0abf4ec979528c3b7b19802af48">m_satColor</a> {255}</td></tr>
+<tr class="memitem:acf54f0abf4ec979528c3b7b19802af48" id="r_acf54f0abf4ec979528c3b7b19802af48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#acf54f0abf4ec979528c3b7b19802af48">m_satColor</a> { 255 }</td></tr>
 <tr class="memdesc:acf54f0abf4ec979528c3b7b19802af48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index in the color table to use for the saturation color.  <br /></td></tr>
 <tr class="separator:acf54f0abf4ec979528c3b7b19802af48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5595394106402ba4ff50de3f8afd04d" id="r_af5595394106402ba4ff50de3f8afd04d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#af5595394106402ba4ff50de3f8afd04d">m_nanColor</a> {254}</td></tr>
+<tr class="memitem:af5595394106402ba4ff50de3f8afd04d" id="r_af5595394106402ba4ff50de3f8afd04d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#af5595394106402ba4ff50de3f8afd04d">m_nanColor</a> { 254 }</td></tr>
 <tr class="memdesc:af5595394106402ba4ff50de3f8afd04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index in the color table to use for nans and infinities.  <br /></td></tr>
 <tr class="separator:af5595394106402ba4ff50de3f8afd04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c08d68840b5f52e015a602f80b82fe" id="r_aa0c08d68840b5f52e015a602f80b82fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa0c08d68840b5f52e015a602f80b82fe">colorbar_mode</a> {<a class="el" href="classrtimvBase.html#a210a241be3b7a074bc9092a6b3f1455caadef08a1b0c13d46deac23ddd5303ef6">minmaxglobal</a>}</td></tr>
+<tr class="memitem:aa0c08d68840b5f52e015a602f80b82fe" id="r_aa0c08d68840b5f52e015a602f80b82fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa0c08d68840b5f52e015a602f80b82fe">colorbar_mode</a> { <a class="el" href="classrtimvBase.html#a210a241be3b7a074bc9092a6b3f1455caadef08a1b0c13d46deac23ddd5303ef6">minmaxglobal</a> }</td></tr>
 <tr class="separator:aa0c08d68840b5f52e015a602f80b82fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4677560aba652b2c896a3aeb39ad87fa" id="r_a4677560aba652b2c896a3aeb39ad87fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a4677560aba652b2c896a3aeb39ad87fa">m_cbStretch</a> {<a class="el" href="classrtimvBase.html#a253704ea9f5f9ce5a2359faae6ce6d88ac3f58a8243ad4014b8ab8bbfdc73d780">stretchLinear</a>}</td></tr>
+<tr class="memitem:a4677560aba652b2c896a3aeb39ad87fa" id="r_a4677560aba652b2c896a3aeb39ad87fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a4677560aba652b2c896a3aeb39ad87fa">m_cbStretch</a> { <a class="el" href="classrtimvBase.html#a253704ea9f5f9ce5a2359faae6ce6d88ac3f58a8243ad4014b8ab8bbfdc73d780">stretchLinear</a> }</td></tr>
 <tr class="separator:a4677560aba652b2c896a3aeb39ad87fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092a0f34acfc3dc3440b8f49ba266cff" id="r_a092a0f34acfc3dc3440b8f49ba266cff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a092a0f34acfc3dc3440b8f49ba266cff">current_colorbar</a> {<a class="el" href="classrtimvBase.html#a091d6b6a565b8fd3aa6c8028c5ee7437aa7553ac50fc81637263770c9f309e30e">colorbarBone</a>}</td></tr>
+<tr class="memitem:a092a0f34acfc3dc3440b8f49ba266cff" id="r_a092a0f34acfc3dc3440b8f49ba266cff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a092a0f34acfc3dc3440b8f49ba266cff">current_colorbar</a> { <a class="el" href="classrtimvBase.html#a091d6b6a565b8fd3aa6c8028c5ee7437aa7553ac50fc81637263770c9f309e30e">colorbarBone</a> }</td></tr>
 <tr class="separator:a092a0f34acfc3dc3440b8f49ba266cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382b253f179da7bb6c998b1ab7192ca5" id="r_a382b253f179da7bb6c998b1ab7192ca5"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a382b253f179da7bb6c998b1ab7192ca5">warning_color</a></td></tr>
 <tr class="separator:a382b253f179da7bb6c998b1ab7192ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -440,7 +441,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a033c456ed02ae7997e7a7354ee790d3d" id="r_a033c456ed02ae7997e7a7354ee790d3d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a033c456ed02ae7997e7a7354ee790d3d">m_maxdat</a></td></tr>
 <tr class="memdesc:a033c456ed02ae7997e7a7354ee790d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum data valuse used for scaling.  <br /></td></tr>
 <tr class="separator:a033c456ed02ae7997e7a7354ee790d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af426e17ee2c6a52a390f636bdfa86835" id="r_af426e17ee2c6a52a390f636bdfa86835"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#af426e17ee2c6a52a390f636bdfa86835">m_autoScale</a> {false}</td></tr>
+<tr class="memitem:af426e17ee2c6a52a390f636bdfa86835" id="r_af426e17ee2c6a52a390f636bdfa86835"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#af426e17ee2c6a52a390f636bdfa86835">m_autoScale</a> { false }</td></tr>
 <tr class="separator:af426e17ee2c6a52a390f636bdfa86835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5697e2ee0241e15c3b62564969987ae" id="r_ac5697e2ee0241e15c3b62564969987ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac5697e2ee0241e15c3b62564969987ae">mindat</a> (float md)</td></tr>
 <tr class="separator:ac5697e2ee0241e15c3b62564969987ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -468,7 +469,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a608cd5b7d500a940c5c2278ecd9fb3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">A User Defined Region</h2></td></tr>
-<tr class="memitem:aa15ea04226be31d618c4cc8a9077bd85" id="r_aa15ea04226be31d618c4cc8a9077bd85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa15ea04226be31d618c4cc8a9077bd85">colorBoxActive</a> {0}</td></tr>
+<tr class="memitem:aa15ea04226be31d618c4cc8a9077bd85" id="r_aa15ea04226be31d618c4cc8a9077bd85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aa15ea04226be31d618c4cc8a9077bd85">colorBoxActive</a> { 0 }</td></tr>
 <tr class="separator:aa15ea04226be31d618c4cc8a9077bd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab674dcfcc7169fc8208b5138afe29983" id="r_ab674dcfcc7169fc8208b5138afe29983"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ab674dcfcc7169fc8208b5138afe29983">m_colorBox_max</a></td></tr>
 <tr class="separator:ab674dcfcc7169fc8208b5138afe29983"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,10 +497,79 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ae36e39545daa6a4814909c44c6dc5f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c7425f83692c9ed99e4254dd1f40d3a" id="r_a1c7425f83692c9ed99e4254dd1f40d3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1c7425f83692c9ed99e4254dd1f40d3a">mtxL_postSetColorBoxActive</a> (bool usba, const <a class="el" href="classrtimvBase.html#a8b61bbdabd8d2523a2cc4c1c592addbb">sharedLockT</a> &amp;lock)=0</td></tr>
 <tr class="separator:a1c7425f83692c9ed99e4254dd1f40d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Image Size</h2></td></tr>
+<tr class="memitem:a73fcb40b73f5880c66a506649ae360eb" id="r_a73fcb40b73f5880c66a506649ae360eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a73fcb40b73f5880c66a506649ae360eb">mtxL_setImsize</a> (uint32_t x, uint32_t y, uint32_t z, const <a class="el" href="classrtimvBase.html#ad88357de947f7b92fcd6e1401c7e15aa">uniqueLockT</a> &amp;lock)</td></tr>
+<tr class="memdesc:a73fcb40b73f5880c66a506649ae360eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the image size, but only if necessary.  <br /></td></tr>
+<tr class="separator:a73fcb40b73f5880c66a506649ae360eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3275285ac87a369c6cd6fb99e382d7" id="r_a5e3275285ac87a369c6cd6fb99e382d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a5e3275285ac87a369c6cd6fb99e382d7">mtxL_postSetImsize</a> (const <a class="el" href="classrtimvBase.html#ad88357de947f7b92fcd6e1401c7e15aa">uniqueLockT</a> &amp;lock)=0</td></tr>
+<tr class="memdesc:a5e3275285ac87a369c6cd6fb99e382d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after set_imsize to handle allocations for derived classes.  <br /></td></tr>
+<tr class="separator:a5e3275285ac87a369c6cd6fb99e382d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2e98b672743bd2792c6ed1f10777fc" id="r_a0d2e98b672743bd2792c6ed1f10777fc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0d2e98b672743bd2792c6ed1f10777fc">nx</a> ()</td></tr>
+<tr class="memdesc:a0d2e98b672743bd2792c6ed1f10777fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of x pixels.  <br /></td></tr>
+<tr class="separator:a0d2e98b672743bd2792c6ed1f10777fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844b06be89dda520322a28c4069b4f9d" id="r_a844b06be89dda520322a28c4069b4f9d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a844b06be89dda520322a28c4069b4f9d">ny</a> ()</td></tr>
+<tr class="memdesc:a844b06be89dda520322a28c4069b4f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of y pixels.  <br /></td></tr>
+<tr class="separator:a844b06be89dda520322a28c4069b4f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab609069f3b849aa456b5161a98f90d8c" id="r_ab609069f3b849aa456b5161a98f90d8c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ab609069f3b849aa456b5161a98f90d8c">nz</a> ()</td></tr>
+<tr class="memdesc:ab609069f3b849aa456b5161a98f90d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of images.  <br /></td></tr>
+<tr class="separator:ab609069f3b849aa456b5161a98f90d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9980a82e357fd3408c5202285510d3d5" id="r_a9980a82e357fd3408c5202285510d3d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a9980a82e357fd3408c5202285510d3d5">nzUpdated</a> (uint32_t n)</td></tr>
+<tr class="memdesc:a9980a82e357fd3408c5202285510d3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the number of images in the cube.  <br /></td></tr>
+<tr class="separator:a9980a82e357fd3408c5202285510d3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Image Update Member Access</h2></td></tr>
+<tr class="memitem:a57afa662d20fb775390eff593aed7a73" id="r_a57afa662d20fb775390eff593aed7a73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a57afa662d20fb775390eff593aed7a73">imageTimeout</a> ()</td></tr>
+<tr class="memdesc:a57afa662d20fb775390eff593aed7a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum image display timeout.  <br /></td></tr>
+<tr class="separator:a57afa662d20fb775390eff593aed7a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b02c2b959727416f036612ad361cee" id="r_ac9b02c2b959727416f036612ad361cee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ac9b02c2b959727416f036612ad361cee">currImageTimeout</a> ()</td></tr>
+<tr class="memdesc:ac9b02c2b959727416f036612ad361cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current image display timeout.  <br /></td></tr>
+<tr class="separator:ac9b02c2b959727416f036612ad361cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Image Update - Slots and Signals</h2></td></tr>
+<tr class="memitem:a73e13ba9c6a6afe17bbdaecabd25e407" id="r_a73e13ba9c6a6afe17bbdaecabd25e407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a73e13ba9c6a6afe17bbdaecabd25e407">cubeModeUpdated</a> (bool mode)</td></tr>
+<tr class="memdesc:a73e13ba9c6a6afe17bbdaecabd25e407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cube mode.  <br /></td></tr>
+<tr class="separator:a73e13ba9c6a6afe17bbdaecabd25e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b15651f26d8750dd120f497da81069e" id="r_a1b15651f26d8750dd120f497da81069e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1b15651f26d8750dd120f497da81069e">cubeFPSUpdated</a> (float fps, float desiredFPS)</td></tr>
+<tr class="memdesc:a1b15651f26d8750dd120f497da81069e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cube FPS.  <br /></td></tr>
+<tr class="separator:a1b15651f26d8750dd120f497da81069e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df2a451a0505b09c81486e4d022a63a" id="r_a0df2a451a0505b09c81486e4d022a63a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0df2a451a0505b09c81486e4d022a63a">cubeFPSMultUpdated</a> (float fpsMult)</td></tr>
+<tr class="memdesc:a0df2a451a0505b09c81486e4d022a63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cube FPS multiplier.  <br /></td></tr>
+<tr class="separator:a0df2a451a0505b09c81486e4d022a63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9979408b387708c69f05ce66c31df7f" id="r_ab9979408b387708c69f05ce66c31df7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ab9979408b387708c69f05ce66c31df7f">cubeDirUpdated</a> (int dir)</td></tr>
+<tr class="memdesc:ab9979408b387708c69f05ce66c31df7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cube direction.  <br /></td></tr>
+<tr class="separator:ab9979408b387708c69f05ce66c31df7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef45f7ec0cf1eb6e7582dc2bedc4423" id="r_aaef45f7ec0cf1eb6e7582dc2bedc4423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#aaef45f7ec0cf1eb6e7582dc2bedc4423">cubeFrameUpdated</a> (uint32_t fno)</td></tr>
+<tr class="memdesc:aaef45f7ec0cf1eb6e7582dc2bedc4423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cube frame number.  <br /></td></tr>
+<tr class="separator:aaef45f7ec0cf1eb6e7582dc2bedc4423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e0d6dbd130310cb547403034d4c4c1" id="r_a51e0d6dbd130310cb547403034d4c4c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a51e0d6dbd130310cb547403034d4c4c1">imageTimeout</a> (int to)</td></tr>
+<tr class="memdesc:a51e0d6dbd130310cb547403034d4c4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the image display timeout.  <br /></td></tr>
+<tr class="separator:a51e0d6dbd130310cb547403034d4c4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad523e755ab9cb4d8bd00ce42823f0843" id="r_ad523e755ab9cb4d8bd00ce42823f0843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ad523e755ab9cb4d8bd00ce42823f0843">cubeMode</a> (bool cm)</td></tr>
+<tr class="separator:ad523e755ab9cb4d8bd00ce42823f0843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834bf47aed7b0e637734806a15c3a8e5" id="r_a834bf47aed7b0e637734806a15c3a8e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a834bf47aed7b0e637734806a15c3a8e5">cubeFPS</a> (float fps)</td></tr>
+<tr class="separator:a834bf47aed7b0e637734806a15c3a8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af714bcba9fd3c3f4bc70e3601a3b8c3c" id="r_af714bcba9fd3c3f4bc70e3601a3b8c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#af714bcba9fd3c3f4bc70e3601a3b8c3c">cubeFPSMult</a> (float mult)</td></tr>
+<tr class="separator:af714bcba9fd3c3f4bc70e3601a3b8c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c9437f156e9750b89d8bbe9bcc5e9f" id="r_a47c9437f156e9750b89d8bbe9bcc5e9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a47c9437f156e9750b89d8bbe9bcc5e9f">cubeDir</a> (int dir)</td></tr>
+<tr class="separator:a47c9437f156e9750b89d8bbe9bcc5e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d0a6245c5de5a0bbae0468d0a6ec4d" id="r_a38d0a6245c5de5a0bbae0468d0a6ec4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a38d0a6245c5de5a0bbae0468d0a6ec4d">cubeFrame</a> (uint32_t fno)</td></tr>
+<tr class="separator:a38d0a6245c5de5a0bbae0468d0a6ec4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d84023af4a8e1ead4df2bf38edcb11b" id="r_a1d84023af4a8e1ead4df2bf38edcb11b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a1d84023af4a8e1ead4df2bf38edcb11b">cubeFrameDelta</a> (int32_t dfno)</td></tr>
+<tr class="separator:a1d84023af4a8e1ead4df2bf38edcb11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0633d398b63af5942b2bf0e4d3f019ea" id="r_a0633d398b63af5942b2bf0e4d3f019ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a0633d398b63af5942b2bf0e4d3f019ea">updateImages</a> ()</td></tr>
+<tr class="memdesc:a0633d398b63af5942b2bf0e4d3f019ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check all images for updates.  <br /></td></tr>
+<tr class="separator:a0633d398b63af5942b2bf0e4d3f019ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9799b9b6381f1110dd2b0b57b2f97f9" id="r_ad9799b9b6381f1110dd2b0b57b2f97f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#ad9799b9b6381f1110dd2b0b57b2f97f9">updateCube</a> ()</td></tr>
+<tr class="memdesc:ad9799b9b6381f1110dd2b0b57b2f97f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the main image cube number.  <br /></td></tr>
+<tr class="separator:ad9799b9b6381f1110dd2b0b57b2f97f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082d23c181401c3af2173ced8b8d0505" id="r_a082d23c181401c3af2173ced8b8d0505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtimvBase.html#a082d23c181401c3af2173ced8b8d0505">updateCubeFrame</a> ()</td></tr>
+<tr class="memdesc:a082d23c181401c3af2173ced8b8d0505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cube frame number.  <br /></td></tr>
+<tr class="separator:a082d23c181401c3af2173ced8b8d0505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00037">37</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00034">34</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a63ef723fa0d3783574ff6de9532b7145" name="a63ef723fa0d3783574ff6de9532b7145"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63ef723fa0d3783574ff6de9532b7145">&#9670;&#160;</a></span>pixelF</h2>
@@ -515,7 +585,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The fuction pointer type for accessing pixels with calibrations applied. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00264">264</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00339">339</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +601,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00321">321</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00392">392</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -547,7 +617,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00045">45</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00041">41</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -563,7 +633,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00043">43</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00039">39</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +656,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a210a241be3b7a074bc9092a6b3f1455ca4c592031ee21bf91a651f00c6747c06d" name="a210a241be3b7a074bc9092a6b3f1455ca4c592031ee21bf91a651f00c6747c06d"></a>colorbar_modes_max&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00364">364</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00443">443</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +682,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a091d6b6a565b8fd3aa6c8028c5ee7437a7777040f7c0b6e1e0048dfacc0ca25bd" name="a091d6b6a565b8fd3aa6c8028c5ee7437a7777040f7c0b6e1e0048dfacc0ca25bd"></a>colorbarMax&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00353">353</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00423">423</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -641,7 +711,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a253704ea9f5f9ce5a2359faae6ce6d88a860a410a57504996df6dd48226db12ac" name="a253704ea9f5f9ce5a2359faae6ce6d88a860a410a57504996df6dd48226db12ac"></a>cbStretches_max&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00323">323</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00394">394</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -720,7 +790,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00021">21</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00020">20</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -740,7 +810,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00468">468</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00630">630</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -760,7 +830,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00460">460</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00622">622</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -779,7 +849,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00481">481</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00643">643</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -799,7 +869,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00473">473</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00635">635</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -829,7 +899,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00378">378</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00548">548</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -848,7 +918,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01012">1012</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01172">1172</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -868,7 +938,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01007">1007</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01167">1167</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -887,7 +957,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01022">1022</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01182">1182</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -907,7 +977,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01017">1017</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01177">1177</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -926,7 +996,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01032">1032</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01192">1192</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -946,7 +1016,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01027">1027</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01187">1187</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -965,7 +1035,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01042">1042</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01202">1202</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1055,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01037">1037</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01197">1197</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1074,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00493">493</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00655">655</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1094,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00486">486</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00648">648</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1113,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00498">498</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00660">660</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1133,412 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00503">503</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00665">665</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47c9437f156e9750b89d8bbe9bcc5e9f" name="a47c9437f156e9750b89d8bbe9bcc5e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c9437f156e9750b89d8bbe9bcc5e9f">&#9670;&#160;</a></span>cubeDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeDir </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00341">341</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab9979408b387708c69f05ce66c31df7f" name="ab9979408b387708c69f05ce66c31df7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9979408b387708c69f05ce66c31df7f">&#9670;&#160;</a></span>cubeDirUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeDirUpdated </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the cube direction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>the current cube direction (+1 is forward, -1 is backward) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a834bf47aed7b0e637734806a15c3a8e5" name="a834bf47aed7b0e637734806a15c3a8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834bf47aed7b0e637734806a15c3a8e5">&#9670;&#160;</a></span>cubeFPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFPS </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00322">322</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af714bcba9fd3c3f4bc70e3601a3b8c3c" name="af714bcba9fd3c3f4bc70e3601a3b8c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af714bcba9fd3c3f4bc70e3601a3b8c3c">&#9670;&#160;</a></span>cubeFPSMult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFPSMult </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>mult</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mult</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00334">334</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0df2a451a0505b09c81486e4d022a63a" name="a0df2a451a0505b09c81486e4d022a63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df2a451a0505b09c81486e4d022a63a">&#9670;&#160;</a></span>cubeFPSMultUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFPSMultUpdated </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fpsMult</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the cube FPS multiplier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fpsMult</td><td>the current FPS multiplier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b15651f26d8750dd120f497da81069e" name="a1b15651f26d8750dd120f497da81069e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b15651f26d8750dd120f497da81069e">&#9670;&#160;</a></span>cubeFPSUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFPSUpdated </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>desiredFPS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the cube FPS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td>the current actual FPS  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desiredFPS</td><td>the desired FPS </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38d0a6245c5de5a0bbae0468d0a6ec4d" name="a38d0a6245c5de5a0bbae0468d0a6ec4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d0a6245c5de5a0bbae0468d0a6ec4d">&#9670;&#160;</a></span>cubeFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fno</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00347">347</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d84023af4a8e1ead4df2bf38edcb11b" name="a1d84023af4a8e1ead4df2bf38edcb11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d84023af4a8e1ead4df2bf38edcb11b">&#9670;&#160;</a></span>cubeFrameDelta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFrameDelta </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>dfno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dfno</td><td>the change in image number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00357">357</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaef45f7ec0cf1eb6e7582dc2bedc4423" name="aaef45f7ec0cf1eb6e7582dc2bedc4423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef45f7ec0cf1eb6e7582dc2bedc4423">&#9670;&#160;</a></span>cubeFrameUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeFrameUpdated </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the cube frame number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fno</td><td>the current cube frame number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad523e755ab9cb4d8bd00ce42823f0843" name="ad523e755ab9cb4d8bd00ce42823f0843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad523e755ab9cb4d8bd00ce42823f0843">&#9670;&#160;</a></span>cubeMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cm</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00313">313</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73e13ba9c6a6afe17bbdaecabd25e407" name="a73e13ba9c6a6afe17bbdaecabd25e407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e13ba9c6a6afe17bbdaecabd25e407">&#9670;&#160;</a></span>cubeModeUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::cubeModeUpdated </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the cube mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>the current cube mode (true is playing back, false is stopped </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9b02c2b959727416f036612ad361cee" name="ac9b02c2b959727416f036612ad361cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b02c2b959727416f036612ad361cee">&#9670;&#160;</a></span>currImageTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rtimvBase::currImageTimeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current image display timeout. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current value of m_currImageTimeout </dd></dl>
 
 </div>
 </div>
@@ -1082,7 +1557,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00435">435</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00597">597</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1584,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00366">366</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00456">456</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +1611,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00362">362</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00438">438</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1638,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00489">489</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00582">582</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1665,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00488">488</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00578">578</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1692,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00541">541</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00644">644</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1246,7 +1721,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Get the QPixMap pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00457">457</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00544">544</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1265,18 +1740,21 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the image display timeout. </p>
+<p>Get the minimum image display timeout. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current value of m_imageTimeout </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00268">268</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00442">442</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a51e0d6dbd130310cb547403034d4c4c1" name="a51e0d6dbd130310cb547403034d4c4c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51e0d6dbd130310cb547403034d4c4c1">&#9670;&#160;</a></span>imageTimeout() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e0d6dbd130310cb547403034d4c4c1">&#9670;&#160;</a></span>imageTimeout <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rtimvBase::imageTimeout </td>
@@ -1286,10 +1764,15 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Set the image display timeout. </p>
-<p>This sets the display frame rate, e.g. a timeout of 100 msec will cause the display to update at 10 f.p.s. </p>
+<p>This sets the display frame rate, e.g. a timeout of 50 msec will cause the display to update at 20 f.p.s. (the default setting). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>the new image display timeout </td></tr>
@@ -1297,7 +1780,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00248">248</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00306">306</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1329,7 +1812,7 @@ false otherwise </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00124">124</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00125">125</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1831,7 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00455">455</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00617">617</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1368,7 +1851,7 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00450">450</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00612">612</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1387,7 +1870,7 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00445">445</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00607">607</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1407,7 +1890,7 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00440">440</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00602">602</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1928,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00572">572</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00670">670</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +2106,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00928">928</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01088">1088</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1643,7 +2126,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00919">919</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01079">1079</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1673,12 +2156,12 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01047">1047</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01207">1207</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a18c192980fc84aca7436ed0472996dad" name="a18c192980fc84aca7436ed0472996dad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18c192980fc84aca7436ed0472996dad">&#9670;&#160;</a></span>mtxL_setImsize()</h2>
+<a id="a73fcb40b73f5880c66a506649ae360eb" name="a73fcb40b73f5880c66a506649ae360eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fcb40b73f5880c66a506649ae360eb">&#9670;&#160;</a></span>mtxL_setImsize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1694,6 +2177,12 @@ template&lt;typename lockT &gt; </div>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1714,12 +2203,13 @@ template&lt;typename lockT &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>the new x size  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>the new y size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>the new y size  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td>the new z size </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00139">139</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00140">140</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1747,7 +2237,7 @@ template&lt;typename lockT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00598">598</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00760">760</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1769,7 +2259,7 @@ template&lt;typename lockT &gt; </div>
 <p>Get the number of x pixels. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current vvalue of m_nx </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00185">185</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00197">197</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +2281,63 @@ template&lt;typename lockT &gt; </div>
 <p>Get the number of y pixels. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current vvalue of m_ny </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00190">190</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00202">202</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab609069f3b849aa456b5161a98f90d8c" name="ab609069f3b849aa456b5161a98f90d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab609069f3b849aa456b5161a98f90d8c">&#9670;&#160;</a></span>nz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t rtimvBase::nz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of images. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current vvalue of m_nz </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00207">207</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9980a82e357fd3408c5202285510d3d5" name="a9980a82e357fd3408c5202285510d3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9980a82e357fd3408c5202285510d3d5">&#9670;&#160;</a></span>nzUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::nzUpdated </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the number of images in the cube. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the current number of images in the cube </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1819,10 +2365,11 @@ template&lt;typename lockT &gt; </div>
 </div><div class="memdoc">
 
 <p>Function called on connection. </p>
+<p>This function must set m_connected to true if successful. </p>
 
 <p>Reimplemented in <a class="el" href="classrtimvMainWindow.html#a244e911f12bc76ee1bac6f2084f4ec08">rtimvMainWindow</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00104">104</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00101">101</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +2417,7 @@ template&lt;typename lockT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00366">366</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00538">538</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1918,7 +2465,7 @@ template&lt;typename lockT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00354">354</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00528">528</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1966,7 +2513,7 @@ template&lt;typename lockT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00360">360</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00533">533</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2014,7 +2561,7 @@ template&lt;typename lockT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00372">372</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00543">543</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2211,7 +2758,7 @@ template&lt;typename lockT &gt; </div>
 <p>Calibration configuration includes the value of m_subtractDark, m_applyMask.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to one of pixel_noCal, pixel_subDark, pixel_applyMask, pixel_subDarkApplyMask. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00273">273</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00447">447</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2241,7 +2788,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00385">385</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00553">553</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2808,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00425">425</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00587">587</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2289,7 +2836,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00365">365</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00451">451</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2309,7 +2856,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01104">1104</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01262">1262</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2329,7 +2876,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01109">1109</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01267">1267</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2357,7 +2904,7 @@ template&lt;typename lockT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00028">28</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00026">26</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2388,7 +2935,67 @@ template&lt;typename lockT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classrtimvMainWindow.html#a34b2001f78d258858e42c3f054ebd3f0">rtimvMainWindow</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01128">1128</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01286">1286</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad9799b9b6381f1110dd2b0b57b2f97f9" name="ad9799b9b6381f1110dd2b0b57b2f97f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9799b9b6381f1110dd2b0b57b2f97f9">&#9670;&#160;</a></span>updateCube</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::updateCube </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increment the main image cube number. </p>
+<p>This is on m_cubeTimer expiration </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00422">422</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a082d23c181401c3af2173ced8b8d0505" name="a082d23c181401c3af2173ced8b8d0505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082d23c181401c3af2173ced8b8d0505">&#9670;&#160;</a></span>updateCubeFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtimvBase::updateCubeFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the cube frame number. </p>
+<p>Emits <a class="el" href="classrtimvBase.html#aaef45f7ec0cf1eb6e7582dc2bedc4423" title="Update the cube frame number.">cubeFrameUpdated(uint32_t)</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00437">437</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2419,7 +3026,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classrtimvMainWindow.html#a674f59486eb3619c96be998759773c3b">rtimvMainWindow</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01123">1123</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01281">1281</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2441,16 +3048,16 @@ template&lt;typename lockT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Function called by m_imageTimer expiration. </p>
-<p>This is what actually checks for image data updates. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>onConnect should maybe only be called upon connection to main image, and may need to wait a sec to let things settle. </dd></dl>
+<p>Check all images for updates. </p>
+<p>This is called on m_imageTimer expiration. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>onConnect may need to wait a sec to let things settle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00195">195</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00367">367</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2481,7 +3088,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classrtimvMainWindow.html#ad0ed009a4fc06aab96b8643dca160ba9">rtimvMainWindow</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01133">1133</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01291">1291</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2508,7 +3115,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00498">498</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00594">594</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2528,7 +3135,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l00937">937</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8cpp_source.html#l01097">1097</a> of file <a class="el" href="rtimvBase_8cpp_source.html">rtimvBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -2555,7 +3162,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00500">500</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00602">602</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2582,7 +3189,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00499">499</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00598">598</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2597,7 +3204,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::colorbar_mode {<a class="el" href="classrtimvBase.html#a210a241be3b7a074bc9092a6b3f1455caadef08a1b0c13d46deac23ddd5303ef6">minmaxglobal</a>}</td>
+          <td class="memname">int rtimvBase::colorbar_mode { <a class="el" href="classrtimvBase.html#a210a241be3b7a074bc9092a6b3f1455caadef08a1b0c13d46deac23ddd5303ef6">minmaxglobal</a> }</td>
         </tr>
       </table>
   </td>
@@ -2607,7 +3214,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00342">342</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00415">415</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2621,7 +3228,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::colorBoxActive {0}</td>
+          <td class="memname">int rtimvBase::colorBoxActive { 0 }</td>
         </tr>
       </table>
   </td>
@@ -2631,7 +3238,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00512">512</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00616">616</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2645,7 +3252,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::current_colorbar {<a class="el" href="classrtimvBase.html#a091d6b6a565b8fd3aa6c8028c5ee7437aa7553ac50fc81637263770c9f309e30e">colorbarBone</a>}</td>
+          <td class="memname">int rtimvBase::current_colorbar { <a class="el" href="classrtimvBase.html#a091d6b6a565b8fd3aa6c8028c5ee7437aa7553ac50fc81637263770c9f309e30e">colorbarBone</a> }</td>
         </tr>
       </table>
   </td>
@@ -2655,7 +3262,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00345">345</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00418">418</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2679,7 +3286,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00485">485</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00575">575</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2703,7 +3310,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00484">484</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00574">574</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2717,7 +3324,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::m_amChangingimdata {false}</td>
+          <td class="memname">bool rtimvBase::m_amChangingimdata { false }</td>
         </tr>
       </table>
   </td>
@@ -2729,7 +3336,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Flag indicating that changeImdata(bool) is currently executing. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00452">452</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00540">540</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2745,7 +3352,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00435">435</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00525">525</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2759,7 +3366,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::m_applyMask {false}</td>
+          <td class="memname">bool rtimvBase::m_applyMask { false }</td>
         </tr>
       </table>
   </td>
@@ -2771,7 +3378,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Whether or not the mask is applied, default is false. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00223">223</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00299">299</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2785,7 +3392,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::m_applySatMask {false}</td>
+          <td class="memname">bool rtimvBase::m_applySatMask { false }</td>
         </tr>
       </table>
   </td>
@@ -2795,11 +3402,10 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Whether or not the saturation mask is applied, default is false. <br  />
- </p>
+<p>Whether or not the saturation mask is applied, default is false. </p>
 <p>Note this only controls whether the pixels are colored m_satColor. It does not change the values returned by <a class="el" href="classrtimvBase.html#a578b955263ca264c6e278228b93a92cc" title="Returns a pointer to the static pixel value calculation function for the current calibration configur...">rawPixel()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00229">229</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00305">305</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2813,7 +3419,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::m_autoScale {false}</td>
+          <td class="memname">bool rtimvBase::m_autoScale { false }</td>
         </tr>
       </table>
   </td>
@@ -2823,7 +3429,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00397">397</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00489">489</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2837,7 +3443,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float* rtimvBase::m_calData {nullptr}</td>
+          <td class="memname">float* rtimvBase::m_calData { nullptr }</td>
         </tr>
       </table>
   </td>
@@ -2847,7 +3453,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00231">231</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00307">307</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2874,7 +3480,7 @@ template&lt;typename lockT &gt; </div>
 <p>Mutex for locking access to calibrated pixels. </p>
 <p>Most uses require non-exclusive shared-locking for readings </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00244">244</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00320">320</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2888,7 +3494,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_cbStretch {<a class="el" href="classrtimvBase.html#a253704ea9f5f9ce5a2359faae6ce6d88ac3f58a8243ad4014b8ab8bbfdc73d780">stretchLinear</a>}</td>
+          <td class="memname">int rtimvBase::m_cbStretch { <a class="el" href="classrtimvBase.html#a253704ea9f5f9ce5a2359faae6ce6d88ac3f58a8243ad4014b8ab8bbfdc73d780">stretchLinear</a> }</td>
         </tr>
       </table>
   </td>
@@ -2898,7 +3504,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00343">343</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00416">416</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2922,7 +3528,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00524">524</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00628">628</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2946,7 +3552,240 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00525">525</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00629">629</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5eb1e7700c69fde9970a4fe1e5111e00" name="a5eb1e7700c69fde9970a4fe1e5111e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb1e7700c69fde9970a4fe1e5111e00">&#9670;&#160;</a></span>m_connected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rtimvBase::m_connected { false }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag used to indicate that the main image, m_images[0], is connected to its first image. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00072">72</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c28228ff749386f3f4409afd0e032ba" name="a3c28228ff749386f3f4409afd0e032ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c28228ff749386f3f4409afd0e032ba">&#9670;&#160;</a></span>m_cubeDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rtimvBase::m_cubeDir { 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Direction of cube travel. +1 or -1. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00195">195</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa51212c1faf9047e9c0f02a942d2fc17" name="aa51212c1faf9047e9c0f02a942d2fc17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51212c1faf9047e9c0f02a942d2fc17">&#9670;&#160;</a></span>m_cubeFPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rtimvBase::m_cubeFPS { 20 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The cube frame rate. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00189">189</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa71d94d0a26827871e268622fed42132" name="aa71d94d0a26827871e268622fed42132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71d94d0a26827871e268622fed42132">&#9670;&#160;</a></span>m_cubeFPSMult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rtimvBase::m_cubeFPSMult { 1.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplier on cube FPS, e.g. for fast forwarding. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00193">193</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acfc4e27779f826e831d2c04c92036b74" name="acfc4e27779f826e831d2c04c92036b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc4e27779f826e831d2c04c92036b74">&#9670;&#160;</a></span>m_cubeFrameUpdateTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer rtimvBase::m_cubeFrameUpdateTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When this times out the current frame number signal is sent. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00183">183</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0708c9df061a1aeed8ad80230b810bf8" name="a0708c9df061a1aeed8ad80230b810bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0708c9df061a1aeed8ad80230b810bf8">&#9670;&#160;</a></span>m_cubeMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rtimvBase::m_cubeMode { false }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether or not cube mode is enabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00187">187</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3dcf03c94b65ad6e6859eb26317f105a" name="a3dcf03c94b65ad6e6859eb26317f105a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dcf03c94b65ad6e6859eb26317f105a">&#9670;&#160;</a></span>m_cubeTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer rtimvBase::m_cubeTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When this times out <a class="el" href="classrtimvBase.html">rtimvBase</a> increments the cube frame number. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00181">181</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1933edbaa84ec2bce3b32be73887819" name="ab1933edbaa84ec2bce3b32be73887819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1933edbaa84ec2bce3b32be73887819">&#9670;&#160;</a></span>m_currImageTimeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rtimvBase::m_currImageTimeout { 50 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The timeout for checking for a new image in ms. This is what is used to maintain both the cube update rate set by m_cubeFPS (as close as possible) while meeting the minimum interval set by m_imageTimeout. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00197">197</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a69d0c589834ceba7ff3acb57e7a5f72e" name="a69d0c589834ceba7ff3acb57e7a5f72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d0c589834ceba7ff3acb57e7a5f72e">&#9670;&#160;</a></span>m_desiredCubeFPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rtimvBase::m_desiredCubeFPS { 20 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The cube frame rate. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00191">191</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2978,7 +3817,7 @@ template&lt;typename lockT &gt; </div>
 <li>3 is the saturation mask which (optionally) denotes which pixels to turn the saturation color. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00078">78</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00069">69</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -2992,7 +3831,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_imageTimeout {50}</td>
+          <td class="memname">int rtimvBase::m_imageTimeout { 50 }</td>
         </tr>
       </table>
   </td>
@@ -3002,9 +3841,9 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The timeout for checking for a new images, ms. </p>
+<p>The minimum timeout for checking for a new images, ms. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00172">172</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00185">185</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3030,7 +3869,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>When this times out <a class="el" href="classrtimvBase.html">rtimvBase</a> checks for a new image. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00170">170</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00179">179</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3056,7 +3895,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The perceived lightness values of the colormap RGB values. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00447">447</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00535">535</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3067,12 +3906,12 @@ template&lt;typename lockT &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float* rtimvBase::m_lowPassFiltered {nullptr}</td>
+          <td class="memname">float* rtimvBase::m_lowPassFiltered { nullptr }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00433">433</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00523">523</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3088,7 +3927,7 @@ template&lt;typename lockT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00437">437</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00527">527</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3102,7 +3941,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_maskColor {254}</td>
+          <td class="memname">int rtimvBase::m_maskColor { 254 }</td>
         </tr>
       </table>
   </td>
@@ -3114,7 +3953,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The index in the color table to use for the mask color. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00336">336</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00409">409</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3128,7 +3967,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_maxColor {253}</td>
+          <td class="memname">int rtimvBase::m_maxColor { 253 }</td>
         </tr>
       </table>
   </td>
@@ -3140,7 +3979,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The maximum index to use for the color table. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00334">334</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00407">407</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3166,7 +4005,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The maximum data valuse used for scaling. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00395">395</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00487">487</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3180,7 +4019,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_minColor {0}</td>
+          <td class="memname">int rtimvBase::m_minColor { 0 }</td>
         </tr>
       </table>
   </td>
@@ -3192,7 +4031,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The minimum index to use for the color table. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00332">332</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00405">405</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3218,7 +4057,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The minimum data value used for scaling. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00393">393</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00485">485</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3232,7 +4071,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::m_mzmqAlways {false}</td>
+          <td class="memname">bool rtimvBase::m_mzmqAlways { false }</td>
         </tr>
       </table>
   </td>
@@ -3244,7 +4083,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Flag to indicate that the milkzmq protocol should be used for all ImageStremIO images. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00081">81</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00075">75</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3258,7 +4097,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_mzmqPort {0}</td>
+          <td class="memname">int rtimvBase::m_mzmqPort { 0 }</td>
         </tr>
       </table>
   </td>
@@ -3270,7 +4109,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Default milkzmq server to use, if set this overrides default "5556" in mzmqImage. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00087">87</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00081">81</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3296,7 +4135,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Default milkzmq server to use, if set this overrides default "localhost" in mzmqImage. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00084">84</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00078">78</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3310,7 +4149,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_nanColor {254}</td>
+          <td class="memname">int rtimvBase::m_nanColor { 254 }</td>
         </tr>
       </table>
   </td>
@@ -3322,7 +4161,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The index in the color table to use for nans and infinities. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00340">340</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00413">413</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3336,7 +4175,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t rtimvBase::m_nx {0}</td>
+          <td class="memname">uint32_t rtimvBase::m_nx { 0 }</td>
         </tr>
       </table>
   </td>
@@ -3348,7 +4187,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The number of pixels in the x (horizontal) direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00123">123</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00122">122</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3362,7 +4201,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t rtimvBase::m_ny {0}</td>
+          <td class="memname">uint32_t rtimvBase::m_ny { 0 }</td>
         </tr>
       </table>
   </td>
@@ -3374,7 +4213,33 @@ template&lt;typename lockT &gt; </div>
 
 <p>The number of pixels in the y (vertical) direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00125">125</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00124">124</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8499046f36c8eb54e0b182b2ed008d3f" name="a8499046f36c8eb54e0b182b2ed008d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8499046f36c8eb54e0b182b2ed008d3f">&#9670;&#160;</a></span>m_nz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t rtimvBase::m_nz { 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of images in the cube. Always &gt;= 1. </p>
+
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00126">126</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3388,7 +4253,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QImage* rtimvBase::m_qim {nullptr}</td>
+          <td class="memname">QImage* rtimvBase::m_qim { nullptr }</td>
         </tr>
       </table>
   </td>
@@ -3400,7 +4265,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>A QT image, used to store the color-map encoded data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00445">445</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00533">533</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3426,7 +4291,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>A QT pixmap, used to prep the QImage for display. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00449">449</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00537">537</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3453,7 +4318,7 @@ template&lt;typename lockT &gt; </div>
 <p>Mutex for locking access to raw pixels. </p>
 <p>This is used by <a class="el" href="structrtimvImage.html" title="Base class for rtimv images.">rtimvImage</a> derived classes to protect deletion and recreation of the m_data array they manage. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00239">239</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00315">315</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3467,7 +4332,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int rtimvBase::m_satColor {255}</td>
+          <td class="memname">int rtimvBase::m_satColor { 255 }</td>
         </tr>
       </table>
   </td>
@@ -3479,7 +4344,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>The index in the color table to use for the saturation color. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00338">338</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00411">411</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3493,7 +4358,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* rtimvBase::m_satData {nullptr}</td>
+          <td class="memname">uint8_t* rtimvBase::m_satData { nullptr }</td>
         </tr>
       </table>
   </td>
@@ -3503,7 +4368,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00232">232</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00308">308</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3517,7 +4382,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvBase::m_satLevel {1e30}</td>
+          <td class="memname">float rtimvBase::m_satLevel { 1e30 }</td>
         </tr>
       </table>
   </td>
@@ -3527,7 +4392,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00479">479</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00569">569</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3541,7 +4406,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t rtimvBase::m_saturated {0}</td>
+          <td class="memname">uint32_t rtimvBase::m_saturated { 0 }</td>
         </tr>
       </table>
   </td>
@@ -3551,7 +4416,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00480">480</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00570">570</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3565,7 +4430,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::m_subtractDark {false}</td>
+          <td class="memname">bool rtimvBase::m_subtractDark { false }</td>
         </tr>
       </table>
   </td>
@@ -3577,7 +4442,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Whether or not the dark image is subtracted, default is false. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00220">220</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00296">296</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3591,7 +4456,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvBase::m_zoomLevel {1}</td>
+          <td class="memname">float rtimvBase::m_zoomLevel { 1 }</td>
         </tr>
       </table>
   </td>
@@ -3601,7 +4466,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00493">493</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00589">589</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3615,7 +4480,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvBase::m_zoomLevelMax {64}</td>
+          <td class="memname">float rtimvBase::m_zoomLevelMax { 64 }</td>
         </tr>
       </table>
   </td>
@@ -3625,7 +4490,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00495">495</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00591">591</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3639,7 +4504,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float rtimvBase::m_zoomLevelMin {1}</td>
+          <td class="memname">float rtimvBase::m_zoomLevelMin { 1 }</td>
         </tr>
       </table>
   </td>
@@ -3649,7 +4514,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00494">494</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00590">590</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3663,7 +4528,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::RealTimeEnabled {true}</td>
+          <td class="memname">bool rtimvBase::RealTimeEnabled { true }</td>
         </tr>
       </table>
   </td>
@@ -3675,7 +4540,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Controls whether <a class="el" href="classrtimvBase.html">rtimvBase</a> is using real-time data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00556">556</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00657">657</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3689,7 +4554,7 @@ template&lt;typename lockT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rtimvBase::RealTimeStopped {false}</td>
+          <td class="memname">bool rtimvBase::RealTimeStopped { false }</td>
         </tr>
       </table>
   </td>
@@ -3701,7 +4566,7 @@ template&lt;typename lockT &gt; </div>
 
 <p>Set when user temporarily freezes real-time data viewing. </p>
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00557">557</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00658">658</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -3725,7 +4590,7 @@ template&lt;typename lockT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00347">347</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rtimvBase_8hpp_source.html#l00420">420</a> of file <a class="el" href="rtimvBase_8hpp_source.html">rtimvBase.hpp</a>.</p>
 
 </div>
 </div>
